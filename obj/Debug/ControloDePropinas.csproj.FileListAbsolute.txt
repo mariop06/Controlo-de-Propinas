@@ -11,3 +11,15 @@ A:\Visual Studio 2022\Projects\ControloDePropinas\obj\Debug\Controlo.EE91CEC8.Up
 A:\Visual Studio 2022\Projects\ControloDePropinas\obj\Debug\ControloDePropinas.exe
 A:\Visual Studio 2022\Projects\ControloDePropinas\obj\Debug\ControloDePropinas.pdb
 A:\Visual Studio 2022\Projects\ControloDePropinas\obj\Debug\ControloDePropinas.Telas.TelaPrincipal.resources
+C:\Users\Mário Paulo\OneDrive\Documents\Projectos\Controlo-de-Propinas\bin\Debug\ControloDePropinas.exe.config
+C:\Users\Mário Paulo\OneDrive\Documents\Projectos\Controlo-de-Propinas\bin\Debug\ControloDePropinas.exe
+C:\Users\Mário Paulo\OneDrive\Documents\Projectos\Controlo-de-Propinas\bin\Debug\ControloDePropinas.pdb
+C:\Users\Mário Paulo\OneDrive\Documents\Projectos\Controlo-de-Propinas\obj\Debug\ControloDePropinas.csproj.AssemblyReference.cache
+C:\Users\Mário Paulo\OneDrive\Documents\Projectos\Controlo-de-Propinas\obj\Debug\ControloDePropinas.TelaLogin.resources
+C:\Users\Mário Paulo\OneDrive\Documents\Projectos\Controlo-de-Propinas\obj\Debug\ControloDePropinas.Properties.Resources.resources
+C:\Users\Mário Paulo\OneDrive\Documents\Projectos\Controlo-de-Propinas\obj\Debug\ControloDePropinas.Telas.TelaPrincipal.resources
+C:\Users\Mário Paulo\OneDrive\Documents\Projectos\Controlo-de-Propinas\obj\Debug\ControloDePropinas.csproj.GenerateResource.cache
+C:\Users\Mário Paulo\OneDrive\Documents\Projectos\Controlo-de-Propinas\obj\Debug\ControloDePropinas.csproj.CoreCompileInputs.cache
+C:\Users\Mário Paulo\OneDrive\Documents\Projectos\Controlo-de-Propinas\obj\Debug\ControloDePropinas.csproj.CopyComplete
+C:\Users\Mário Paulo\OneDrive\Documents\Projectos\Controlo-de-Propinas\obj\Debug\ControloDePropinas.exe
+C:\Users\Mário Paulo\OneDrive\Documents\Projectos\Controlo-de-Propinas\obj\Debug\ControloDePropinas.pdb
