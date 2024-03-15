@@ -1,0 +1,13 @@
+A:\Visual Studio 2022\Projects\ControloDePropinas\bin\Debug\ControloDePropinas.exe.config
+A:\Visual Studio 2022\Projects\ControloDePropinas\bin\Debug\ControloDePropinas.exe
+A:\Visual Studio 2022\Projects\ControloDePropinas\bin\Debug\ControloDePropinas.pdb
+A:\Visual Studio 2022\Projects\ControloDePropinas\bin\Debug\Guna.UI.dll
+A:\Visual Studio 2022\Projects\ControloDePropinas\obj\Debug\ControloDePropinas.csproj.AssemblyReference.cache
+A:\Visual Studio 2022\Projects\ControloDePropinas\obj\Debug\ControloDePropinas.TelaLogin.resources
+A:\Visual Studio 2022\Projects\ControloDePropinas\obj\Debug\ControloDePropinas.Properties.Resources.resources
+A:\Visual Studio 2022\Projects\ControloDePropinas\obj\Debug\ControloDePropinas.csproj.GenerateResource.cache
+A:\Visual Studio 2022\Projects\ControloDePropinas\obj\Debug\ControloDePropinas.csproj.CoreCompileInputs.cache
+A:\Visual Studio 2022\Projects\ControloDePropinas\obj\Debug\Controlo.EE91CEC8.Up2Date
+A:\Visual Studio 2022\Projects\ControloDePropinas\obj\Debug\ControloDePropinas.exe
+A:\Visual Studio 2022\Projects\ControloDePropinas\obj\Debug\ControloDePropinas.pdb
+A:\Visual Studio 2022\Projects\ControloDePropinas\obj\Debug\ControloDePropinas.Telas.TelaPrincipal.resources
