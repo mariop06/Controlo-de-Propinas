@@ -31,6 +31,7 @@
             this.panelPrincipal = new Guna.UI.WinForms.GunaPanel();
             this.gunaPanel6 = new Guna.UI.WinForms.GunaPanel();
             this.gunaPictureBox6 = new Guna.UI.WinForms.GunaPictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.gunaPanel5 = new Guna.UI.WinForms.GunaPanel();
             this.gunaPictureBox5 = new Guna.UI.WinForms.GunaPictureBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,7 +43,9 @@
             this.gunaPictureBox2 = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.gunaPictureBox7 = new Guna.UI.WinForms.GunaPictureBox();
+            this.labelNome = new System.Windows.Forms.Label();
             this.panelPrincipal.SuspendLayout();
             this.gunaPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox6)).BeginInit();
@@ -56,6 +59,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).BeginInit();
             this.gunaPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // panelPrincipal
@@ -83,10 +87,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaPanel6.Controls.Add(this.gunaPictureBox6);
-            this.gunaPanel6.Location = new System.Drawing.Point(4, 14);
+            this.gunaPanel6.Location = new System.Drawing.Point(4, 12);
             this.gunaPanel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaPanel6.Name = "gunaPanel6";
-            this.gunaPanel6.Size = new System.Drawing.Size(126, 57);
+            this.gunaPanel6.Size = new System.Drawing.Size(126, 66);
             this.gunaPanel6.TabIndex = 3;
             // 
             // gunaPictureBox6
@@ -97,14 +101,25 @@
             this.gunaPictureBox6.Location = new System.Drawing.Point(29, 2);
             this.gunaPictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaPictureBox6.Name = "gunaPictureBox6";
-            this.gunaPictureBox6.Size = new System.Drawing.Size(71, 54);
+            this.gunaPictureBox6.Size = new System.Drawing.Size(71, 64);
             this.gunaPictureBox6.TabIndex = 1;
             this.gunaPictureBox6.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(16, 75);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(112, 17);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "_____________";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // gunaPanel5
             // 
             this.gunaPanel5.Controls.Add(this.gunaPictureBox5);
-            this.gunaPanel5.Location = new System.Drawing.Point(4, 895);
+            this.gunaPanel5.Location = new System.Drawing.Point(4, 906);
             this.gunaPanel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaPanel5.Name = "gunaPanel5";
             this.gunaPanel5.Size = new System.Drawing.Size(133, 49);
@@ -125,7 +140,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 863);
+            this.label2.Location = new System.Drawing.Point(14, 874);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(112, 17);
             this.label2.TabIndex = 3;
@@ -215,22 +230,50 @@
             this.gunaPictureBox1.TabIndex = 1;
             this.gunaPictureBox1.TabStop = false;
             // 
-            // label1
+            // label3
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(16, 77);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 17);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "_____________";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Location = new System.Drawing.Point(146, 75);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(1312, 17);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "_________________________________________________________________________________" +
+    "________________________________________________________________________________" +
+    "__";
+            // 
+            // gunaPictureBox7
+            // 
+            this.gunaPictureBox7.BackgroundImage = global::ControloDePropinas.Properties.Resources.Frame_13;
+            this.gunaPictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gunaPictureBox7.BaseColor = System.Drawing.Color.White;
+            this.gunaPictureBox7.Location = new System.Drawing.Point(1370, 14);
+            this.gunaPictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gunaPictureBox7.Name = "gunaPictureBox7";
+            this.gunaPictureBox7.Size = new System.Drawing.Size(71, 64);
+            this.gunaPictureBox7.TabIndex = 2;
+            this.gunaPictureBox7.TabStop = false;
+            // 
+            // labelNome
+            // 
+            this.labelNome.AutoSize = true;
+            this.labelNome.BackColor = System.Drawing.Color.Transparent;
+            this.labelNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNome.Location = new System.Drawing.Point(1152, 53);
+            this.labelNome.MaximumSize = new System.Drawing.Size(300, 30);
+            this.labelNome.Name = "labelNome";
+            this.labelNome.Size = new System.Drawing.Size(127, 25);
+            this.labelNome.TabIndex = 4;
+            this.labelNome.Text = "Mario Paulo";
             // 
             // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1471, 1029);
+            this.ClientSize = new System.Drawing.Size(1488, 1029);
+            this.Controls.Add(this.labelNome);
+            this.Controls.Add(this.gunaPictureBox7);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.panelPrincipal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -251,7 +294,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).EndInit();
             this.gunaPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox7)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -272,5 +317,8 @@
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox5;
         private Guna.UI.WinForms.GunaPanel gunaPanel6;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox6;
+        private System.Windows.Forms.Label label3;
+        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox7;
+        private System.Windows.Forms.Label labelNome;
     }
 }
