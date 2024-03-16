@@ -39,6 +39,8 @@
             this.txtSenha = new Guna.UI.WinForms.GunaTextBox();
             this.buttonEntrar = new Guna.UI.WinForms.GunaAdvenceButton();
             this.buttonCancelar = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.circleProgress = new Guna.UI.WinForms.GunaWinCircleProgressIndicator();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // gunaElipse1
@@ -198,12 +200,26 @@
             this.buttonCancelar.TabIndex = 8;
             this.buttonCancelar.Text = "CANCELAR";
             this.buttonCancelar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
+            // 
+            // circleProgress
+            // 
+            this.circleProgress.BackColor = System.Drawing.Color.Transparent;
+            this.circleProgress.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.circleProgress.Location = new System.Drawing.Point(150, 480);
+            this.circleProgress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.circleProgress.Name = "circleProgress";
+            this.circleProgress.ProgressColor = System.Drawing.Color.DodgerBlue;
+            this.circleProgress.Size = new System.Drawing.Size(70, 48);
+            this.circleProgress.TabIndex = 5;
+            this.circleProgress.Visible = false;
             // 
             // TelaLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1159, 660);
+            this.Controls.Add(this.circleProgress);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.buttonEntrar);
             this.Controls.Add(this.gunaLabel3);
@@ -234,6 +250,8 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI.WinForms.GunaAdvenceButton buttonEntrar;
         private Guna.UI.WinForms.GunaAdvenceButton buttonCancelar;
+        private Guna.UI.WinForms.GunaWinCircleProgressIndicator circleProgress;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

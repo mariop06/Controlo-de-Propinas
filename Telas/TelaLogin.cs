@@ -50,6 +50,7 @@ namespace ControloDePropinas
                 MessageBox.Show("Login bem-sucedido!");
                 // Faça aqui o redirecionamento para a próxima tela, se necessário
                 TelaPrincipal telaPrincipal = new TelaPrincipal();
+                this.Hide();
                 telaPrincipal.Show();
             }
             else
@@ -93,6 +94,9 @@ namespace ControloDePropinas
             }
         }
 
-
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

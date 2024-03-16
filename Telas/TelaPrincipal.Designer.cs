@@ -44,6 +44,7 @@
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaPictureBox7 = new Guna.UI.WinForms.GunaPictureBox();
             this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
+            this.mainPanel = new System.Windows.Forms.Panel();
             this.sideBarP.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox7)).BeginInit();
@@ -103,9 +104,12 @@
             this.btn_info.Size = new System.Drawing.Size(62, 60);
             this.btn_info.TabIndex = 6;
             this.btn_info.Text = "INFORMAÇÃO";
+            this.btn_info.Click += new System.EventHandler(this.btn_info_Click);
+            this.btn_info.MouseHover += new System.EventHandler(this.btn_info_MouseHover);
             // 
             // gunaPictureBox6
             // 
+            this.gunaPictureBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaPictureBox6.BackgroundImage = global::ControloDePropinas.Properties.Resources.Frame_13;
             this.gunaPictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gunaPictureBox6.BaseColor = System.Drawing.Color.White;
@@ -160,6 +164,7 @@
             this.btn_atividade.Size = new System.Drawing.Size(50, 60);
             this.btn_atividade.TabIndex = 6;
             this.btn_atividade.Text = "ATIVIDADES";
+            this.btn_atividade.MouseHover += new System.EventHandler(this.btn_atividade_MouseHover);
             // 
             // btn_Inicio
             // 
@@ -192,6 +197,9 @@
             this.btn_Inicio.Size = new System.Drawing.Size(50, 60);
             this.btn_Inicio.TabIndex = 5;
             this.btn_Inicio.Text = "ÍNICIO";
+            this.btn_Inicio.Click += new System.EventHandler(this.btn_Inicio_Click);
+            this.btn_Inicio.MouseHover += new System.EventHandler(this.btn_Inicio_MouseHover);
+            this.btn_Inicio.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_Inicio_MouseUp);
             // 
             // label4
             // 
@@ -236,6 +244,7 @@
             this.btn_more.Size = new System.Drawing.Size(50, 60);
             this.btn_more.TabIndex = 8;
             this.btn_more.Text = "MORE";
+            this.btn_more.MouseHover += new System.EventHandler(this.btn_more_MouseHover);
             // 
             // btn_dash
             // 
@@ -268,6 +277,8 @@
             this.btn_dash.Size = new System.Drawing.Size(50, 60);
             this.btn_dash.TabIndex = 7;
             this.btn_dash.Text = "DASHBOARD";
+            this.btn_dash.Click += new System.EventHandler(this.btn_dash_Click);
+            this.btn_dash.MouseHover += new System.EventHandler(this.btn_dash_MouseHover);
             // 
             // label3
             // 
@@ -278,7 +289,7 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "_________________________________________________________________________________" +
     "________________________________________________________________________________" +
-    "___";
+    "_______";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelNome
@@ -286,7 +297,7 @@
             this.labelNome.AutoSize = true;
             this.labelNome.BackColor = System.Drawing.Color.Transparent;
             this.labelNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNome.Location = new System.Drawing.Point(1152, 53);
+            this.labelNome.Location = new System.Drawing.Point(1152, 51);
             this.labelNome.MaximumSize = new System.Drawing.Size(300, 30);
             this.labelNome.Name = "labelNome";
             this.labelNome.Size = new System.Drawing.Size(127, 25);
@@ -303,7 +314,7 @@
             this.gunaPictureBox7.BackgroundImage = global::ControloDePropinas.Properties.Resources.Frame_13;
             this.gunaPictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gunaPictureBox7.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox7.Location = new System.Drawing.Point(1370, 14);
+            this.gunaPictureBox7.Location = new System.Drawing.Point(1370, 13);
             this.gunaPictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaPictureBox7.Name = "gunaPictureBox7";
             this.gunaPictureBox7.Size = new System.Drawing.Size(71, 64);
@@ -315,11 +326,22 @@
             this.sidebarTimer.Interval = 80;
             this.sidebarTimer.Tick += new System.EventHandler(this.sidebarTimer_Tick);
             // 
+            // mainPanel
+            // 
+            this.mainPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.mainPanel.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.mainPanel.Location = new System.Drawing.Point(97, 102);
+            this.mainPanel.Name = "mainPanel";
+            this.mainPanel.Size = new System.Drawing.Size(1402, 808);
+            this.mainPanel.TabIndex = 5;
+            // 
             // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1500, 910);
+            this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.labelNome);
             this.Controls.Add(this.gunaPictureBox7);
             this.Controls.Add(this.label3);
@@ -357,5 +379,6 @@
         private System.Windows.Forms.Label label4;
         private Guna.UI.WinForms.GunaAdvenceButton btn_Inicio;
         private System.Windows.Forms.Timer sidebarTimer;
+        private System.Windows.Forms.Panel mainPanel;
     }
 }

@@ -13,10 +13,46 @@ namespace ControloDePropinas.Telas
     public partial class TelaPrincipal : Form
     {
         bool sidebarExpand=true;
+        bool visible = true;
         public TelaPrincipal()
         {
             InitializeComponent();
+            if (visible)
+            {
+                mainPanel.Visible = false;
+               
+            }
+          
         }
+
+        public void LoadForm(object Form)
+        {
+            //form = new Telas.Configuracoes();
+            //paneljanela.Controls.Clear();
+            //form.TopLevel = false;
+            //form.Visible = true;
+            //form.Dock = DockStyle.Fill;
+            //paneljanela.Controls.Add(form);
+            //btnconfig.FillColor = Color.Orange;
+            //btnhome.FillColor = Color.Transparent;
+            //btnadd.FillColor = Color.Transparent;
+            //btnhelp.FillColor = Color.Transparent;
+            //btn_ver.FillColor = Color.Transparent;
+
+            if (this.mainPanel.Controls.Count>0)
+            {
+                this.mainPanel.Controls.RemoveAt(0);
+            }
+            Form f = Form as Form;
+            f.TopLevel = false;
+            f.Dock = DockStyle.Fill;
+            this.mainPanel.Controls.Add(f);
+            this.mainPanel.Tag = f;
+            f.Show();
+
+        }
+
+
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -45,13 +81,17 @@ namespace ControloDePropinas.Telas
                 btn_atividade.Width += 10;
                 btn_info.Width += 10;
 
+                label1.Width+=10;
+
+                //mainPanel.Width -= 10;
+                //mainPanel.Location = new Point(mainPanel.Location.X + 10, mainPanel.Location.Y);
                 //label3.Width -= 10;
                 //label3.Location = new Point(label3.Location.X + 10, label3.Location.Y);
 
                 if (sideBarP.Width == sideBarP.MaximumSize.Width)
                 {
-                    label3.Location = new Point(210, label3.Location.Y);
-                    label3.Width = 1250;
+                    //label3.Location = new Point(210, label3.Location.Y);
+                    //label3.Width = 1250;
                    
                     sidebarExpand = false;
 
@@ -68,10 +108,14 @@ namespace ControloDePropinas.Telas
                 btn_atividade.Width -= 10;
                 btn_info.Width -= 10;
 
-                label3.Width -= 10;
-                label3.Location = new Point(label3.Location.X - 10, label3.Location.Y);
+                label1.Width -= 10;
 
-                if (sideBarP.Width==sideBarP.MinimumSize.Width)
+                //label3.Width -= 10;
+                //label3.Location = new Point(label3.Location.X - 10, label3.Location.Y);
+
+                //mainPanel.Width += 10;
+                //mainPanel.Location = new Point(mainPanel.Location.X - 10, mainPanel.Location.Y);
+                if (sideBarP.Width == sideBarP.MinimumSize.Width)
                 {
                     //label3.Location = new Point(138, label3.Location.Y);
                     //label3.Width = 1320;
@@ -81,9 +125,67 @@ namespace ControloDePropinas.Telas
             }
         }
 
+
+
         private void sideBarP_MouseHover(object sender, EventArgs e)
         {
+            sideBarP.BringToFront();
             sidebarTimer.Start();
+        }
+
+        private void btn_more_MouseHover(object sender, EventArgs e)
+        {
+            sideBarP.BringToFront();
+            sidebarTimer.Start();
+        }
+        private void btn_Inicio_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void btn_Inicio_MouseHover(object sender, EventArgs e)
+        {
+            sideBarP.BringToFront();
+            sidebarTimer.Start();
+        }
+
+        private void btn_dash_MouseHover(object sender, EventArgs e)
+        {
+            sideBarP.BringToFront();
+            sidebarTimer.Start();
+        }
+
+        private void btn_atividade_MouseHover(object sender, EventArgs e)
+        {
+            sideBarP.BringToFront();
+            sidebarTimer.Start();
+        }
+
+        private void btn_info_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_info_MouseHover(object sender, EventArgs e)
+        {
+           
+        }
+     
+
+        private void btn_Inicio_MouseUp(object sender, MouseEventArgs e)
+        {
+            sideBarP.BringToFront();
+            sidebarTimer.Start();
+        }
+
+        private void btn_dash_Click(object sender, EventArgs e)
+        {
+            mainPanel.Visible = true;
+            LoadForm( new TelaDashboard());
+
+            
+
         }
     }
 }
+
