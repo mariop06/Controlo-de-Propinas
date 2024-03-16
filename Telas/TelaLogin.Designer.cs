@@ -33,66 +33,68 @@
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaElipsePanel1 = new Guna.UI.WinForms.GunaElipsePanel();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaTextBox1 = new Guna.UI.WinForms.GunaTextBox();
+            this.txtUsuario = new Guna.UI.WinForms.GunaTextBox();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaTextBox2 = new Guna.UI.WinForms.GunaTextBox();
-            this.button = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.gunaAdvenceButton1 = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.txtSenha = new Guna.UI.WinForms.GunaTextBox();
+            this.buttonEntrar = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.buttonCancelar = new Guna.UI.WinForms.GunaAdvenceButton();
             this.SuspendLayout();
             // 
             // gunaElipse1
             // 
-            this.gunaElipse1.Radius = 20;
+            this.gunaElipse1.Radius = 15;
             this.gunaElipse1.TargetControl = this;
             // 
             // gunaElipsePanel1
             // 
             this.gunaElipsePanel1.BackColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(187)))), ((int)(((byte)(201)))));
-            this.gunaElipsePanel1.Location = new System.Drawing.Point(699, 24);
+            this.gunaElipsePanel1.Location = new System.Drawing.Point(621, 19);
+            this.gunaElipsePanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaElipsePanel1.Name = "gunaElipsePanel1";
             this.gunaElipsePanel1.Radius = 10;
-            this.gunaElipsePanel1.Size = new System.Drawing.Size(584, 775);
+            this.gunaElipsePanel1.Size = new System.Drawing.Size(519, 620);
             this.gunaElipsePanel1.TabIndex = 0;
             // 
             // gunaLabel1
             // 
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.Location = new System.Drawing.Point(244, 48);
+            this.gunaLabel1.Location = new System.Drawing.Point(217, 38);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(179, 54);
+            this.gunaLabel1.Size = new System.Drawing.Size(153, 46);
             this.gunaLabel1.TabIndex = 1;
             this.gunaLabel1.Text = "ENTRAR";
             this.gunaLabel1.Click += new System.EventHandler(this.gunaLabel1_Click);
             // 
-            // gunaTextBox1
+            // txtUsuario
             // 
-            this.gunaTextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaTextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
-            this.gunaTextBox1.BorderSize = 1;
-            this.gunaTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaTextBox1.FocusedBaseColor = System.Drawing.Color.White;
-            this.gunaTextBox1.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
-            this.gunaTextBox1.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaTextBox1.Location = new System.Drawing.Point(106, 222);
-            this.gunaTextBox1.Name = "gunaTextBox1";
-            this.gunaTextBox1.PasswordChar = '\0';
-            this.gunaTextBox1.Radius = 10;
-            this.gunaTextBox1.SelectedText = "";
-            this.gunaTextBox1.Size = new System.Drawing.Size(475, 73);
-            this.gunaTextBox1.TabIndex = 3;
+            this.txtUsuario.BackColor = System.Drawing.Color.Transparent;
+            this.txtUsuario.BaseColor = System.Drawing.Color.White;
+            this.txtUsuario.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
+            this.txtUsuario.BorderSize = 1;
+            this.txtUsuario.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtUsuario.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtUsuario.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
+            this.txtUsuario.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtUsuario.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtUsuario.Location = new System.Drawing.Point(94, 178);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.PasswordChar = '\0';
+            this.txtUsuario.Radius = 10;
+            this.txtUsuario.SelectedText = "";
+            this.txtUsuario.Size = new System.Drawing.Size(422, 58);
+            this.txtUsuario.TabIndex = 3;
             // 
             // gunaLabel2
             // 
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.Location = new System.Drawing.Point(115, 187);
+            this.gunaLabel2.Location = new System.Drawing.Point(102, 150);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(93, 30);
+            this.gunaLabel2.Size = new System.Drawing.Size(82, 25);
             this.gunaLabel2.TabIndex = 4;
             this.gunaLabel2.Text = "Usuário:";
             // 
@@ -100,114 +102,118 @@
             // 
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.Location = new System.Drawing.Point(115, 344);
+            this.gunaLabel3.Location = new System.Drawing.Point(102, 275);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(79, 30);
+            this.gunaLabel3.Size = new System.Drawing.Size(69, 25);
             this.gunaLabel3.TabIndex = 6;
             this.gunaLabel3.Text = "Senha:";
             // 
-            // gunaTextBox2
+            // txtSenha
             // 
-            this.gunaTextBox2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox2.BaseColor = System.Drawing.Color.White;
-            this.gunaTextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
-            this.gunaTextBox2.BorderSize = 1;
-            this.gunaTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaTextBox2.FocusedBaseColor = System.Drawing.Color.White;
-            this.gunaTextBox2.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
-            this.gunaTextBox2.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaTextBox2.Location = new System.Drawing.Point(106, 377);
-            this.gunaTextBox2.Name = "gunaTextBox2";
-            this.gunaTextBox2.PasswordChar = '\0';
-            this.gunaTextBox2.Radius = 10;
-            this.gunaTextBox2.SelectedText = "";
-            this.gunaTextBox2.Size = new System.Drawing.Size(475, 73);
-            this.gunaTextBox2.TabIndex = 5;
+            this.txtSenha.BackColor = System.Drawing.Color.Transparent;
+            this.txtSenha.BaseColor = System.Drawing.Color.White;
+            this.txtSenha.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
+            this.txtSenha.BorderSize = 1;
+            this.txtSenha.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSenha.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtSenha.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
+            this.txtSenha.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtSenha.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSenha.Location = new System.Drawing.Point(94, 302);
+            this.txtSenha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '\0';
+            this.txtSenha.Radius = 10;
+            this.txtSenha.SelectedText = "";
+            this.txtSenha.Size = new System.Drawing.Size(422, 58);
+            this.txtSenha.TabIndex = 5;
             // 
-            // button
+            // buttonEntrar
             // 
-            this.button.AnimationHoverSpeed = 0.07F;
-            this.button.AnimationSpeed = 0.03F;
-            this.button.BackColor = System.Drawing.Color.Transparent;
-            this.button.BaseColor = System.Drawing.Color.White;
-            this.button.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
-            this.button.BorderSize = 1;
-            this.button.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.button.CheckedBorderColor = System.Drawing.Color.Black;
-            this.button.CheckedForeColor = System.Drawing.Color.White;
-            this.button.CheckedImage = ((System.Drawing.Image)(resources.GetObject("button.CheckedImage")));
-            this.button.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.button.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.button.FocusedColor = System.Drawing.Color.Empty;
-            this.button.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button.ForeColor = System.Drawing.Color.Black;
-            this.button.Image = null;
-            this.button.ImageSize = new System.Drawing.Size(20, 20);
-            this.button.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.button.Location = new System.Drawing.Point(106, 594);
-            this.button.Name = "button";
-            this.button.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(202)))), ((int)(((byte)(202)))));
-            this.button.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.button.OnHoverForeColor = System.Drawing.Color.White;
-            this.button.OnHoverImage = null;
-            this.button.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
-            this.button.OnPressedColor = System.Drawing.Color.Black;
-            this.button.Radius = 10;
-            this.button.Size = new System.Drawing.Size(209, 73);
-            this.button.TabIndex = 7;
-            this.button.Text = "ENTRAR";
-            this.button.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.button.Click += new System.EventHandler(this.button_Click);
+            this.buttonEntrar.AnimationHoverSpeed = 0.07F;
+            this.buttonEntrar.AnimationSpeed = 0.03F;
+            this.buttonEntrar.BackColor = System.Drawing.Color.Transparent;
+            this.buttonEntrar.BaseColor = System.Drawing.Color.White;
+            this.buttonEntrar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
+            this.buttonEntrar.BorderSize = 1;
+            this.buttonEntrar.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.buttonEntrar.CheckedBorderColor = System.Drawing.Color.Black;
+            this.buttonEntrar.CheckedForeColor = System.Drawing.Color.White;
+            this.buttonEntrar.CheckedImage = ((System.Drawing.Image)(resources.GetObject("buttonEntrar.CheckedImage")));
+            this.buttonEntrar.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.buttonEntrar.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.buttonEntrar.FocusedColor = System.Drawing.Color.Empty;
+            this.buttonEntrar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEntrar.ForeColor = System.Drawing.Color.Black;
+            this.buttonEntrar.Image = null;
+            this.buttonEntrar.ImageSize = new System.Drawing.Size(20, 20);
+            this.buttonEntrar.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.buttonEntrar.Location = new System.Drawing.Point(94, 475);
+            this.buttonEntrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonEntrar.Name = "buttonEntrar";
+            this.buttonEntrar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(202)))), ((int)(((byte)(202)))));
+            this.buttonEntrar.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.buttonEntrar.OnHoverForeColor = System.Drawing.Color.White;
+            this.buttonEntrar.OnHoverImage = null;
+            this.buttonEntrar.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
+            this.buttonEntrar.OnPressedColor = System.Drawing.Color.Black;
+            this.buttonEntrar.Radius = 10;
+            this.buttonEntrar.Size = new System.Drawing.Size(186, 58);
+            this.buttonEntrar.TabIndex = 7;
+            this.buttonEntrar.Text = "ENTRAR";
+            this.buttonEntrar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.buttonEntrar.Click += new System.EventHandler(this.button_Click);
             // 
-            // gunaAdvenceButton1
+            // buttonCancelar
             // 
-            this.gunaAdvenceButton1.AnimationHoverSpeed = 0.07F;
-            this.gunaAdvenceButton1.AnimationSpeed = 0.03F;
-            this.gunaAdvenceButton1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaAdvenceButton1.BaseColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
-            this.gunaAdvenceButton1.BorderSize = 1;
-            this.gunaAdvenceButton1.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.gunaAdvenceButton1.CheckedBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.CheckedForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton1.CheckedImage = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton1.CheckedImage")));
-            this.gunaAdvenceButton1.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.gunaAdvenceButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaAdvenceButton1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaAdvenceButton1.ForeColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.Image = null;
-            this.gunaAdvenceButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaAdvenceButton1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton1.Location = new System.Drawing.Point(372, 594);
-            this.gunaAdvenceButton1.Name = "gunaAdvenceButton1";
-            this.gunaAdvenceButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(202)))), ((int)(((byte)(202)))));
-            this.gunaAdvenceButton1.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton1.OnHoverImage = null;
-            this.gunaAdvenceButton1.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
-            this.gunaAdvenceButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.Radius = 10;
-            this.gunaAdvenceButton1.Size = new System.Drawing.Size(209, 73);
-            this.gunaAdvenceButton1.TabIndex = 8;
-            this.gunaAdvenceButton1.Text = "CANCELAR";
-            this.gunaAdvenceButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.buttonCancelar.AnimationHoverSpeed = 0.07F;
+            this.buttonCancelar.AnimationSpeed = 0.03F;
+            this.buttonCancelar.BackColor = System.Drawing.Color.Transparent;
+            this.buttonCancelar.BaseColor = System.Drawing.Color.White;
+            this.buttonCancelar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
+            this.buttonCancelar.BorderSize = 1;
+            this.buttonCancelar.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.buttonCancelar.CheckedBorderColor = System.Drawing.Color.Black;
+            this.buttonCancelar.CheckedForeColor = System.Drawing.Color.White;
+            this.buttonCancelar.CheckedImage = ((System.Drawing.Image)(resources.GetObject("buttonCancelar.CheckedImage")));
+            this.buttonCancelar.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.buttonCancelar.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.buttonCancelar.FocusedColor = System.Drawing.Color.Empty;
+            this.buttonCancelar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCancelar.ForeColor = System.Drawing.Color.Black;
+            this.buttonCancelar.Image = null;
+            this.buttonCancelar.ImageSize = new System.Drawing.Size(20, 20);
+            this.buttonCancelar.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.buttonCancelar.Location = new System.Drawing.Point(331, 475);
+            this.buttonCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonCancelar.Name = "buttonCancelar";
+            this.buttonCancelar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(202)))), ((int)(((byte)(202)))));
+            this.buttonCancelar.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.buttonCancelar.OnHoverForeColor = System.Drawing.Color.White;
+            this.buttonCancelar.OnHoverImage = null;
+            this.buttonCancelar.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
+            this.buttonCancelar.OnPressedColor = System.Drawing.Color.Black;
+            this.buttonCancelar.Radius = 10;
+            this.buttonCancelar.Size = new System.Drawing.Size(186, 58);
+            this.buttonCancelar.TabIndex = 8;
+            this.buttonCancelar.Text = "CANCELAR";
+            this.buttonCancelar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TelaLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1304, 825);
-            this.Controls.Add(this.gunaAdvenceButton1);
-            this.Controls.Add(this.button);
+            this.ClientSize = new System.Drawing.Size(1159, 660);
+            this.Controls.Add(this.buttonCancelar);
+            this.Controls.Add(this.buttonEntrar);
             this.Controls.Add(this.gunaLabel3);
-            this.Controls.Add(this.gunaTextBox2);
+            this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.gunaLabel2);
-            this.Controls.Add(this.gunaTextBox1);
+            this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.gunaElipsePanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "TelaLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tela Login";
@@ -222,12 +228,12 @@
         private Guna.UI.WinForms.GunaElipse gunaElipse1;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel1;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
-        private Guna.UI.WinForms.GunaTextBox gunaTextBox1;
+        private Guna.UI.WinForms.GunaTextBox txtUsuario;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
-        private Guna.UI.WinForms.GunaTextBox gunaTextBox2;
+        private Guna.UI.WinForms.GunaTextBox txtSenha;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
-        private Guna.UI.WinForms.GunaAdvenceButton button;
-        private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton1;
+        private Guna.UI.WinForms.GunaAdvenceButton buttonEntrar;
+        private Guna.UI.WinForms.GunaAdvenceButton buttonCancelar;
     }
 }
 

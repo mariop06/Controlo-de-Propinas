@@ -24,3 +24,4 @@ C:\Users\Mário Paulo\OneDrive\Documents\Projectos\Controlo-de-Propinas\obj\Debu
 C:\Users\Mário Paulo\OneDrive\Documents\Projectos\Controlo-de-Propinas\obj\Debug\ControloDePropinas.exe
 C:\Users\Mário Paulo\OneDrive\Documents\Projectos\Controlo-de-Propinas\obj\Debug\ControloDePropinas.pdb
 C:\Users\Mário Paulo\OneDrive\Documents\Projectos\Controlo-de-Propinas\obj\Debug\ControloDePropinas.Telas.TelaDashboard.resources
+C:\Users\Mário Paulo\OneDrive\Documents\Projectos\Controlo-de-Propinas\bin\Debug\MySql.Data.dll
