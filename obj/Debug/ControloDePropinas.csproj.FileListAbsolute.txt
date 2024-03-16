@@ -23,3 +23,4 @@ C:\Users\Mário Paulo\OneDrive\Documents\Projectos\Controlo-de-Propinas\obj\Debu
 C:\Users\Mário Paulo\OneDrive\Documents\Projectos\Controlo-de-Propinas\obj\Debug\ControloDePropinas.csproj.CopyComplete
 C:\Users\Mário Paulo\OneDrive\Documents\Projectos\Controlo-de-Propinas\obj\Debug\ControloDePropinas.exe
 C:\Users\Mário Paulo\OneDrive\Documents\Projectos\Controlo-de-Propinas\obj\Debug\ControloDePropinas.pdb
+C:\Users\Mário Paulo\OneDrive\Documents\Projectos\Controlo-de-Propinas\obj\Debug\ControloDePropinas.Telas.TelaDashboard.resources
