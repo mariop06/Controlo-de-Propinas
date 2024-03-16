@@ -80,7 +80,7 @@
             this.txtUsuario.FocusedBaseColor = System.Drawing.Color.White;
             this.txtUsuario.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
             this.txtUsuario.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtUsuario.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtUsuario.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.Location = new System.Drawing.Point(94, 178);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUsuario.Name = "txtUsuario";
@@ -120,7 +120,7 @@
             this.txtSenha.FocusedBaseColor = System.Drawing.Color.White;
             this.txtSenha.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
             this.txtSenha.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtSenha.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSenha.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenha.Location = new System.Drawing.Point(94, 302);
             this.txtSenha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSenha.Name = "txtSenha";
@@ -213,6 +213,11 @@
             this.circleProgress.Size = new System.Drawing.Size(70, 48);
             this.circleProgress.TabIndex = 5;
             this.circleProgress.Visible = false;
+            this.circleProgress.Load += new System.EventHandler(this.circleProgress_Load);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
             // 
             // TelaLogin
             // 

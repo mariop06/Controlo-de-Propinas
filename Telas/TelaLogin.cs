@@ -37,6 +37,8 @@ namespace ControloDePropinas
             string usuario = txtUsuario.Text.Trim();
             string senha = txtSenha.Text;
 
+            
+
             // Verificar se os campos estão vazios
             if (string.IsNullOrEmpty(usuario) || string.IsNullOrEmpty(senha))
             {
@@ -97,6 +99,11 @@ namespace ControloDePropinas
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void circleProgress_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
