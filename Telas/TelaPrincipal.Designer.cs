@@ -53,7 +53,7 @@
             // sideBarP
             // 
             this.sideBarP.AllowDrop = true;
-            this.sideBarP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(187)))), ((int)(((byte)(201)))));
+            this.sideBarP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
             this.sideBarP.Controls.Add(this.btn_info);
             this.sideBarP.Controls.Add(this.gunaPictureBox6);
             this.sideBarP.Controls.Add(this.label1);
@@ -94,11 +94,11 @@
             this.btn_info.LineColor = System.Drawing.Color.Transparent;
             this.btn_info.Location = new System.Drawing.Point(29, 761);
             this.btn_info.Name = "btn_info";
-            this.btn_info.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btn_info.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
             this.btn_info.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btn_info.OnHoverForeColor = System.Drawing.Color.White;
             this.btn_info.OnHoverImage = null;
-            this.btn_info.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btn_info.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
             this.btn_info.OnPressedColor = System.Drawing.Color.Black;
             this.btn_info.Radius = 5;
             this.btn_info.Size = new System.Drawing.Size(62, 60);
@@ -122,8 +122,7 @@
             // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(6, 75);
@@ -139,9 +138,9 @@
             this.btn_atividade.AnimationSpeed = 0.03F;
             this.btn_atividade.BackColor = System.Drawing.Color.Transparent;
             this.btn_atividade.BaseColor = System.Drawing.Color.Transparent;
-            this.btn_atividade.BorderColor = System.Drawing.Color.Black;
+            this.btn_atividade.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(187)))), ((int)(((byte)(201)))));
             this.btn_atividade.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btn_atividade.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btn_atividade.CheckedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(187)))), ((int)(((byte)(201)))));
             this.btn_atividade.CheckedForeColor = System.Drawing.Color.White;
             this.btn_atividade.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btn_atividade.CheckedImage")));
             this.btn_atividade.CheckedLineColor = System.Drawing.Color.DimGray;
@@ -154,11 +153,11 @@
             this.btn_atividade.LineColor = System.Drawing.Color.Transparent;
             this.btn_atividade.Location = new System.Drawing.Point(23, 363);
             this.btn_atividade.Name = "btn_atividade";
-            this.btn_atividade.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btn_atividade.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_atividade.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.btn_atividade.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(187)))), ((int)(((byte)(201)))));
             this.btn_atividade.OnHoverForeColor = System.Drawing.Color.White;
             this.btn_atividade.OnHoverImage = null;
-            this.btn_atividade.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btn_atividade.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
             this.btn_atividade.OnPressedColor = System.Drawing.Color.Black;
             this.btn_atividade.Radius = 5;
             this.btn_atividade.Size = new System.Drawing.Size(50, 60);
@@ -172,9 +171,9 @@
             this.btn_Inicio.AnimationSpeed = 0.03F;
             this.btn_Inicio.BackColor = System.Drawing.Color.Transparent;
             this.btn_Inicio.BaseColor = System.Drawing.Color.Transparent;
-            this.btn_Inicio.BorderColor = System.Drawing.Color.Black;
+            this.btn_Inicio.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(187)))), ((int)(((byte)(201)))));
             this.btn_Inicio.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btn_Inicio.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btn_Inicio.CheckedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(187)))), ((int)(((byte)(201)))));
             this.btn_Inicio.CheckedForeColor = System.Drawing.Color.White;
             this.btn_Inicio.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btn_Inicio.CheckedImage")));
             this.btn_Inicio.CheckedLineColor = System.Drawing.Color.DimGray;
@@ -187,11 +186,11 @@
             this.btn_Inicio.LineColor = System.Drawing.Color.Transparent;
             this.btn_Inicio.Location = new System.Drawing.Point(23, 153);
             this.btn_Inicio.Name = "btn_Inicio";
-            this.btn_Inicio.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btn_Inicio.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_Inicio.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.btn_Inicio.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(187)))), ((int)(((byte)(201)))));
             this.btn_Inicio.OnHoverForeColor = System.Drawing.Color.White;
             this.btn_Inicio.OnHoverImage = null;
-            this.btn_Inicio.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btn_Inicio.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
             this.btn_Inicio.OnPressedColor = System.Drawing.Color.Black;
             this.btn_Inicio.Radius = 5;
             this.btn_Inicio.Size = new System.Drawing.Size(50, 60);
@@ -203,8 +202,7 @@
             // 
             // label4
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Location = new System.Drawing.Point(7, 729);
@@ -219,9 +217,9 @@
             this.btn_more.AnimationSpeed = 0.03F;
             this.btn_more.BackColor = System.Drawing.Color.Transparent;
             this.btn_more.BaseColor = System.Drawing.Color.Transparent;
-            this.btn_more.BorderColor = System.Drawing.Color.Black;
+            this.btn_more.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(187)))), ((int)(((byte)(201)))));
             this.btn_more.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btn_more.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btn_more.CheckedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(187)))), ((int)(((byte)(201)))));
             this.btn_more.CheckedForeColor = System.Drawing.Color.White;
             this.btn_more.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btn_more.CheckedImage")));
             this.btn_more.CheckedLineColor = System.Drawing.Color.DimGray;
@@ -234,11 +232,11 @@
             this.btn_more.LineColor = System.Drawing.Color.Transparent;
             this.btn_more.Location = new System.Drawing.Point(23, 296);
             this.btn_more.Name = "btn_more";
-            this.btn_more.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btn_more.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_more.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.btn_more.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(187)))), ((int)(((byte)(201)))));
             this.btn_more.OnHoverForeColor = System.Drawing.Color.White;
             this.btn_more.OnHoverImage = null;
-            this.btn_more.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btn_more.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
             this.btn_more.OnPressedColor = System.Drawing.Color.Black;
             this.btn_more.Radius = 5;
             this.btn_more.Size = new System.Drawing.Size(50, 60);
@@ -252,9 +250,9 @@
             this.btn_dash.AnimationSpeed = 0.03F;
             this.btn_dash.BackColor = System.Drawing.Color.Transparent;
             this.btn_dash.BaseColor = System.Drawing.Color.Transparent;
-            this.btn_dash.BorderColor = System.Drawing.Color.Black;
+            this.btn_dash.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(187)))), ((int)(((byte)(201)))));
             this.btn_dash.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btn_dash.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btn_dash.CheckedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(187)))), ((int)(((byte)(201)))));
             this.btn_dash.CheckedForeColor = System.Drawing.Color.White;
             this.btn_dash.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btn_dash.CheckedImage")));
             this.btn_dash.CheckedLineColor = System.Drawing.Color.DimGray;
@@ -267,11 +265,11 @@
             this.btn_dash.LineColor = System.Drawing.Color.Transparent;
             this.btn_dash.Location = new System.Drawing.Point(23, 225);
             this.btn_dash.Name = "btn_dash";
-            this.btn_dash.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btn_dash.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_dash.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.btn_dash.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(187)))), ((int)(((byte)(201)))));
             this.btn_dash.OnHoverForeColor = System.Drawing.Color.White;
             this.btn_dash.OnHoverImage = null;
-            this.btn_dash.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btn_dash.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
             this.btn_dash.OnPressedColor = System.Drawing.Color.Black;
             this.btn_dash.Radius = 5;
             this.btn_dash.Size = new System.Drawing.Size(50, 60);
