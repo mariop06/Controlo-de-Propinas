@@ -124,12 +124,11 @@
             this.txtSenha.Location = new System.Drawing.Point(94, 302);
             this.txtSenha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSenha.Name = "txtSenha";
-            this.txtSenha.PasswordChar = '●';
+            this.txtSenha.PasswordChar = '\0';
             this.txtSenha.Radius = 10;
             this.txtSenha.SelectedText = "";
             this.txtSenha.Size = new System.Drawing.Size(422, 58);
             this.txtSenha.TabIndex = 5;
-            this.txtSenha.UseSystemPasswordChar = true;
             // 
             // buttonEntrar
             // 
@@ -222,8 +221,7 @@
             // 
             // TelaLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1159, 660);
             this.Controls.Add(this.circleProgress);
             this.Controls.Add(this.buttonCancelar);

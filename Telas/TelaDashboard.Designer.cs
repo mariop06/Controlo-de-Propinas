@@ -29,19 +29,19 @@ namespace ControloDePropinas.Telas
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.button2 = new System.Windows.Forms.Button();
             this.gunaGauge1 = new Guna.UI.WinForms.GunaGauge();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.gunaCircleProgressBar1 = new Guna.UI.WinForms.GunaCircleProgressBar();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.gunaProgressBar1 = new Guna.UI.WinForms.GunaProgressBar();
             this.gunaProgressBar2 = new Guna.UI.WinForms.GunaProgressBar();
+            this.gunaProgressBar1 = new Guna.UI.WinForms.GunaProgressBar();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.gunaCircleProgressBar1 = new Guna.UI.WinForms.GunaCircleProgressBar();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
@@ -105,6 +105,47 @@ namespace ControloDePropinas.Telas
             this.panel4.Size = new System.Drawing.Size(1402, 543);
             this.panel4.TabIndex = 5;
             // 
+            // gunaProgressBar2
+            // 
+            this.gunaProgressBar2.BorderColor = System.Drawing.Color.Black;
+            this.gunaProgressBar2.ColorStyle = Guna.UI.WinForms.ColorStyle.Default;
+            this.gunaProgressBar2.IdleColor = System.Drawing.Color.Gainsboro;
+            this.gunaProgressBar2.Location = new System.Drawing.Point(115, 356);
+            this.gunaProgressBar2.Name = "gunaProgressBar2";
+            this.gunaProgressBar2.ProgressMaxColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaProgressBar2.ProgressMinColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaProgressBar2.Size = new System.Drawing.Size(304, 23);
+            this.gunaProgressBar2.TabIndex = 6;
+            // 
+            // gunaProgressBar1
+            // 
+            this.gunaProgressBar1.BorderColor = System.Drawing.Color.Black;
+            this.gunaProgressBar1.ColorStyle = Guna.UI.WinForms.ColorStyle.Default;
+            this.gunaProgressBar1.IdleColor = System.Drawing.Color.Gainsboro;
+            this.gunaProgressBar1.Location = new System.Drawing.Point(115, 327);
+            this.gunaProgressBar1.Name = "gunaProgressBar1";
+            this.gunaProgressBar1.ProgressMaxColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaProgressBar1.ProgressMinColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaProgressBar1.Size = new System.Drawing.Size(304, 23);
+            this.gunaProgressBar1.TabIndex = 5;
+            // 
+            // chart1
+            // 
+            this.chart1.BackColor = System.Drawing.Color.DarkGray;
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
+            this.chart1.Location = new System.Drawing.Point(830, 25);
+            this.chart1.Name = "chart1";
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart1.Series.Add(series2);
+            this.chart1.Size = new System.Drawing.Size(513, 327);
+            this.chart1.TabIndex = 4;
+            this.chart1.Text = "chart1";
+            // 
             // gunaCircleProgressBar1
             // 
             this.gunaCircleProgressBar1.AnimationSpeed = 0.6F;
@@ -121,47 +162,6 @@ namespace ControloDePropinas.Telas
             this.gunaCircleProgressBar1.ProgressOffset = 20;
             this.gunaCircleProgressBar1.Size = new System.Drawing.Size(272, 257);
             this.gunaCircleProgressBar1.TabIndex = 3;
-            // 
-            // chart1
-            // 
-            this.chart1.BackColor = System.Drawing.Color.DarkGray;
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(830, 25);
-            this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(513, 327);
-            this.chart1.TabIndex = 4;
-            this.chart1.Text = "chart1";
-            // 
-            // gunaProgressBar1
-            // 
-            this.gunaProgressBar1.BorderColor = System.Drawing.Color.Black;
-            this.gunaProgressBar1.ColorStyle = Guna.UI.WinForms.ColorStyle.Default;
-            this.gunaProgressBar1.IdleColor = System.Drawing.Color.Gainsboro;
-            this.gunaProgressBar1.Location = new System.Drawing.Point(115, 327);
-            this.gunaProgressBar1.Name = "gunaProgressBar1";
-            this.gunaProgressBar1.ProgressMaxColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaProgressBar1.ProgressMinColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaProgressBar1.Size = new System.Drawing.Size(304, 23);
-            this.gunaProgressBar1.TabIndex = 5;
-            // 
-            // gunaProgressBar2
-            // 
-            this.gunaProgressBar2.BorderColor = System.Drawing.Color.Black;
-            this.gunaProgressBar2.ColorStyle = Guna.UI.WinForms.ColorStyle.Default;
-            this.gunaProgressBar2.IdleColor = System.Drawing.Color.Gainsboro;
-            this.gunaProgressBar2.Location = new System.Drawing.Point(115, 356);
-            this.gunaProgressBar2.Name = "gunaProgressBar2";
-            this.gunaProgressBar2.ProgressMaxColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaProgressBar2.ProgressMinColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaProgressBar2.Size = new System.Drawing.Size(304, 23);
-            this.gunaProgressBar2.TabIndex = 6;
             // 
             // TelaDashboard
             // 
