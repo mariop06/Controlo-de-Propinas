@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Resources",
     "\\Telas"
   ],
-  "SelectedNode": "\\Telas\\TelaDashboard.cs",
+  "SelectedNode": "\\Telas\\TelaPrincipal.cs",
   "PreviewInSolutionExplorer": false
 }

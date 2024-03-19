@@ -36,13 +36,18 @@
     <Reference Include="Guna.UI">
       <HintPath>..\..\Code Snippets\Guna.UI\Guna.UI.dll</HintPath>
     </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="MySql.Data">
       <HintPath>..\..\..\..\Desktop\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -56,11 +61,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataBase.cs" />
+    <Compile Include="Telas\TelaCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\TelaCadastro.Designer.cs">
+      <DependentUpon>TelaCadastro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\TelaDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Telas\TelaDashboard.Designer.cs">
       <DependentUpon>TelaDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\TelaInformações.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\TelaInformações.Designer.cs">
+      <DependentUpon>TelaInformações.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\TelaLogin.cs">
       <SubType>Form</SubType>
@@ -76,8 +93,14 @@
     <Compile Include="Telas\TelaPrincipal.Designer.cs">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Telas\TelaCadastro.resx">
+      <DependentUpon>TelaCadastro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\TelaDashboard.resx">
       <DependentUpon>TelaDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\TelaInformações.resx">
+      <DependentUpon>TelaInformações.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\TelaLogin.resx">
       <DependentUpon>TelaLogin.cs</DependentUpon>
@@ -95,6 +118,7 @@
     <EmbeddedResource Include="Telas\TelaPrincipal.resx">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
