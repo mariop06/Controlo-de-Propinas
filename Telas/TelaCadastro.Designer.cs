@@ -31,20 +31,20 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaCadastro));
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
-            this.txtSenha = new Guna.UI.WinForms.GunaTextBox();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
-            this.txtUsuario = new Guna.UI.WinForms.GunaTextBox();
+            this.TxtNum = new Guna.UI.WinForms.GunaTextBox();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.buttonCancelar = new Guna.UI.WinForms.GunaAdvenceButton();
             this.buttonEntrar = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaElipsePanel1 = new Guna.UI.WinForms.GunaElipsePanel();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaTextBox1 = new Guna.UI.WinForms.GunaTextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.TxtProc = new Guna.UI.WinForms.GunaTextBox();
+            this.comboSexo = new System.Windows.Forms.ComboBox();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaTextBox2 = new Guna.UI.WinForms.GunaTextBox();
+            this.TxtNome = new Guna.UI.WinForms.GunaTextBox();
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.comboTurmas = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // gunaLabel3
@@ -58,26 +58,6 @@
             this.gunaLabel3.Text = "Turma:";
             this.gunaLabel3.Click += new System.EventHandler(this.gunaLabel3_Click);
             // 
-            // txtSenha
-            // 
-            this.txtSenha.BackColor = System.Drawing.Color.Transparent;
-            this.txtSenha.BaseColor = System.Drawing.Color.White;
-            this.txtSenha.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
-            this.txtSenha.BorderSize = 1;
-            this.txtSenha.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSenha.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtSenha.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
-            this.txtSenha.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtSenha.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSenha.Location = new System.Drawing.Point(87, 524);
-            this.txtSenha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtSenha.Name = "txtSenha";
-            this.txtSenha.PasswordChar = '\0';
-            this.txtSenha.Radius = 10;
-            this.txtSenha.SelectedText = "";
-            this.txtSenha.Size = new System.Drawing.Size(478, 58);
-            this.txtSenha.TabIndex = 13;
-            // 
             // gunaLabel2
             // 
             this.gunaLabel2.AutoSize = true;
@@ -88,25 +68,25 @@
             this.gunaLabel2.TabIndex = 11;
             this.gunaLabel2.Text = "Número na Turma:";
             // 
-            // txtUsuario
+            // TxtNum
             // 
-            this.txtUsuario.BackColor = System.Drawing.Color.Transparent;
-            this.txtUsuario.BaseColor = System.Drawing.Color.White;
-            this.txtUsuario.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
-            this.txtUsuario.BorderSize = 1;
-            this.txtUsuario.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUsuario.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtUsuario.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
-            this.txtUsuario.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtUsuario.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(87, 348);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.PasswordChar = '\0';
-            this.txtUsuario.Radius = 10;
-            this.txtUsuario.SelectedText = "";
-            this.txtUsuario.Size = new System.Drawing.Size(478, 58);
-            this.txtUsuario.TabIndex = 10;
+            this.TxtNum.BackColor = System.Drawing.Color.Transparent;
+            this.TxtNum.BaseColor = System.Drawing.Color.White;
+            this.TxtNum.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
+            this.TxtNum.BorderSize = 1;
+            this.TxtNum.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtNum.FocusedBaseColor = System.Drawing.Color.White;
+            this.TxtNum.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
+            this.TxtNum.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.TxtNum.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtNum.Location = new System.Drawing.Point(87, 348);
+            this.TxtNum.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TxtNum.Name = "TxtNum";
+            this.TxtNum.PasswordChar = '\0';
+            this.TxtNum.Radius = 10;
+            this.TxtNum.SelectedText = "";
+            this.TxtNum.Size = new System.Drawing.Size(478, 58);
+            this.TxtNum.TabIndex = 10;
             // 
             // gunaLabel1
             // 
@@ -187,6 +167,7 @@
             this.buttonEntrar.TabIndex = 15;
             this.buttonEntrar.Text = "CADASTRAR";
             this.buttonEntrar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.buttonEntrar.Click += new System.EventHandler(this.buttonEntrar_Click);
             // 
             // gunaElipsePanel1
             // 
@@ -219,40 +200,40 @@
             this.gunaLabel5.TabIndex = 20;
             this.gunaLabel5.Text = "Nº do Processo:";
             // 
-            // gunaTextBox1
+            // TxtProc
             // 
-            this.gunaTextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaTextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
-            this.gunaTextBox1.BorderSize = 1;
-            this.gunaTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaTextBox1.FocusedBaseColor = System.Drawing.Color.White;
-            this.gunaTextBox1.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
-            this.gunaTextBox1.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaTextBox1.Location = new System.Drawing.Point(87, 136);
-            this.gunaTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gunaTextBox1.Name = "gunaTextBox1";
-            this.gunaTextBox1.PasswordChar = '\0';
-            this.gunaTextBox1.Radius = 10;
-            this.gunaTextBox1.SelectedText = "";
-            this.gunaTextBox1.Size = new System.Drawing.Size(478, 58);
-            this.gunaTextBox1.TabIndex = 19;
+            this.TxtProc.BackColor = System.Drawing.Color.Transparent;
+            this.TxtProc.BaseColor = System.Drawing.Color.White;
+            this.TxtProc.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
+            this.TxtProc.BorderSize = 1;
+            this.TxtProc.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtProc.FocusedBaseColor = System.Drawing.Color.White;
+            this.TxtProc.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
+            this.TxtProc.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.TxtProc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtProc.Location = new System.Drawing.Point(87, 136);
+            this.TxtProc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TxtProc.Name = "TxtProc";
+            this.TxtProc.PasswordChar = '\0';
+            this.TxtProc.Radius = 10;
+            this.TxtProc.SelectedText = "";
+            this.TxtProc.Size = new System.Drawing.Size(478, 58);
+            this.TxtProc.TabIndex = 19;
             // 
-            // comboBox1
+            // comboSexo
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboSexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboSexo.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.comboSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboSexo.FormattingEnabled = true;
+            this.comboSexo.Items.AddRange(new object[] {
             "M",
             "F"});
-            this.comboBox1.Location = new System.Drawing.Point(87, 448);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.comboBox1.Size = new System.Drawing.Size(478, 37);
-            this.comboBox1.TabIndex = 21;
+            this.comboSexo.Location = new System.Drawing.Point(87, 448);
+            this.comboSexo.Name = "comboSexo";
+            this.comboSexo.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.comboSexo.Size = new System.Drawing.Size(478, 37);
+            this.comboSexo.TabIndex = 21;
             // 
             // gunaLabel6
             // 
@@ -264,53 +245,64 @@
             this.gunaLabel6.TabIndex = 23;
             this.gunaLabel6.Text = "Nome:";
             // 
-            // gunaTextBox2
+            // TxtNome
             // 
-            this.gunaTextBox2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox2.BaseColor = System.Drawing.Color.White;
-            this.gunaTextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
-            this.gunaTextBox2.BorderSize = 1;
-            this.gunaTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaTextBox2.FocusedBaseColor = System.Drawing.Color.White;
-            this.gunaTextBox2.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
-            this.gunaTextBox2.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaTextBox2.Location = new System.Drawing.Point(87, 241);
-            this.gunaTextBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gunaTextBox2.Name = "gunaTextBox2";
-            this.gunaTextBox2.PasswordChar = '\0';
-            this.gunaTextBox2.Radius = 10;
-            this.gunaTextBox2.SelectedText = "";
-            this.gunaTextBox2.Size = new System.Drawing.Size(478, 58);
-            this.gunaTextBox2.TabIndex = 22;
+            this.TxtNome.BackColor = System.Drawing.Color.Transparent;
+            this.TxtNome.BaseColor = System.Drawing.Color.White;
+            this.TxtNome.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
+            this.TxtNome.BorderSize = 1;
+            this.TxtNome.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtNome.FocusedBaseColor = System.Drawing.Color.White;
+            this.TxtNome.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
+            this.TxtNome.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.TxtNome.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtNome.Location = new System.Drawing.Point(87, 241);
+            this.TxtNome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TxtNome.Name = "TxtNome";
+            this.TxtNome.PasswordChar = '\0';
+            this.TxtNome.Radius = 10;
+            this.TxtNome.SelectedText = "";
+            this.TxtNome.Size = new System.Drawing.Size(478, 58);
+            this.TxtNome.TabIndex = 22;
             // 
             // gunaElipse1
             // 
             this.gunaElipse1.TargetControl = this;
+            // 
+            // comboTurmas
+            // 
+            this.comboTurmas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboTurmas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboTurmas.FormattingEnabled = true;
+            this.comboTurmas.Location = new System.Drawing.Point(87, 525);
+            this.comboTurmas.Name = "comboTurmas";
+            this.comboTurmas.Size = new System.Drawing.Size(478, 37);
+            this.comboTurmas.TabIndex = 24;
             // 
             // TelaCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1402, 808);
+            this.Controls.Add(this.comboTurmas);
             this.Controls.Add(this.gunaLabel6);
-            this.Controls.Add(this.gunaTextBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.TxtNome);
+            this.Controls.Add(this.comboSexo);
             this.Controls.Add(this.gunaLabel5);
-            this.Controls.Add(this.gunaTextBox1);
+            this.Controls.Add(this.TxtProc);
             this.Controls.Add(this.gunaLabel4);
             this.Controls.Add(this.gunaElipsePanel1);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.buttonEntrar);
             this.Controls.Add(this.gunaLabel3);
-            this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.gunaLabel2);
-            this.Controls.Add(this.txtUsuario);
+            this.Controls.Add(this.TxtNum);
             this.Controls.Add(this.gunaLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TelaCadastro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaCadastro";
+            this.Load += new System.EventHandler(this.TelaCadastro_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -320,17 +312,17 @@
         private Guna.UI.WinForms.GunaAdvenceButton buttonCancelar;
         private Guna.UI.WinForms.GunaAdvenceButton buttonEntrar;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
-        private Guna.UI.WinForms.GunaTextBox txtSenha;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
-        private Guna.UI.WinForms.GunaTextBox txtUsuario;
+        private Guna.UI.WinForms.GunaTextBox TxtNum;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel1;
         private Guna.UI.WinForms.GunaLabel gunaLabel4;
         private Guna.UI.WinForms.GunaLabel gunaLabel5;
-        private Guna.UI.WinForms.GunaTextBox gunaTextBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private Guna.UI.WinForms.GunaTextBox TxtProc;
+        private System.Windows.Forms.ComboBox comboSexo;
         private Guna.UI.WinForms.GunaLabel gunaLabel6;
-        private Guna.UI.WinForms.GunaTextBox gunaTextBox2;
+        private Guna.UI.WinForms.GunaTextBox TxtNome;
         private Guna.UI.WinForms.GunaElipse gunaElipse1;
+        private System.Windows.Forms.ComboBox comboTurmas;
     }
 }
