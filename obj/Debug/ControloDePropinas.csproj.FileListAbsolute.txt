@@ -87,3 +87,20 @@ C:\Users\Lausio Watela\Desktop\Projecto de TLP\Controlo-de-Propinas\obj\Debug\Co
 C:\Users\Lausio Watela\Desktop\Projecto de TLP\Controlo-de-Propinas\obj\Debug\ControloDePropinas.csproj.CopyComplete
 C:\Users\Lausio Watela\Desktop\Projecto de TLP\Controlo-de-Propinas\obj\Debug\ControloDePropinas.exe
 C:\Users\Lausio Watela\Desktop\Projecto de TLP\Controlo-de-Propinas\obj\Debug\ControloDePropinas.pdb
+C:\Users\HUAWEI\Documents\TLP_work\CodePropinas\bin\Debug\ControloDePropinas.exe.config
+C:\Users\HUAWEI\Documents\TLP_work\CodePropinas\bin\Debug\ControloDePropinas.exe
+C:\Users\HUAWEI\Documents\TLP_work\CodePropinas\bin\Debug\ControloDePropinas.pdb
+C:\Users\HUAWEI\Documents\TLP_work\CodePropinas\bin\Debug\Guna.UI2.dll
+C:\Users\HUAWEI\Documents\TLP_work\CodePropinas\obj\Debug\ControloDePropinas.csproj.AssemblyReference.cache
+C:\Users\HUAWEI\Documents\TLP_work\CodePropinas\obj\Debug\ControloDePropinas.TelaArquivos.resources
+C:\Users\HUAWEI\Documents\TLP_work\CodePropinas\obj\Debug\ControloDePropinas.Telas.TelaCadastro.resources
+C:\Users\HUAWEI\Documents\TLP_work\CodePropinas\obj\Debug\ControloDePropinas.Telas.TelaDashboard.resources
+C:\Users\HUAWEI\Documents\TLP_work\CodePropinas\obj\Debug\ControloDePropinas.Telas.TelaInformações.resources
+C:\Users\HUAWEI\Documents\TLP_work\CodePropinas\obj\Debug\ControloDePropinas.TelaLogin.resources
+C:\Users\HUAWEI\Documents\TLP_work\CodePropinas\obj\Debug\ControloDePropinas.Properties.Resources.resources
+C:\Users\HUAWEI\Documents\TLP_work\CodePropinas\obj\Debug\ControloDePropinas.Telas.TelaPrincipal.resources
+C:\Users\HUAWEI\Documents\TLP_work\CodePropinas\obj\Debug\ControloDePropinas.csproj.GenerateResource.cache
+C:\Users\HUAWEI\Documents\TLP_work\CodePropinas\obj\Debug\ControloDePropinas.csproj.CoreCompileInputs.cache
+C:\Users\HUAWEI\Documents\TLP_work\CodePropinas\obj\Debug\Controlo.EE91CEC8.Up2Date
+C:\Users\HUAWEI\Documents\TLP_work\CodePropinas\obj\Debug\ControloDePropinas.exe
+C:\Users\HUAWEI\Documents\TLP_work\CodePropinas\obj\Debug\ControloDePropinas.pdb
