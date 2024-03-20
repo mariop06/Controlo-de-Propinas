@@ -1,18 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "A:\\Visual Studio 2022\\Projects\\ControloDePropinas\\",
+  "WorkspaceRootPath": "C:\\Users\\HUAWEI\\Pictures\\project_TLP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{893C89FC-FD02-43B8-BEA3-C37BB8AE57CC}|ControloDePropinas.csproj|a:\\visual studio 2022\\projects\\controlodepropinas\\telas\\telaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{893C89FC-FD02-43B8-BEA3-C37BB8AE57CC}|ControloDePropinas.csproj|c:\\users\\huawei\\pictures\\project_tlp\\telas\\teladashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{893C89FC-FD02-43B8-BEA3-C37BB8AE57CC}|ControloDePropinas.csproj|solutionrelative:telas\\teladashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{893C89FC-FD02-43B8-BEA3-C37BB8AE57CC}|ControloDePropinas.csproj|c:\\users\\huawei\\pictures\\project_tlp\\telas\\telainforma\u00E7\u00F5es.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{893C89FC-FD02-43B8-BEA3-C37BB8AE57CC}|ControloDePropinas.csproj|solutionrelative:telas\\telainforma\u00E7\u00F5es.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{893C89FC-FD02-43B8-BEA3-C37BB8AE57CC}|ControloDePropinas.csproj|c:\\users\\huawei\\pictures\\project_tlp\\telas\\telalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{893C89FC-FD02-43B8-BEA3-C37BB8AE57CC}|ControloDePropinas.csproj|solutionrelative:telas\\telalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{893C89FC-FD02-43B8-BEA3-C37BB8AE57CC}|ControloDePropinas.csproj|c:\\users\\huawei\\pictures\\project_tlp\\telas\\telaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{893C89FC-FD02-43B8-BEA3-C37BB8AE57CC}|ControloDePropinas.csproj|solutionrelative:telas\\telaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{893C89FC-FD02-43B8-BEA3-C37BB8AE57CC}|ControloDePropinas.csproj|A:\\Visual Studio 2022\\Projects\\ControloDePropinas\\Telas\\TelaLogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{893C89FC-FD02-43B8-BEA3-C37BB8AE57CC}|ControloDePropinas.csproj|solutionrelative:Telas\\TelaLogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{893C89FC-FD02-43B8-BEA3-C37BB8AE57CC}|ControloDePropinas.csproj|C:\\Users\\HUAWEI\\Pictures\\project_TLP\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{893C89FC-FD02-43B8-BEA3-C37BB8AE57CC}|ControloDePropinas.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{893C89FC-FD02-43B8-BEA3-C37BB8AE57CC}|ControloDePropinas.csproj|A:\\Visual Studio 2022\\Projects\\ControloDePropinas\\Telas\\TelaLogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{893C89FC-FD02-43B8-BEA3-C37BB8AE57CC}|ControloDePropinas.csproj|solutionrelative:Telas\\TelaLogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{893C89FC-FD02-43B8-BEA3-C37BB8AE57CC}|ControloDePropinas.csproj|c:\\users\\huawei\\pictures\\project_tlp\\telas\\telacadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{893C89FC-FD02-43B8-BEA3-C37BB8AE57CC}|ControloDePropinas.csproj|solutionrelative:telas\\telacadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{893C89FC-FD02-43B8-BEA3-C37BB8AE57CC}|ControloDePropinas.csproj|c:\\users\\huawei\\pictures\\project_tlp\\telas\\telaarquivos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{893C89FC-FD02-43B8-BEA3-C37BB8AE57CC}|ControloDePropinas.csproj|solutionrelative:telas\\telaarquivos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +38,100 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TelaLogin.cs [Design]",
-              "DocumentMoniker": "A:\\Visual Studio 2022\\Projects\\ControloDePropinas\\Telas\\TelaLogin.cs",
-              "RelativeDocumentMoniker": "Telas\\TelaLogin.cs",
-              "ToolTip": "A:\\Visual Studio 2022\\Projects\\ControloDePropinas\\Telas\\TelaLogin.cs [Design]",
-              "RelativeToolTip": "Telas\\TelaLogin.cs [Design]",
+              "DocumentIndex": 3,
+              "Title": "TelaPrincipal.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HUAWEI\\Pictures\\project_TLP\\Telas\\TelaPrincipal.cs",
+              "RelativeDocumentMoniker": "Telas\\TelaPrincipal.cs",
+              "ToolTip": "C:\\Users\\HUAWEI\\Pictures\\project_TLP\\Telas\\TelaPrincipal.cs [Design]",
+              "RelativeToolTip": "Telas\\TelaPrincipal.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T12:49:36.554Z",
-              "IsPinned": true
+              "WhenOpened": "2024-03-19T23:37:06.123Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "TelaLogin.cs",
-              "DocumentMoniker": "A:\\Visual Studio 2022\\Projects\\ControloDePropinas\\Telas\\TelaLogin.cs",
+              "Title": "TelaLogin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HUAWEI\\Pictures\\project_TLP\\Telas\\TelaLogin.cs",
               "RelativeDocumentMoniker": "Telas\\TelaLogin.cs",
-              "ToolTip": "A:\\Visual Studio 2022\\Projects\\ControloDePropinas\\Telas\\TelaLogin.cs",
-              "RelativeToolTip": "Telas\\TelaLogin.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "ToolTip": "C:\\Users\\HUAWEI\\Pictures\\project_TLP\\Telas\\TelaLogin.cs [Design]",
+              "RelativeToolTip": "Telas\\TelaLogin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T12:56:06.495Z",
-              "IsPinned": true
+              "WhenOpened": "2024-03-19T23:37:03.748Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TelaInforma\u00E7\u00F5es.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HUAWEI\\Pictures\\project_TLP\\Telas\\TelaInforma\u00E7\u00F5es.cs",
+              "RelativeDocumentMoniker": "Telas\\TelaInforma\u00E7\u00F5es.cs",
+              "ToolTip": "C:\\Users\\HUAWEI\\Pictures\\project_TLP\\Telas\\TelaInforma\u00E7\u00F5es.cs [Design]",
+              "RelativeToolTip": "Telas\\TelaInforma\u00E7\u00F5es.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T23:37:01.544Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TelaPrincipal.cs [Design]",
-              "DocumentMoniker": "A:\\Visual Studio 2022\\Projects\\ControloDePropinas\\Telas\\TelaPrincipal.cs",
-              "RelativeDocumentMoniker": "Telas\\TelaPrincipal.cs",
-              "ToolTip": "A:\\Visual Studio 2022\\Projects\\ControloDePropinas\\Telas\\TelaPrincipal.cs [Design]",
-              "RelativeToolTip": "Telas\\TelaPrincipal.cs [Design]",
+              "Title": "TelaDashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HUAWEI\\Pictures\\project_TLP\\Telas\\TelaDashboard.cs",
+              "RelativeDocumentMoniker": "Telas\\TelaDashboard.cs",
+              "ToolTip": "C:\\Users\\HUAWEI\\Pictures\\project_TLP\\Telas\\TelaDashboard.cs [Design]",
+              "RelativeToolTip": "Telas\\TelaDashboard.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T12:54:07.053Z",
-              "IsPinned": true,
+              "WhenOpened": "2024-03-19T23:36:59.199Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TelaCadastro.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HUAWEI\\Pictures\\project_TLP\\Telas\\TelaCadastro.cs",
+              "RelativeDocumentMoniker": "Telas\\TelaCadastro.cs",
+              "ToolTip": "C:\\Users\\HUAWEI\\Pictures\\project_TLP\\Telas\\TelaCadastro.cs [Design]",
+              "RelativeToolTip": "Telas\\TelaCadastro.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T23:36:56.869Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TelaArquivos.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HUAWEI\\Pictures\\project_TLP\\Telas\\TelaArquivos.cs",
+              "RelativeDocumentMoniker": "Telas\\TelaArquivos.cs",
+              "ToolTip": "C:\\Users\\HUAWEI\\Pictures\\project_TLP\\Telas\\TelaArquivos.cs [Design]",
+              "RelativeToolTip": "Telas\\TelaArquivos.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T23:21:41.393Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\HUAWEI\\Pictures\\project_TLP\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\HUAWEI\\Pictures\\project_TLP\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T22:44:58.922Z",
+              "EditorCaption": ""
             }
           ]
         }
