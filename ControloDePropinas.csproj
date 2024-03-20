@@ -61,6 +61,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataBase.cs" />
+    <Compile Include="Telas\TelaArquivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\TelaArquivos.Designer.cs">
+      <DependentUpon>TelaArquivos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\TelaCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,9 @@
     <Compile Include="Telas\TelaPrincipal.Designer.cs">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Telas\TelaArquivos.resx">
+      <DependentUpon>TelaArquivos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\TelaCadastro.resx">
       <DependentUpon>TelaCadastro.cs</DependentUpon>
     </EmbeddedResource>

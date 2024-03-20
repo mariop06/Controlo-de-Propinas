@@ -45,3 +45,20 @@ C:\Users\Lausio Watela\Desktop\Projecto 2 C#\mariop06\Controlo-de-Propinas\obj\D
 C:\Users\Lausio Watela\Desktop\Projecto 2 C#\mariop06\Controlo-de-Propinas\obj\Debug\ControloDePropinas.Telas.TelaCadastro.resources
 C:\Users\Lausio Watela\Desktop\Projecto 2 C#\mariop06\Controlo-de-Propinas\bin\Debug\Guna.UI2.dll
 C:\Users\Lausio Watela\Desktop\Projecto 2 C#\mariop06\Controlo-de-Propinas\obj\Debug\ControloDePropinas.Telas.TelaInformações.resources
+C:\Users\HUAWEI\Pictures\project_TLP\bin\Debug\ControloDePropinas.exe.config
+C:\Users\HUAWEI\Pictures\project_TLP\bin\Debug\ControloDePropinas.exe
+C:\Users\HUAWEI\Pictures\project_TLP\bin\Debug\ControloDePropinas.pdb
+C:\Users\HUAWEI\Pictures\project_TLP\bin\Debug\Guna.UI2.dll
+C:\Users\HUAWEI\Pictures\project_TLP\obj\Debug\ControloDePropinas.csproj.AssemblyReference.cache
+C:\Users\HUAWEI\Pictures\project_TLP\obj\Debug\ControloDePropinas.Telas.TelaCadastro.resources
+C:\Users\HUAWEI\Pictures\project_TLP\obj\Debug\ControloDePropinas.Telas.TelaDashboard.resources
+C:\Users\HUAWEI\Pictures\project_TLP\obj\Debug\ControloDePropinas.Telas.TelaInformações.resources
+C:\Users\HUAWEI\Pictures\project_TLP\obj\Debug\ControloDePropinas.TelaLogin.resources
+C:\Users\HUAWEI\Pictures\project_TLP\obj\Debug\ControloDePropinas.Properties.Resources.resources
+C:\Users\HUAWEI\Pictures\project_TLP\obj\Debug\ControloDePropinas.Telas.TelaPrincipal.resources
+C:\Users\HUAWEI\Pictures\project_TLP\obj\Debug\ControloDePropinas.csproj.GenerateResource.cache
+C:\Users\HUAWEI\Pictures\project_TLP\obj\Debug\ControloDePropinas.csproj.CoreCompileInputs.cache
+C:\Users\HUAWEI\Pictures\project_TLP\obj\Debug\Controlo.EE91CEC8.Up2Date
+C:\Users\HUAWEI\Pictures\project_TLP\obj\Debug\ControloDePropinas.exe
+C:\Users\HUAWEI\Pictures\project_TLP\obj\Debug\ControloDePropinas.pdb
+C:\Users\HUAWEI\Pictures\project_TLP\obj\Debug\ControloDePropinas.TelaArquivos.resources
