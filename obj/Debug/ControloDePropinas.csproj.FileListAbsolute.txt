@@ -62,3 +62,7 @@ C:\Users\HUAWEI\Pictures\project_TLP\obj\Debug\Controlo.EE91CEC8.Up2Date
 C:\Users\HUAWEI\Pictures\project_TLP\obj\Debug\ControloDePropinas.exe
 C:\Users\HUAWEI\Pictures\project_TLP\obj\Debug\ControloDePropinas.pdb
 C:\Users\HUAWEI\Pictures\project_TLP\obj\Debug\ControloDePropinas.TelaArquivos.resources
+C:\Users\Mário Paulo\OneDrive\Documents\Projectos\Controlo-de-Propinas\bin\Debug\Guna.UI2.dll
+C:\Users\Mário Paulo\OneDrive\Documents\Projectos\Controlo-de-Propinas\obj\Debug\ControloDePropinas.TelaArquivos.resources
+C:\Users\Mário Paulo\OneDrive\Documents\Projectos\Controlo-de-Propinas\obj\Debug\ControloDePropinas.Telas.TelaCadastro.resources
+C:\Users\Mário Paulo\OneDrive\Documents\Projectos\Controlo-de-Propinas\obj\Debug\ControloDePropinas.Telas.TelaInformações.resources

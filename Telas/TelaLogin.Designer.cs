@@ -68,7 +68,6 @@
             this.gunaLabel1.Size = new System.Drawing.Size(153, 46);
             this.gunaLabel1.TabIndex = 1;
             this.gunaLabel1.Text = "ENTRAR";
-            this.gunaLabel1.Click += new System.EventHandler(this.gunaLabel1_Click);
             // 
             // txtUsuario
             // 
@@ -204,7 +203,7 @@
             // 
             // circleProgress
             // 
-            this.circleProgress.BackColor = System.Drawing.Color.Transparent;
+            this.circleProgress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(202)))), ((int)(((byte)(202)))));
             this.circleProgress.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.circleProgress.Location = new System.Drawing.Point(150, 480);
             this.circleProgress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -213,7 +212,6 @@
             this.circleProgress.Size = new System.Drawing.Size(70, 48);
             this.circleProgress.TabIndex = 5;
             this.circleProgress.Visible = false;
-            this.circleProgress.Load += new System.EventHandler(this.circleProgress_Load);
             // 
             // timer1
             // 
@@ -237,7 +235,6 @@
             this.Name = "TelaLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tela Login";
-            this.Load += new System.EventHandler(this.TelaLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

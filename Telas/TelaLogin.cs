@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using ControloDePropinas.Telas;
+using System.Threading;
 using MySql.Data.MySqlClient;
 
 namespace ControloDePropinas
@@ -15,29 +10,18 @@ namespace ControloDePropinas
     public partial class TelaLogin : Form
     {
         MySqlConnection connection;
-        string sql = "Server=localhost;Port=3306;Database=enti_uso;Uid=root;Pwd=mariopaulos06; Sslmode=none;";
+        string sql = "Server=localhost;Port=3306;Database=enti_uso;Uid=root;Pwd=mariopaulos06;Sslmode=none;";
+
         public TelaLogin()
         {
             InitializeComponent();
             connection = new MySqlConnection(sql);
         }
 
-        private void gunaLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TelaLogin_Load(object sender, EventArgs e)
-        {
-          
-        }
-
         private void button_Click(object sender, EventArgs e)
         {
             string usuario = txtUsuario.Text.Trim();
             string senha = txtSenha.Text;
-
-            
 
             // Verificar se os campos estão vazios
             if (string.IsNullOrEmpty(usuario) || string.IsNullOrEmpty(senha))
@@ -46,21 +30,42 @@ namespace ControloDePropinas
                 return;
             }
 
-            // Realizar a validação do login
-            if (ValidarLogin(usuario, senha))
-            {
-                MessageBox.Show("Login bem-sucedido!");
-                // Faça aqui o redirecionamento para a próxima tela, se necessário
-                TelaPrincipal telaPrincipal = new TelaPrincipal();
-                this.Hide();
-                telaPrincipal.Show();
-            }
-            else
-            {
-                MessageBox.Show("Credenciais inválidas. Tente novamente.");
-            }
+            // Mostrar a ProgressBar
+            circleProgress.Visible = true;
 
+            // Desativar o botão enquanto o processo está ocorrendo
+            buttonEntrar.Enabled = false;
 
+            // Iniciar o processo de login em uma thread separada
+            ThreadPool.QueueUserWorkItem((o) =>
+            {
+                // Realizar a validação do login
+                bool loginValido = ValidarLogin(usuario, senha);
+
+                // Atualizar a UI na thread principal
+                this.Invoke((MethodInvoker)delegate
+                {
+                    // Esconder a ProgressBar
+                    circleProgress.Visible = false;
+
+                    // Ativar o botão novamente
+                    buttonEntrar.Enabled = true;
+
+                    // Verificar se o login é válido
+                    if (loginValido)
+                    {
+                        MessageBox.Show("Login bem-sucedido!");
+                        // Faça aqui o redirecionamento para a próxima tela, se necessário
+                        TelaPrincipal telaPrincipal = new TelaPrincipal();
+                        this.Hide();
+                        telaPrincipal.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Credenciais inválidas. Tente novamente.");
+                    }
+                });
+            });
         }
 
         private bool ValidarLogin(string usuario, string senha)
@@ -100,10 +105,6 @@ namespace ControloDePropinas
         {
             this.Close();
         }
-
-        private void circleProgress_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
+
