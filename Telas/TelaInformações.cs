@@ -31,5 +31,20 @@ namespace ControloDePropinas.Telas
         {
 
         }
+
+        private void TelaInformações_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaLabel9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
