@@ -3,11 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\HUAWEI\\Documents\\TLP_work\\CodePropinas\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{893C89FC-FD02-43B8-BEA3-C37BB8AE57CC}|ControloDePropinas.csproj|c:\\users\\huawei\\documents\\tlp_work\\codepropinas\\telas\\telaarquivos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{893C89FC-FD02-43B8-BEA3-C37BB8AE57CC}|ControloDePropinas.csproj|solutionrelative:telas\\telaarquivos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{893C89FC-FD02-43B8-BEA3-C37BB8AE57CC}|ControloDePropinas.csproj|c:\\users\\huawei\\documents\\tlp_work\\codepropinas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{893C89FC-FD02-43B8-BEA3-C37BB8AE57CC}|ControloDePropinas.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{893C89FC-FD02-43B8-BEA3-C37BB8AE57CC}|ControloDePropinas.csproj|c:\\users\\huawei\\documents\\tlp_work\\codepropinas\\telas\\telalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{893C89FC-FD02-43B8-BEA3-C37BB8AE57CC}|ControloDePropinas.csproj|c:\\users\\huawei\\documents\\tlp_work\\codepropinas\\telas\\telalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{893C89FC-FD02-43B8-BEA3-C37BB8AE57CC}|ControloDePropinas.csproj|solutionrelative:telas\\telalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{893C89FC-FD02-43B8-BEA3-C37BB8AE57CC}|ControloDePropinas.csproj|C:\\Users\\HUAWEI\\Documents\\TLP_work\\CodePropinas\\telas\\telalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{893C89FC-FD02-43B8-BEA3-C37BB8AE57CC}|ControloDePropinas.csproj|solutionrelative:telas\\telalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -27,6 +35,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "TelaArquivos.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HUAWEI\\Documents\\TLP_work\\CodePropinas\\Telas\\TelaArquivos.cs",
+              "RelativeDocumentMoniker": "Telas\\TelaArquivos.cs",
+              "ToolTip": "C:\\Users\\HUAWEI\\Documents\\TLP_work\\CodePropinas\\Telas\\TelaArquivos.cs [Design]*",
+              "RelativeToolTip": "Telas\\TelaArquivos.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T20:52:02.316Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TelaLogin.cs",
+              "DocumentMoniker": "C:\\Users\\HUAWEI\\Documents\\TLP_work\\CodePropinas\\Telas\\TelaLogin.cs",
+              "RelativeDocumentMoniker": "Telas\\TelaLogin.cs",
+              "ToolTip": "C:\\Users\\HUAWEI\\Documents\\TLP_work\\CodePropinas\\Telas\\TelaLogin.cs",
+              "RelativeToolTip": "Telas\\TelaLogin.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAUwBcAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T20:38:17.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\HUAWEI\\Documents\\TLP_work\\CodePropinas\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -39,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "TelaLogin.cs [Design]",
               "DocumentMoniker": "C:\\Users\\HUAWEI\\Documents\\TLP_work\\CodePropinas\\Telas\\TelaLogin.cs",
               "RelativeDocumentMoniker": "Telas\\TelaLogin.cs",

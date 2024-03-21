@@ -65,10 +65,10 @@
             this.gunaPanel1.Controls.Add(this.gunaLabel3);
             this.gunaPanel1.Controls.Add(this.gunaLabel2);
             this.gunaPanel1.Controls.Add(this.gunaLabel1);
-            this.gunaPanel1.Location = new System.Drawing.Point(102, 111);
+            this.gunaPanel1.Location = new System.Drawing.Point(115, 139);
             this.gunaPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(1190, 160);
+            this.gunaPanel1.Size = new System.Drawing.Size(1338, 200);
             this.gunaPanel1.TabIndex = 0;
             this.gunaPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.gunaPanel1_Paint);
             // 
@@ -76,10 +76,10 @@
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(948, 64);
+            this.comboBox1.Location = new System.Drawing.Point(1066, 80);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(185, 24);
+            this.comboBox1.Size = new System.Drawing.Size(208, 28);
             this.comboBox1.TabIndex = 9;
             // 
             // panelsexo
@@ -87,10 +87,10 @@
             this.panelsexo.Controls.Add(this.gunaButton1);
             this.panelsexo.Controls.Add(this.gunaCheckBox2);
             this.panelsexo.Controls.Add(this.gunaCheckBox1);
-            this.panelsexo.Location = new System.Drawing.Point(404, 39);
+            this.panelsexo.Location = new System.Drawing.Point(454, 49);
             this.panelsexo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelsexo.Name = "panelsexo";
-            this.panelsexo.Size = new System.Drawing.Size(358, 83);
+            this.panelsexo.Size = new System.Drawing.Size(403, 104);
             this.panelsexo.TabIndex = 8;
             // 
             // gunaButton1
@@ -106,7 +106,7 @@
             this.gunaButton1.ForeColor = System.Drawing.Color.White;
             this.gunaButton1.Image = null;
             this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton1.Location = new System.Drawing.Point(216, 26);
+            this.gunaButton1.Location = new System.Drawing.Point(243, 32);
             this.gunaButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaButton1.Name = "gunaButton1";
             this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.Silver;
@@ -115,7 +115,7 @@
             this.gunaButton1.OnHoverImage = null;
             this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
             this.gunaButton1.Radius = 2;
-            this.gunaButton1.Size = new System.Drawing.Size(118, 28);
+            this.gunaButton1.Size = new System.Drawing.Size(133, 35);
             this.gunaButton1.TabIndex = 2;
             this.gunaButton1.Text = "Filtrar";
             this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -128,10 +128,10 @@
             this.gunaCheckBox2.CheckedOffColor = System.Drawing.Color.Gray;
             this.gunaCheckBox2.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaCheckBox2.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox2.Location = new System.Drawing.Point(45, 49);
+            this.gunaCheckBox2.Location = new System.Drawing.Point(51, 61);
             this.gunaCheckBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaCheckBox2.Name = "gunaCheckBox2";
-            this.gunaCheckBox2.Size = new System.Drawing.Size(128, 20);
+            this.gunaCheckBox2.Size = new System.Drawing.Size(151, 22);
             this.gunaCheckBox2.TabIndex = 1;
             this.gunaCheckBox2.Text = "Filtrar Femenino";
             // 
@@ -142,10 +142,10 @@
             this.gunaCheckBox1.CheckedOffColor = System.Drawing.Color.Gray;
             this.gunaCheckBox1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaCheckBox1.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox1.Location = new System.Drawing.Point(44, 16);
+            this.gunaCheckBox1.Location = new System.Drawing.Point(50, 20);
             this.gunaCheckBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaCheckBox1.Name = "gunaCheckBox1";
-            this.gunaCheckBox1.Size = new System.Drawing.Size(129, 20);
+            this.gunaCheckBox1.Size = new System.Drawing.Size(152, 22);
             this.gunaCheckBox1.TabIndex = 0;
             this.gunaCheckBox1.Text = "Filtrar Masculino";
             // 
@@ -153,36 +153,36 @@
             // 
             this.gunaLabel5.AutoSize = true;
             this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel5.Location = new System.Drawing.Point(59, 38);
+            this.gunaLabel5.Location = new System.Drawing.Point(66, 48);
             this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(0, 20);
+            this.gunaLabel5.Size = new System.Drawing.Size(0, 25);
             this.gunaLabel5.TabIndex = 7;
             // 
             // gunaLabel6
             // 
             this.gunaLabel6.AutoSize = true;
             this.gunaLabel6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel6.Location = new System.Drawing.Point(96, 70);
+            this.gunaLabel6.Location = new System.Drawing.Point(108, 88);
             this.gunaLabel6.Name = "gunaLabel6";
-            this.gunaLabel6.Size = new System.Drawing.Size(0, 20);
+            this.gunaLabel6.Size = new System.Drawing.Size(0, 25);
             this.gunaLabel6.TabIndex = 6;
             // 
             // gunaLabel7
             // 
             this.gunaLabel7.AutoSize = true;
             this.gunaLabel7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel7.Location = new System.Drawing.Point(108, 102);
+            this.gunaLabel7.Location = new System.Drawing.Point(122, 128);
             this.gunaLabel7.Name = "gunaLabel7";
-            this.gunaLabel7.Size = new System.Drawing.Size(0, 20);
+            this.gunaLabel7.Size = new System.Drawing.Size(0, 25);
             this.gunaLabel7.TabIndex = 5;
             // 
             // gunaLabel4
             // 
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel4.Location = new System.Drawing.Point(70, 38);
+            this.gunaLabel4.Location = new System.Drawing.Point(79, 48);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(60, 20);
+            this.gunaLabel4.Size = new System.Drawing.Size(73, 25);
             this.gunaLabel4.TabIndex = 4;
             this.gunaLabel4.Text = "ª Classe";
             // 
@@ -190,9 +190,9 @@
             // 
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel3.Location = new System.Drawing.Point(56, 70);
+            this.gunaLabel3.Location = new System.Drawing.Point(63, 88);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(40, 20);
+            this.gunaLabel3.Size = new System.Drawing.Size(48, 25);
             this.gunaLabel3.TabIndex = 3;
             this.gunaLabel3.Text = "Sala:";
             // 
@@ -200,9 +200,9 @@
             // 
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel2.Location = new System.Drawing.Point(54, 102);
+            this.gunaLabel2.Location = new System.Drawing.Point(61, 128);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(50, 20);
+            this.gunaLabel2.Size = new System.Drawing.Size(62, 25);
             this.gunaLabel2.TabIndex = 2;
             this.gunaLabel2.Text = "Turno:";
             // 
@@ -210,9 +210,9 @@
             // 
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel1.Location = new System.Drawing.Point(944, 39);
+            this.gunaLabel1.Location = new System.Drawing.Point(1062, 49);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(54, 20);
+            this.gunaLabel1.Size = new System.Drawing.Size(66, 25);
             this.gunaLabel1.TabIndex = 1;
             this.gunaLabel1.Text = "Turma:";
             this.gunaLabel1.Click += new System.EventHandler(this.gunaLabel1_Click);
@@ -222,7 +222,7 @@
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.gunaDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gunaDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gunaDataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            this.gunaDataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.gunaDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gunaDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gunaDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
@@ -245,14 +245,14 @@
             this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.gunaDataGridView1.EnableHeadersVisualStyles = false;
             this.gunaDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gunaDataGridView1.Location = new System.Drawing.Point(102, 305);
+            this.gunaDataGridView1.Location = new System.Drawing.Point(115, 381);
             this.gunaDataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaDataGridView1.Name = "gunaDataGridView1";
             this.gunaDataGridView1.RowHeadersVisible = false;
             this.gunaDataGridView1.RowHeadersWidth = 62;
             this.gunaDataGridView1.RowTemplate.Height = 28;
             this.gunaDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gunaDataGridView1.Size = new System.Drawing.Size(1190, 450);
+            this.gunaDataGridView1.Size = new System.Drawing.Size(1339, 562);
             this.gunaDataGridView1.TabIndex = 1;
             this.gunaDataGridView1.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -260,7 +260,7 @@
             this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.gunaDataGridView1.ThemeStyle.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.gunaDataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
             this.gunaDataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gunaDataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaDataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
@@ -291,7 +291,7 @@
             this.gunaButton2.ForeColor = System.Drawing.Color.White;
             this.gunaButton2.Image = null;
             this.gunaButton2.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton2.Location = new System.Drawing.Point(528, 18);
+            this.gunaButton2.Location = new System.Drawing.Point(594, 22);
             this.gunaButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaButton2.Name = "gunaButton2";
             this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.Silver;
@@ -300,7 +300,7 @@
             this.gunaButton2.OnHoverImage = null;
             this.gunaButton2.OnPressedColor = System.Drawing.Color.Black;
             this.gunaButton2.Radius = 2;
-            this.gunaButton2.Size = new System.Drawing.Size(324, 52);
+            this.gunaButton2.Size = new System.Drawing.Size(364, 65);
             this.gunaButton2.TabIndex = 3;
             this.gunaButton2.Text = "LISTA DE PAGAMENTOS";
             this.gunaButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -319,7 +319,7 @@
             this.gunaButton3.ForeColor = System.Drawing.Color.White;
             this.gunaButton3.Image = null;
             this.gunaButton3.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton3.Location = new System.Drawing.Point(102, 18);
+            this.gunaButton3.Location = new System.Drawing.Point(115, 22);
             this.gunaButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaButton3.Name = "gunaButton3";
             this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.Silver;
@@ -328,7 +328,7 @@
             this.gunaButton3.OnHoverImage = null;
             this.gunaButton3.OnPressedColor = System.Drawing.Color.Black;
             this.gunaButton3.Radius = 2;
-            this.gunaButton3.Size = new System.Drawing.Size(324, 52);
+            this.gunaButton3.Size = new System.Drawing.Size(364, 65);
             this.gunaButton3.TabIndex = 4;
             this.gunaButton3.Text = "VISUALIZAR TURMAS";
             this.gunaButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -347,7 +347,7 @@
             this.gunaButton4.ForeColor = System.Drawing.Color.White;
             this.gunaButton4.Image = null;
             this.gunaButton4.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton4.Location = new System.Drawing.Point(968, 18);
+            this.gunaButton4.Location = new System.Drawing.Point(1089, 22);
             this.gunaButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaButton4.Name = "gunaButton4";
             this.gunaButton4.OnHoverBaseColor = System.Drawing.Color.Silver;
@@ -356,18 +356,18 @@
             this.gunaButton4.OnHoverImage = null;
             this.gunaButton4.OnPressedColor = System.Drawing.Color.Black;
             this.gunaButton4.Radius = 2;
-            this.gunaButton4.Size = new System.Drawing.Size(324, 52);
+            this.gunaButton4.Size = new System.Drawing.Size(364, 65);
             this.gunaButton4.TabIndex = 5;
             this.gunaButton4.Text = "ACTUALIZAR PAGAMENTO";
             this.gunaButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TelaArquivos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1402, 808);
+            this.ClientSize = new System.Drawing.Size(1577, 1010);
             this.Controls.Add(this.gunaButton4);
             this.Controls.Add(this.gunaButton3);
             this.Controls.Add(this.gunaButton2);
