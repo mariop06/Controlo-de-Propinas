@@ -74,51 +74,41 @@ namespace ControloDePropinas.Telas
             if (sidebarExpand)
             {
                 sideBarP.Width += 10;
-
                 btn_Inicio.Width += 10;
                 btn_dash.Width += 10;
                 btn_more.Width += 10;
                 btn_atividade.Width += 10;
                 btn_info.Width += 10;
-
-                label1.Width+=10;
-
-                //mainPanel.Width -= 10;
-                //mainPanel.Location = new Point(mainPanel.Location.X + 10, mainPanel.Location.Y);
-                //label3.Width -= 10;
-                //label3.Location = new Point(label3.Location.X + 10, label3.Location.Y);
+                label1.Width += 10;
 
                 if (sideBarP.Width == sideBarP.MaximumSize.Width)
                 {
-                    //label3.Location = new Point(210, label3.Location.Y);
-                    //label3.Width = 1250;
-                   
                     sidebarExpand = false;
-
                     sidebarTimer.Stop();
                 }
             }
             else
             {
                 sideBarP.Width -= 10;
-
                 btn_Inicio.Width -= 10;
                 btn_dash.Width -= 10;
                 btn_more.Width -= 10;
                 btn_atividade.Width -= 10;
                 btn_info.Width -= 10;
 
-                label1.Width -= 10;
+                panelOpcoes.Height -= 10;
+                if (panelOpcoes.Height <= panelOpcoes.MinimumSize.Height)
+                    panelOpcoes.Height = panelOpcoes.MinimumSize.Height;
 
-                //label3.Width -= 10;
-                //label3.Location = new Point(label3.Location.X - 10, label3.Location.Y);
 
-                //mainPanel.Width += 10;
-                //mainPanel.Location = new Point(mainPanel.Location.X - 10, mainPanel.Location.Y);
+                if (panelOpcoes.Height > 65)
+                    btn_atividade.Location = new Point(btn_atividade.Location.X, btn_atividade.Location.Y - 10);
+
+
                 if (sideBarP.Width == sideBarP.MinimumSize.Width)
                 {
-                    //label3.Location = new Point(138, label3.Location.Y);
-                    //label3.Width = 1320;
+                    btn_atividade.Location = new Point(btn_atividade.Location.X, 298);
+                    panelOpcoes.Height = 65;
                     sidebarExpand = true;
                     sidebarTimer.Stop();
                 }
@@ -185,6 +175,29 @@ namespace ControloDePropinas.Telas
 
             
 
+        }
+
+        private void timerButtonMore_Tick(object sender, EventArgs e)
+        {
+            bool valido = Convert.ToBoolean(sideBarP.MaximumSize.Width);
+            if (valido)
+            {
+                btn_atividade.Location = new Point(btn_atividade.Location.X, btn_atividade.Location.Y + 10);
+                panelOpcoes.Height += 10;
+
+                if (panelOpcoes.Height >= panelOpcoes.MaximumSize.Height)
+                {
+                    btn_atividade.Location = new Point(btn_atividade.Location.X, 420);
+                    btn_atividade.BringToFront();
+                    panelOpcoes.Height = 210;
+                    timerButtonMore.Stop();
+                }
+            }
+        }
+
+        private void btn_more_Click(object sender, EventArgs e)
+        {
+            timerButtonMore.Start();
         }
     }
 }

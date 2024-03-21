@@ -165,5 +165,17 @@
   <ItemGroup>
     <None Include="Telas\cima.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Frame 20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mais.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mais 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
