@@ -35,11 +35,24 @@ namespace ControloDePropinas
 
         private void gunaButton2_Click(object sender, EventArgs e)
         {
+            btn_ListaPag.BaseColor = Color.DarkGray;
+            Btn_Visualizar.BaseColor = Color.DimGray;
+            btn_RefreshPag.BaseColor = Color.DimGray;
+
+            labelFiltroM_Pago.Text = "Filtrar Pago";
+            labelF_Npag.Text = "Filtrar Não Pago";
+
+            labelMes.Visible = true;
+            comboxMeses.Visible = true;
         }
 
         private void TelaArquivos_Load(object sender, EventArgs e)
         {
             combox();
+
+            Btn_Visualizar.BaseColor = Color.DarkGray;
+            btn_ListaPag.BaseColor = Color.DimGray;
+            btn_RefreshPag.BaseColor = Color.DimGray;
         }
 
         private void gunaPanel1_Paint(object sender, PaintEventArgs e)
@@ -76,8 +89,16 @@ namespace ControloDePropinas
         // *************************************
         private void gunaButton3_Click(object sender, EventArgs e)
         {
- 
-           
+            Btn_Visualizar.BaseColor = Color.DarkGray;
+            btn_ListaPag.BaseColor = Color.DimGray;
+            btn_RefreshPag.BaseColor = Color.DimGray;
+
+            labelFiltroM_Pago.Text = "Filtrar Masculino";
+            labelF_Npag.Text = "Filtrar Femenino";
+
+            labelMes.Visible = false;
+            comboxMeses.Visible = false;
+
             DataTable dt = new DataTable();
             MySqlDataReader resultado;
 
@@ -120,96 +141,127 @@ namespace ControloDePropinas
         {
 
         }
+        
+           
 
         private void gunaButton1_Click(object sender, EventArgs e)
         {
-            //Filtrando os Masculinos da tabela
-            if (gunaCheckBox1.Checked)
+            if (Btn_Visualizar.BaseColor == Color.DarkGray && (btn_ListaPag.BaseColor == Color.DimGray && btn_RefreshPag.BaseColor == Color.DimGray))
             {
+                //Filtrando os Masculinos da tabela
 
-            DataTable dt = new DataTable();
-            MySqlDataReader resultado;
-
-            try
-            {
-                int pst = comboBox1.SelectedIndex+1;
-
-                string sql = "select lista.proc as 'Processo',lista.num as 'Nº',nome as 'Nome do Aluno',lista.sexo as 'Sexo' from lista inner join turma on turma.id = lista.Turma where Turma = '"+pst+"' AND sexo = 'M';";
-
-                MySqlCommand comando = new MySqlCommand(sql, conexao);
-                comando.CommandType = CommandType.Text;
-
-                conexao.Open();
-                resultado = comando.ExecuteReader();
-                dt.Load(resultado);
-
-                conexao.Close();
-                conexao.Dispose();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            gunaDataGridView1.DataSource = dt;
-            }
-
-            //Filtrando os Femeninos da tabela
-            if (gunaCheckBox2.Checked)
-            {
-                DataTable dt = new DataTable();
-                MySqlDataReader resultado;
-
-                try
+                if (labelFiltroM_Pago.Text == "Filtrar Masculino")
                 {
-                    int pst = comboBox1.SelectedIndex + 1;
 
-                    string sql = "select lista.proc as 'Processo',lista.num as 'Nº',nome as 'Nome do Aluno',lista.sexo as 'Sexo' from lista inner join turma on turma.id = lista.Turma where Turma = '" + pst + "' AND sexo = 'F';";
+                    MessageBox.Show("Filtrar Masculino");
 
-                    MySqlCommand comando = new MySqlCommand(sql, conexao);
-                    comando.CommandType = CommandType.Text;
+                    if (labelFiltroM_Pago.Checked)
+                    {
 
-                    conexao.Open();
-                    resultado = comando.ExecuteReader();
-                    dt.Load(resultado);
+                        DataTable dt = new DataTable();
+                        MySqlDataReader resultado;
 
-                    conexao.Close();
-                    conexao.Dispose();
+                        try
+                        {
+                            int pst = comboBox1.SelectedIndex + 1;
+
+                            string sql = "select lista.proc as 'Processo',lista.num as 'Nº',nome as 'Nome do Aluno',lista.sexo as 'Sexo' from lista inner join turma on turma.id = lista.Turma where Turma = '" + pst + "' AND sexo = 'M';";
+
+                            MySqlCommand comando = new MySqlCommand(sql, conexao);
+                            comando.CommandType = CommandType.Text;
+
+                            conexao.Open();
+                            resultado = comando.ExecuteReader();
+                            dt.Load(resultado);
+
+                            conexao.Close();
+                            conexao.Dispose();
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message);
+                        }
+                        gunaDataGridView1.DataSource = dt;
+                    }
                 }
-                catch (Exception ex)
+
+                //Filtrando os Femeninos da tabela
+                if (labelF_Npag.Text == "Filtrar Femenino" )
                 {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show("Filtrar Femenino");
+                    if (labelF_Npag.Checked)
+                    {
+                        DataTable dt = new DataTable();
+                        MySqlDataReader resultado;
+
+                        try
+                        {
+                            int pst = comboBox1.SelectedIndex + 1;
+
+                            string sql = "select lista.proc as 'Processo',lista.num as 'Nº',nome as 'Nome do Aluno',lista.sexo as 'Sexo' from lista inner join turma on turma.id = lista.Turma where Turma = '" + pst + "' AND sexo = 'F';";
+
+                            MySqlCommand comando = new MySqlCommand(sql, conexao);
+                            comando.CommandType = CommandType.Text;
+
+                            conexao.Open();
+                            resultado = comando.ExecuteReader();
+                            dt.Load(resultado);
+
+                            conexao.Close();
+                            conexao.Dispose();
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message);
+                        }
+                        gunaDataGridView1.DataSource = dt;
+                    }
                 }
-                gunaDataGridView1.DataSource = dt;
+
+                //Filtrando MAsculino e Femenino
+
+                if ((labelF_Npag.Text == "Filtrar Femenino" && labelFiltroM_Pago.Text == "Filtrar Masculino"))
+                {
+                    MessageBox.Show("Filtar ambos");
+
+                    if (labelFiltroM_Pago.Checked && labelF_Npag.Checked)
+                    {
+                        DataTable dt = new DataTable();
+                        MySqlDataReader resultado;
+
+                        try
+                        {
+                            int pst = comboBox1.SelectedIndex + 1;
+
+                            string sql = "select lista.proc as 'Processo',lista.num as 'Nº',nome as 'Nome do Aluno',lista.sexo as 'Sexo' from lista inner join turma on turma.id = lista.Turma where Turma = '" + pst + "';";
+
+                            MySqlCommand comando = new MySqlCommand(sql, conexao);
+                            comando.CommandType = CommandType.Text;
+
+                            conexao.Open();
+                            resultado = comando.ExecuteReader();
+                            dt.Load(resultado);
+
+                            conexao.Close();
+                            conexao.Dispose();
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message);
+                        }
+                        gunaDataGridView1.DataSource = dt;
+                    }
+                }
+
             }
 
-            //Filtrando MAsculino e Femenino
-            if (gunaCheckBox1.Checked && gunaCheckBox2.Checked)
+
+            if (btn_ListaPag.BaseColor==Color.DarkGray)
             {
-                DataTable dt = new DataTable();
-                MySqlDataReader resultado;
-
-                try
-                {
-                    int pst = comboBox1.SelectedIndex + 1;
-
-                    string sql = "select lista.proc as 'Processo',lista.num as 'Nº',nome as 'Nome do Aluno',lista.sexo as 'Sexo' from lista inner join turma on turma.id = lista.Turma where Turma = '" + pst + "';";
-
-                    MySqlCommand comando = new MySqlCommand(sql, conexao);
-                    comando.CommandType = CommandType.Text;
-
-                    conexao.Open();
-                    resultado = comando.ExecuteReader();
-                    dt.Load(resultado);
-
-                    conexao.Close();
-                    conexao.Dispose();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-                gunaDataGridView1.DataSource = dt;
+                MessageBox.Show("Botao Lista de Pagamento");
             }
+
+            
         }
     }
 }

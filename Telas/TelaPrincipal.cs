@@ -183,8 +183,6 @@ namespace ControloDePropinas.Telas
             mainPanel.Visible = true;
             LoadForm(new TelaDashboard());
 
-
-
         }
 
         private void timerButtonMore_Tick(object sender, EventArgs e)
@@ -213,15 +211,13 @@ namespace ControloDePropinas.Telas
         private void label6_Click(object sender, EventArgs e)
         {
             TelaCadastro telaCadastro = new TelaCadastro();
-            telaCadastro.Show();
-            this.Hide();
+            telaCadastro.ShowDialog();
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
             TelaCadastro telaCadastro = new TelaCadastro();
-            telaCadastro.Show();
-            this.Hide();
+            telaCadastro.ShowDialog();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -233,6 +229,10 @@ namespace ControloDePropinas.Telas
         {
             mainPanel.Visible = true;
             LoadForm(new TelaArquivos());
+
+            
+        
+
         }
 
         private void label7_Click(object sender, EventArgs e)

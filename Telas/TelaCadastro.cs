@@ -120,8 +120,6 @@ namespace ControloDePropinas.Telas
 
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
-            TelaPrincipal telaPrincipal = new TelaPrincipal();
-            telaPrincipal.Show();
             this.Hide();
         }
 
