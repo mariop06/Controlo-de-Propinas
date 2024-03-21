@@ -103,6 +103,13 @@ namespace ControloDePropinas.Telas
                 comboTurmas.Text = "";
             }
         }
+
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+            TelaPrincipal telaPrincipal = new TelaPrincipal();
+            telaPrincipal.Show();
+            this.Hide();
+        }
     }
 }
 

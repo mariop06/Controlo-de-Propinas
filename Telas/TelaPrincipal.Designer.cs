@@ -167,7 +167,7 @@
             // 
             this.panelOpcoes.Controls.Add(this.panel2);
             this.panelOpcoes.Controls.Add(this.btn_more);
-            this.panelOpcoes.Location = new System.Drawing.Point(16, 291);
+            this.panelOpcoes.Location = new System.Drawing.Point(23, 291);
             this.panelOpcoes.MaximumSize = new System.Drawing.Size(240, 230);
             this.panelOpcoes.MinimumSize = new System.Drawing.Size(233, 60);
             this.panelOpcoes.Name = "panelOpcoes";
@@ -200,12 +200,13 @@
             this.label2.Size = new System.Drawing.Size(56, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "Turma";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(127, 113);
+            this.label5.Location = new System.Drawing.Point(127, 115);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(73, 18);
             this.label5.TabIndex = 2;
@@ -220,6 +221,7 @@
             this.label6.Size = new System.Drawing.Size(50, 18);
             this.label6.TabIndex = 3;
             this.label6.Text = "Aluno";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // timerButtonMore
             // 
@@ -230,10 +232,10 @@
             this.picUser.BackgroundImage = global::ControloDePropinas.Properties.Resources.user;
             this.picUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picUser.BaseColor = System.Drawing.Color.White;
-            this.picUser.Location = new System.Drawing.Point(1372, 18);
+            this.picUser.Location = new System.Drawing.Point(1366, 29);
             this.picUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picUser.Name = "picUser";
-            this.picUser.Size = new System.Drawing.Size(60, 60);
+            this.picUser.Size = new System.Drawing.Size(57, 49);
             this.picUser.TabIndex = 2;
             this.picUser.TabStop = false;
             // 
@@ -247,6 +249,7 @@
             this.pictureBox5.Size = new System.Drawing.Size(22, 18);
             this.pictureBox5.TabIndex = 5;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // pictureBox6
             // 
@@ -426,6 +429,7 @@
             this.btn_atividade.Size = new System.Drawing.Size(50, 60);
             this.btn_atividade.TabIndex = 6;
             this.btn_atividade.Text = "ATIVIDADES";
+            this.btn_atividade.Click += new System.EventHandler(this.btn_atividade_Click);
             this.btn_atividade.MouseHover += new System.EventHandler(this.btn_atividade_MouseHover);
             // 
             // btn_Inicio

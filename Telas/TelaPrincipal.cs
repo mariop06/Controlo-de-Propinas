@@ -153,7 +153,8 @@ namespace ControloDePropinas.Telas
 
         private void btn_info_Click(object sender, EventArgs e)
         {
-
+            mainPanel.Visible = true;
+            LoadForm(new TelaInformações());
         }
 
         private void btn_info_MouseHover(object sender, EventArgs e)
@@ -198,6 +199,31 @@ namespace ControloDePropinas.Telas
         private void btn_more_Click(object sender, EventArgs e)
         {
             timerButtonMore.Start();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            TelaCadastro telaCadastro = new TelaCadastro();
+            telaCadastro.Show();
+            this.Hide();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            TelaCadastro telaCadastro = new TelaCadastro();
+            telaCadastro.Show();
+            this.Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_atividade_Click(object sender, EventArgs e)
+        {
+            mainPanel.Visible = true;
+            LoadForm(new TelaArquivos());
         }
     }
 }
