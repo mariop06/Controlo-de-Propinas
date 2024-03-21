@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,18 +13,26 @@ namespace ControloDePropinas.Telas
 {
     public partial class TelaPrincipal : Form
     {
-        bool sidebarExpand=true;
+        bool sidebarExpand = true;
         bool visible = true;
         public TelaPrincipal()
         {
             InitializeComponent();
+
             if (visible)
             {
                 mainPanel.Visible = false;
-               
+
             }
-          
+
         }
+
+        public void Acesso(string nome, string username)
+        {
+            labelNome.Text = nome;
+            labelUsername.Text = "@" + username;
+        }
+
 
         public void LoadForm(object Form)
         {
@@ -39,7 +48,7 @@ namespace ControloDePropinas.Telas
             //btnhelp.FillColor = Color.Transparent;
             //btn_ver.FillColor = Color.Transparent;
 
-            if (this.mainPanel.Controls.Count>0)
+            if (this.mainPanel.Controls.Count > 0)
             {
                 this.mainPanel.Controls.RemoveAt(0);
             }
@@ -130,7 +139,7 @@ namespace ControloDePropinas.Telas
         }
         private void btn_Inicio_Click(object sender, EventArgs e)
         {
-          
+
         }
 
         private void btn_Inicio_MouseHover(object sender, EventArgs e)
@@ -159,9 +168,9 @@ namespace ControloDePropinas.Telas
 
         private void btn_info_MouseHover(object sender, EventArgs e)
         {
-           
+
         }
-     
+
 
         private void btn_Inicio_MouseUp(object sender, MouseEventArgs e)
         {
@@ -172,9 +181,9 @@ namespace ControloDePropinas.Telas
         private void btn_dash_Click(object sender, EventArgs e)
         {
             mainPanel.Visible = true;
-            LoadForm( new TelaDashboard());
+            LoadForm(new TelaDashboard());
 
-            
+
 
         }
 
@@ -232,4 +241,3 @@ namespace ControloDePropinas.Telas
         }
     }
 }
-

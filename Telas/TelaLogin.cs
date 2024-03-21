@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Data;
 using System.Windows.Forms;
 using ControloDePropinas.Telas;
@@ -12,16 +13,21 @@ namespace ControloDePropinas
         MySqlConnection connection;
         string sql = "Server=localhost;Port=3306;Database=enti_uso;Uid=root;Pwd=mariopaulos06;Sslmode=none;";
 
-        public TelaLogin()
+        private TelaPrincipal telaPrincipal;
+
+        public TelaLogin(TelaPrincipal telaPrincipal)
         {
             InitializeComponent();
             connection = new MySqlConnection(sql);
+            this.telaPrincipal = telaPrincipal;
+
         }
 
         private void button_Click(object sender, EventArgs e)
         {
             string usuario = txtUsuario.Text.Trim();
             string senha = txtSenha.Text;
+            string nome;
 
             // Verificar se os campos estão vazios
             if (string.IsNullOrEmpty(usuario) || string.IsNullOrEmpty(senha))
@@ -54,11 +60,26 @@ namespace ControloDePropinas
                     // Verificar se o login é válido
                     if (loginValido)
                     {
-                        MessageBox.Show("Login bem-sucedido!");
-                        // Faça aqui o redirecionamento para a próxima tela, se necessário
-                        TelaPrincipal telaPrincipal = new TelaPrincipal();
-                        this.Hide();
-                        telaPrincipal.Show();
+
+                        connection.Open();
+
+                        String q = "select nome from autorizado where username = '" + usuario + "'";
+                        MySqlCommand comando = new MySqlCommand(q, connection);
+                        MySqlDataReader leitura;
+
+                        leitura = comando.ExecuteReader();
+                        if (leitura.Read())
+                        {
+                            nome = leitura.GetString("nome");
+                            MessageBox.Show("Login bem-sucedido!");
+
+                            //Faça aqui o redirecionamento para a próxima tela, se necessário
+                            TelaPrincipal telaPrincipal = new TelaPrincipal();
+                            telaPrincipal.Acesso(nome, usuario);
+                            this.Hide();
+                            telaPrincipal.Show();
+
+                        }
                     }
                     else
                     {
@@ -76,11 +97,21 @@ namespace ControloDePropinas
                 connection.Open();
 
                 // Query para verificar se o usuário e senha existem no banco de dados
-                string query = "SELECT COUNT(*) FROM autorizado WHERE username = @usuario AND senha = @senha";
+                string query = "SELECT COUNT(*)  FROM autorizado WHERE username = @usuario AND senha = @senha";
 
                 MySqlCommand cmd = new MySqlCommand(query, connection);
                 cmd.Parameters.AddWithValue("@usuario", usuario);
                 cmd.Parameters.AddWithValue("@senha", senha);
+
+                //MySqlDataReader reader = cmd.ExecuteReader();
+                //if (reader.Read())
+                //{
+                //    string nome = reader["nome"].ToString();
+
+                //    TelaPrincipal telaPrincipal = new TelaPrincipal();
+                //    telaPrincipal.Acesso(nome, usuario);
+                //}
+
 
                 // Executar a consulta
                 int count = Convert.ToInt32(cmd.ExecuteScalar());
@@ -105,6 +136,29 @@ namespace ControloDePropinas
         {
             this.Close();
         }
+
+
+        //public partial class TelaPrincipal : Form
+        //{
+
+
+        //    public TelaPrincipal(string username)
+        //    {
+        //        InitializeComponent();
+        //        //labelNome.Text = nome;
+        //        labelUsername.Text = username;
+
+
+        //    }
+
+
+
+        //MySqlCommand command = new MySqlCommand();
+        //MySqlDataReader reader = command.ExecuteReader();
+
+        //string nome = reader["nome"].ToString();
+        //string usernameFromDB = reader["username"].ToString();
+        //}
+
     }
 }
-

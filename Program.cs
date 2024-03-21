@@ -1,4 +1,5 @@
-﻿using ControloDePropinas.Telas;
+﻿
+using ControloDePropinas.Telas;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,8 +18,14 @@ namespace ControloDePropinas
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TelaPrincipal());
-          
+
+            TelaPrincipal telaPrincipal = new TelaPrincipal();
+            TelaLogin telaLogin = new TelaLogin(telaPrincipal);
+
+            Application.Run(telaLogin);
+
         }
     }
 }
+
+

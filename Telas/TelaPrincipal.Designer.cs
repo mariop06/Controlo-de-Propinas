@@ -57,7 +57,7 @@
             this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
             this.mainPanel = new System.Windows.Forms.Panel();
             this.timerButtonMore = new System.Windows.Forms.Timer(this.components);
-            this.label7 = new System.Windows.Forms.Label();
+            this.labelUsername = new System.Windows.Forms.Label();
             this.picUser = new Guna.UI.WinForms.GunaPictureBox();
             this.sideBarP.SuspendLayout();
             this.panelOpcoes.SuspendLayout();
@@ -461,9 +461,9 @@
             this.labelNome.Location = new System.Drawing.Point(1135, 31);
             this.labelNome.MaximumSize = new System.Drawing.Size(300, 30);
             this.labelNome.Name = "labelNome";
-            this.labelNome.Size = new System.Drawing.Size(153, 29);
+            this.labelNome.Size = new System.Drawing.Size(20, 29);
             this.labelNome.TabIndex = 4;
-            this.labelNome.Text = "Mario Paulo";
+            this.labelNome.Text = ":";
             // 
             // gunaElipse1
             // 
@@ -489,19 +489,19 @@
             // 
             this.timerButtonMore.Tick += new System.EventHandler(this.timerButtonMore_Tick);
             // 
-            // label7
+            // labelUsername
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Silver;
-            this.label7.Location = new System.Drawing.Point(1141, 62);
-            this.label7.MaximumSize = new System.Drawing.Size(300, 30);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(90, 17);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "@mariop06";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+            this.labelUsername.AutoSize = true;
+            this.labelUsername.BackColor = System.Drawing.Color.Transparent;
+            this.labelUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUsername.ForeColor = System.Drawing.Color.Silver;
+            this.labelUsername.Location = new System.Drawing.Point(1141, 62);
+            this.labelUsername.MaximumSize = new System.Drawing.Size(300, 30);
+            this.labelUsername.Name = "labelUsername";
+            this.labelUsername.Size = new System.Drawing.Size(23, 17);
+            this.labelUsername.TabIndex = 6;
+            this.labelUsername.Text = "@";
+            this.labelUsername.Click += new System.EventHandler(this.label7_Click);
             // 
             // picUser
             // 
@@ -521,7 +521,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1500, 882);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.labelUsername);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.labelNome);
             this.Controls.Add(this.picUser);
@@ -584,6 +584,6 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Timer timerButtonMore;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label labelUsername;
     }
 }
