@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Guna.UI.WinForms;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ControloDePropinas.Telas
 {
@@ -60,13 +62,21 @@ namespace ControloDePropinas.Telas
             }
         }
 
+        
+
         private void buttonEntrar_Click(object sender, EventArgs e)
-        {
+        { 
+      
+
             try
             {
+      
+
                 string sql = "insert into lista values (default, @TxtProc, @TxtNum, @TxtNome, @comboSexo, @comboTurmas);";
                 MySqlCommand comando = new MySqlCommand(sql, conexao);
                 conexao.Open();
+
+
                 comando.Parameters.AddWithValue("@TxtProc", TxtProc.Text);
                 comando.Parameters.AddWithValue("@TxtNum", TxtNum.Text);
                 comando.Parameters.AddWithValue("@TxtNome", TxtNome.Text);
