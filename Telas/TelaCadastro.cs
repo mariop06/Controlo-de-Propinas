@@ -15,8 +15,8 @@ namespace ControloDePropinas.Telas
 {
     public partial class TelaCadastro : Form
     {
-        MySqlConnection conexao = new MySqlConnection("datasource = localhost; username = root; database = controlo_propinas; password = dudoamarildo; Sslmode=none;");
-
+        MySqlConnection conexao = new MySqlConnection("datasource = localhost; username = root; database = controlo_propinas; password = mariopaulos06; Sslmode=none;");
+        // MySqlConnection conexao = new MySqlConnection("datasource = localhost; username = root; database = controlo_propinas; password = dudoamarildo; Sslmode=none;");
         public TelaCadastro()
         {
             InitializeComponent();

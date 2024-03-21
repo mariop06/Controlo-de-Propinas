@@ -21,7 +21,8 @@ namespace ControloDePropinas
 
 
         }
-            MySqlConnection conexao = new MySqlConnection("datasource = localhost; username = root; database = controlo_propinas; password = dudoamarildo; Sslmode=none;");
+        MySqlConnection conexao = new MySqlConnection("datasource = localhost; username = root; database = controlo_propinas; password = mariopaulos06; Sslmode=none;");
+        // MySqlConnection conexao = new MySqlConnection("datasource = localhost; username = root; database = controlo_propinas; password = dudoamarildo; Sslmode=none;");
         private void gunaLabel1_Click(object sender, EventArgs e)
         {
 
