@@ -131,7 +131,7 @@
             this.buttonCancelar.Radius = 10;
             this.buttonCancelar.Size = new System.Drawing.Size(186, 58);
             this.buttonCancelar.TabIndex = 16;
-            this.buttonCancelar.Text = "CANCELAR";
+            this.buttonCancelar.Text = "SAIR";
             this.buttonCancelar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
