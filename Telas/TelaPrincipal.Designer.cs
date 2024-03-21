@@ -44,6 +44,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.timerButtonMore = new System.Windows.Forms.Timer(this.components);
+            this.label7 = new System.Windows.Forms.Label();
             this.picUser = new Guna.UI.WinForms.GunaPictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -58,7 +59,6 @@
             this.btn_atividade = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btn_Inicio = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btn_dash = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.label7 = new System.Windows.Forms.Label();
             this.sideBarP.SuspendLayout();
             this.panelOpcoes.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -101,7 +101,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(6, 75);
+            this.label1.Location = new System.Drawing.Point(6, 72);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(88, 17);
             this.label1.TabIndex = 1;
@@ -122,7 +122,7 @@
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(138, 78);
+            this.label3.Location = new System.Drawing.Point(138, 70);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(1320, 21);
             this.label3.TabIndex = 4;
@@ -136,7 +136,7 @@
             this.labelNome.AutoSize = true;
             this.labelNome.BackColor = System.Drawing.Color.Transparent;
             this.labelNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNome.Location = new System.Drawing.Point(1135, 39);
+            this.labelNome.Location = new System.Drawing.Point(1135, 31);
             this.labelNome.MaximumSize = new System.Drawing.Size(300, 30);
             this.labelNome.Name = "labelNome";
             this.labelNome.Size = new System.Drawing.Size(153, 29);
@@ -158,9 +158,9 @@
             this.mainPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.mainPanel.BackColor = System.Drawing.Color.White;
-            this.mainPanel.Location = new System.Drawing.Point(97, 102);
+            this.mainPanel.Location = new System.Drawing.Point(103, 94);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(1402, 808);
+            this.mainPanel.Size = new System.Drawing.Size(1402, 800);
             this.mainPanel.TabIndex = 5;
             // 
             // panelOpcoes
@@ -227,12 +227,26 @@
             // 
             this.timerButtonMore.Tick += new System.EventHandler(this.timerButtonMore_Tick);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Silver;
+            this.label7.Location = new System.Drawing.Point(1141, 62);
+            this.label7.MaximumSize = new System.Drawing.Size(300, 30);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(90, 17);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "@mariop06";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
             // picUser
             // 
             this.picUser.BackgroundImage = global::ControloDePropinas.Properties.Resources.user;
             this.picUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picUser.BaseColor = System.Drawing.Color.White;
-            this.picUser.Location = new System.Drawing.Point(1366, 29);
+            this.picUser.Location = new System.Drawing.Point(1366, 21);
             this.picUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picUser.Name = "picUser";
             this.picUser.Size = new System.Drawing.Size(57, 49);
@@ -391,7 +405,7 @@
             this.gunaPictureBox6.BackgroundImage = global::ControloDePropinas.Properties.Resources.Frame_13;
             this.gunaPictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gunaPictureBox6.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox6.Location = new System.Drawing.Point(16, 14);
+            this.gunaPictureBox6.Location = new System.Drawing.Point(16, 13);
             this.gunaPictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaPictureBox6.Name = "gunaPictureBox6";
             this.gunaPictureBox6.Size = new System.Drawing.Size(71, 64);
@@ -500,19 +514,6 @@
             this.btn_dash.Text = "DASHBOARD";
             this.btn_dash.Click += new System.EventHandler(this.btn_dash_Click);
             this.btn_dash.MouseHover += new System.EventHandler(this.btn_dash_MouseHover);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Silver;
-            this.label7.Location = new System.Drawing.Point(1141, 71);
-            this.label7.MaximumSize = new System.Drawing.Size(300, 30);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(90, 17);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "@mariop06";
             // 
             // TelaPrincipal
             // 

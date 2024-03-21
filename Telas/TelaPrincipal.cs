@@ -225,6 +225,11 @@ namespace ControloDePropinas.Telas
             mainPanel.Visible = true;
             LoadForm(new TelaArquivos());
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
