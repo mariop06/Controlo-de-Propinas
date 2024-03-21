@@ -110,6 +110,11 @@ namespace ControloDePropinas.Telas
             telaPrincipal.Show();
             this.Hide();
         }
+
+        private void TxtNum_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
