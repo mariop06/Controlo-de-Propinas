@@ -74,15 +74,26 @@ namespace ControloDePropinas.Telas
 
                 string sql = "insert into lista values (default, @TxtProc, @TxtNum, @TxtNome, @comboSexo, @comboTurmas);";
                 MySqlCommand comando = new MySqlCommand(sql, conexao);
+
+                bool validarNum = ValidarNum(TxtNum.Text, (comboTurmas.SelectedIndex+1).ToString());
                 conexao.Open();
 
+                if (validarNum == true) 
+                {
+                    MessageBox.Show("Nº na turma Já existente");
+                }
+                else 
+                {
+                    comando.Parameters.AddWithValue("@TxtProc", TxtProc.Text);
+                    comando.Parameters.AddWithValue("@TxtNum", TxtNum.Text);
+                    comando.Parameters.AddWithValue("@TxtNome", TxtNome.Text);
+                    comando.Parameters.AddWithValue("@comboSexo", comboSexo.Text);
+                    comando.Parameters.AddWithValue("@comboTurmas", comboTurmas.SelectedIndex + 1);
+                    comando.ExecuteReader();
 
-                comando.Parameters.AddWithValue("@TxtProc", TxtProc.Text);
-                comando.Parameters.AddWithValue("@TxtNum", TxtNum.Text);
-                comando.Parameters.AddWithValue("@TxtNome", TxtNome.Text);
-                comando.Parameters.AddWithValue("@comboSexo", comboSexo.Text);
-                comando.Parameters.AddWithValue("@comboTurmas", comboTurmas.SelectedIndex+1);
-                comando.ExecuteReader();
+                    MessageBox.Show("OPERAÇÃO BEM SUCEDIDA!");
+                }
+                
 
             }
             catch (Exception ex)
@@ -91,10 +102,13 @@ namespace ControloDePropinas.Telas
             }
             finally
             {
-                if (conexao.State == ConnectionState.Open) { }
-                conexao.Close();
-                conexao.Dispose();
-                MessageBox.Show("OPERAÇÃO BEM SUCEDIDA!");
+                if (conexao.State == ConnectionState.Open)
+                {
+                    conexao.Close();
+                    conexao.Dispose();
+                }
+                
+               
 
                 TxtProc.Text = "";
                 TxtNum.Text = "";
@@ -115,6 +129,43 @@ namespace ControloDePropinas.Telas
         {
 
         }
+
+        private bool ValidarNum(string Numero, string Turma)
+        {
+            try
+            {
+                // Abre a conexão com o banco de dados
+                conexao.Open();
+
+                // Query para verificar se o usuário e senha existem no banco de dados
+                string query = "SELECT num FROM lista WHERE num = @Numero AND Turma = @Turma;";
+
+                MySqlCommand cmd = new MySqlCommand(query, conexao);
+                cmd.Parameters.AddWithValue("@Numero", Numero);
+                cmd.Parameters.AddWithValue("@Turma", Turma);
+
+
+
+                // Executar a consulta
+                int count = Convert.ToInt32(cmd.ExecuteScalar());
+
+                // Se count for maior que 0, o login é válido
+                return count > 0;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao validar login: " + ex.Message);
+                return false;
+            }
+            finally
+            {
+                // Fechar a conexão com o banco de dados
+                if (conexao.State == ConnectionState.Open)
+                    conexao.Close();
+            }
+        }
     }
+
+
 }
 

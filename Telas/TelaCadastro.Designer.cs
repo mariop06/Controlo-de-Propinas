@@ -51,7 +51,7 @@
             // 
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.Location = new System.Drawing.Point(82, 492);
+            this.gunaLabel3.Location = new System.Drawing.Point(110, 499);
             this.gunaLabel3.Name = "gunaLabel3";
             this.gunaLabel3.Size = new System.Drawing.Size(79, 30);
             this.gunaLabel3.TabIndex = 14;
@@ -62,7 +62,7 @@
             // 
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.Location = new System.Drawing.Point(82, 316);
+            this.gunaLabel2.Location = new System.Drawing.Point(110, 323);
             this.gunaLabel2.Name = "gunaLabel2";
             this.gunaLabel2.Size = new System.Drawing.Size(197, 30);
             this.gunaLabel2.TabIndex = 11;
@@ -79,7 +79,7 @@
             this.TxtNum.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
             this.TxtNum.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtNum.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNum.Location = new System.Drawing.Point(87, 348);
+            this.TxtNum.Location = new System.Drawing.Point(115, 355);
             this.TxtNum.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtNum.Name = "TxtNum";
             this.TxtNum.PasswordChar = '\0';
@@ -93,7 +93,7 @@
             // 
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.Location = new System.Drawing.Point(162, 9);
+            this.gunaLabel1.Location = new System.Drawing.Point(162, 21);
             this.gunaLabel1.Name = "gunaLabel1";
             this.gunaLabel1.Size = new System.Drawing.Size(407, 54);
             this.gunaLabel1.TabIndex = 9;
@@ -119,7 +119,7 @@
             this.buttonCancelar.Image = null;
             this.buttonCancelar.ImageSize = new System.Drawing.Size(20, 20);
             this.buttonCancelar.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.buttonCancelar.Location = new System.Drawing.Point(382, 686);
+            this.buttonCancelar.Location = new System.Drawing.Point(407, 693);
             this.buttonCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(202)))), ((int)(((byte)(202)))));
@@ -155,7 +155,7 @@
             this.buttonEntrar.Image = null;
             this.buttonEntrar.ImageSize = new System.Drawing.Size(20, 20);
             this.buttonEntrar.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.buttonEntrar.Location = new System.Drawing.Point(91, 686);
+            this.buttonEntrar.Location = new System.Drawing.Point(115, 693);
             this.buttonEntrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonEntrar.Name = "buttonEntrar";
             this.buttonEntrar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(202)))), ((int)(((byte)(202)))));
@@ -186,7 +186,7 @@
             // 
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel4.Location = new System.Drawing.Point(82, 415);
+            this.gunaLabel4.Location = new System.Drawing.Point(110, 422);
             this.gunaLabel4.Name = "gunaLabel4";
             this.gunaLabel4.Size = new System.Drawing.Size(66, 30);
             this.gunaLabel4.TabIndex = 18;
@@ -196,7 +196,7 @@
             // 
             this.gunaLabel5.AutoSize = true;
             this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel5.Location = new System.Drawing.Point(86, 104);
+            this.gunaLabel5.Location = new System.Drawing.Point(114, 111);
             this.gunaLabel5.Name = "gunaLabel5";
             this.gunaLabel5.Size = new System.Drawing.Size(170, 30);
             this.gunaLabel5.TabIndex = 20;
@@ -213,7 +213,7 @@
             this.TxtProc.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
             this.TxtProc.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtProc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtProc.Location = new System.Drawing.Point(87, 136);
+            this.TxtProc.Location = new System.Drawing.Point(115, 143);
             this.TxtProc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtProc.Name = "TxtProc";
             this.TxtProc.PasswordChar = '\0';
@@ -224,6 +224,7 @@
             // 
             // comboSexo
             // 
+            this.comboSexo.BackColor = System.Drawing.SystemColors.Window;
             this.comboSexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboSexo.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.comboSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -231,7 +232,7 @@
             this.comboSexo.Items.AddRange(new object[] {
             "M",
             "F"});
-            this.comboSexo.Location = new System.Drawing.Point(87, 448);
+            this.comboSexo.Location = new System.Drawing.Point(115, 455);
             this.comboSexo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboSexo.Name = "comboSexo";
             this.comboSexo.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -242,7 +243,7 @@
             // 
             this.gunaLabel6.AutoSize = true;
             this.gunaLabel6.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel6.Location = new System.Drawing.Point(82, 209);
+            this.gunaLabel6.Location = new System.Drawing.Point(110, 216);
             this.gunaLabel6.Name = "gunaLabel6";
             this.gunaLabel6.Size = new System.Drawing.Size(79, 30);
             this.gunaLabel6.TabIndex = 23;
@@ -259,7 +260,7 @@
             this.TxtNome.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
             this.TxtNome.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtNome.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNome.Location = new System.Drawing.Point(87, 241);
+            this.TxtNome.Location = new System.Drawing.Point(115, 248);
             this.TxtNome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtNome.Name = "TxtNome";
             this.TxtNome.PasswordChar = '\0';
@@ -274,10 +275,11 @@
             // 
             // comboTurmas
             // 
+            this.comboTurmas.BackColor = System.Drawing.SystemColors.Window;
             this.comboTurmas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboTurmas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboTurmas.FormattingEnabled = true;
-            this.comboTurmas.Location = new System.Drawing.Point(87, 525);
+            this.comboTurmas.Location = new System.Drawing.Point(115, 532);
             this.comboTurmas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboTurmas.Name = "comboTurmas";
             this.comboTurmas.Size = new System.Drawing.Size(478, 37);
