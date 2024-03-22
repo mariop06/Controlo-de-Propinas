@@ -22,7 +22,7 @@ namespace ControloDePropinas
             TelaPrincipal telaPrincipal = new TelaPrincipal();
             TelaLogin telaLogin = new TelaLogin(telaPrincipal);
 
-            Application.Run(telaLogin);
+            Application.Run(telaPrincipal);
 
         }
     }

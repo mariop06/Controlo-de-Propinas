@@ -18,7 +18,8 @@ namespace ControloDePropinas.Telas
         public TelaPrincipal()
         {
             InitializeComponent();
-
+            this.MouseClick += TelaPrincipal_MouseClick;
+            this.MouseClick += mainPanel_MouseClick;
             if (visible)
             {
                 mainPanel.Visible = false;
@@ -75,7 +76,7 @@ namespace ControloDePropinas.Telas
 
         private void TelaPrincipal_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void sidebarTimer_Tick(object sender, EventArgs e)
@@ -238,6 +239,68 @@ namespace ControloDePropinas.Telas
         private void label7_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void mainPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void mainPanel_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void TelaPrincipal_DoubleClick(object sender, EventArgs e)
+        {
+            if(WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                WindowState = FormWindowState.Normal;
+            }
+        }
+        
+        private void TelaPrincipal_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Clicks == 3) 
+            {
+                this.WindowState = FormWindowState.Minimized; 
+            }
+        }
+
+        private void sideBarP_DoubleClick(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void mainPanel_DoubleClick(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void mainPanel_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Clicks == 3)
+            {
+                this.WindowState = FormWindowState.Minimized;
+            }
         }
     }
 }
