@@ -21,8 +21,12 @@ namespace ControloDePropinas
 
 
         }
-        MySqlConnection conexao = new MySqlConnection("datasource = localhost; username = root; database = controlo_propinas; password = mariopaulos06; Sslmode=none;");
-        // MySqlConnection conexao = new MySqlConnection("datasource = localhost; username = root; database = controlo_propinas; password = dudoamarildo; Sslmode=none;");
+
+        
+        MySqlConnection conectar;
+        // Classe com o médoto que possui as credencias de conexão
+        DataBase br = new DataBase();
+
         private void gunaLabel1_Click(object sender, EventArgs e)
         {
 
@@ -62,6 +66,8 @@ namespace ControloDePropinas
 
          private void combox()
         {
+
+           MySqlConnection conexao = br.conexao(conectar);
             try 
             {
                 string sql = "select distinct(nome_tur) from turma";
@@ -104,6 +110,8 @@ namespace ControloDePropinas
 
             try
             {
+                MySqlConnection conexao = br.conexao(conectar);
+
                 int pst = comboBox1.SelectedIndex+1;
 
                 string sql = "select lista.proc as 'Processo',lista.num as 'Nº',nome as 'Nome do Aluno',lista.sexo as 'Sexo' from lista inner join turma on turma.id = lista.Turma where Turma = '"+pst+"';";
@@ -163,6 +171,9 @@ namespace ControloDePropinas
 
                         try
                         {
+
+                            MySqlConnection conexao = br.conexao(conectar);
+
                             int pst = comboBox1.SelectedIndex + 1;
 
                             string sql = "select lista.proc as 'Processo',lista.num as 'Nº',nome as 'Nome do Aluno',lista.sexo as 'Sexo' from lista inner join turma on turma.id = lista.Turma where Turma = '" + pst + "' AND sexo = 'M';";
@@ -196,6 +207,8 @@ namespace ControloDePropinas
 
                         try
                         {
+                            MySqlConnection conexao = br.conexao(conectar);
+
                             int pst = comboBox1.SelectedIndex + 1;
 
                             string sql = "select lista.proc as 'Processo',lista.num as 'Nº',nome as 'Nome do Aluno',lista.sexo as 'Sexo' from lista inner join turma on turma.id = lista.Turma where Turma = '" + pst + "' AND sexo = 'F';";
@@ -231,6 +244,8 @@ namespace ControloDePropinas
 
                         try
                         {
+                            MySqlConnection conexao = br.conexao(conectar);
+
                             int pst = comboBox1.SelectedIndex + 1;
 
                             string sql = "select lista.proc as 'Processo',lista.num as 'Nº',nome as 'Nome do Aluno',lista.sexo as 'Sexo' from lista inner join turma on turma.id = lista.Turma where Turma = '" + pst + "';";
