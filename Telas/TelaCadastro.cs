@@ -15,8 +15,11 @@ namespace ControloDePropinas.Telas
 {
     public partial class TelaCadastro : Form
     {
-        MySqlConnection conexao = new MySqlConnection("datasource = localhost; username = root; database = controlo_propinas; password = mariopaulos06; Sslmode=none;");
+        // MySqlConnection conexao = new MySqlConnection("datasource = localhost; username = root; database = controlo_propinas; password = mariopaulos06; Sslmode=none;");
         // MySqlConnection conexao = new MySqlConnection("datasource = localhost; username = root; database = controlo_propinas; password = dudoamarildo; Sslmode=none;");
+        MySqlConnection conectar;
+        // Classe com o médoto que possui as credencias de conexão
+        DataBase br = new DataBase();
         public TelaCadastro()
         {
             InitializeComponent();
@@ -36,6 +39,8 @@ namespace ControloDePropinas.Telas
         // Métodos para extrair as turma da BD para a comboBox
         public void combox()
         {
+            MySqlConnection conexao = br.conexao(conectar);
+
             try
             {
                 string sql = "select distinct(nome_tur) from turma";
@@ -65,8 +70,8 @@ namespace ControloDePropinas.Telas
         
 
         private void buttonEntrar_Click(object sender, EventArgs e)
-        { 
-      
+        {
+            MySqlConnection conexao = br.conexao(conectar);
 
             try
             {
@@ -130,6 +135,7 @@ namespace ControloDePropinas.Telas
 
         private bool ValidarNum(string Numero, string Turma)
         {
+            MySqlConnection conexao = br.conexao(conectar);
             try
             {
                 // Abre a conexão com o banco de dados
