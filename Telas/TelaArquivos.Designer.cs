@@ -74,7 +74,6 @@
             this.gunaPanel1.Name = "gunaPanel1";
             this.gunaPanel1.Size = new System.Drawing.Size(1338, 200);
             this.gunaPanel1.TabIndex = 0;
-            this.gunaPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.gunaPanel1_Paint);
             // 
             // comboxMeses
             // 
@@ -107,6 +106,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(208, 28);
             this.comboBox1.TabIndex = 9;
+            this.comboBox1.TextChanged += new System.EventHandler(this.comboBox1_TextChanged);
             // 
             // panelsexo
             // 
@@ -241,7 +241,6 @@
             this.gunaLabel1.Size = new System.Drawing.Size(66, 25);
             this.gunaLabel1.TabIndex = 1;
             this.gunaLabel1.Text = "Turma:";
-            this.gunaLabel1.Click += new System.EventHandler(this.gunaLabel1_Click);
             // 
             // gunaDataGridView1
             // 
@@ -302,7 +301,6 @@
             this.gunaDataGridView1.ThemeStyle.RowsStyle.Height = 28;
             this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.gunaDataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gunaDataGridView1_CellContentClick);
             // 
             // btn_ListaPag
             // 

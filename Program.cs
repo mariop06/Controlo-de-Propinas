@@ -20,6 +20,7 @@ namespace ControloDePropinas
             Application.SetCompatibleTextRenderingDefault(false);
 
             TelaPrincipal telaPrincipal = new TelaPrincipal();
+            TelaArquivos telaArquivos = new TelaArquivos();
             TelaLogin telaLogin = new TelaLogin(telaPrincipal);
 
             Application.Run(telaLogin);
