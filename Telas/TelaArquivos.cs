@@ -263,5 +263,17 @@ namespace ControloDePropinas
 
             
         }
+
+        private void TelaArquivos_DoubleClick(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                WindowState = FormWindowState.Normal;
+            }
+        }
     }
 }

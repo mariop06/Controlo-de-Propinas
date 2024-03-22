@@ -65,7 +65,7 @@
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel1.Location = new System.Drawing.Point(217, 38);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(153, 46);
+            this.gunaLabel1.Size = new System.Drawing.Size(179, 54);
             this.gunaLabel1.TabIndex = 1;
             this.gunaLabel1.Text = "ENTRAR";
             // 
@@ -95,7 +95,7 @@
             this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel2.Location = new System.Drawing.Point(102, 150);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(82, 25);
+            this.gunaLabel2.Size = new System.Drawing.Size(93, 30);
             this.gunaLabel2.TabIndex = 4;
             this.gunaLabel2.Text = "Usuário:";
             // 
@@ -105,7 +105,7 @@
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel3.Location = new System.Drawing.Point(102, 275);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(69, 25);
+            this.gunaLabel3.Size = new System.Drawing.Size(79, 30);
             this.gunaLabel3.TabIndex = 6;
             this.gunaLabel3.Text = "Senha:";
             // 
@@ -206,7 +206,7 @@
             this.circleProgress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(202)))), ((int)(((byte)(202)))));
             this.circleProgress.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.circleProgress.Location = new System.Drawing.Point(150, 480);
-            this.circleProgress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.circleProgress.Margin = new System.Windows.Forms.Padding(4);
             this.circleProgress.Name = "circleProgress";
             this.circleProgress.ProgressColor = System.Drawing.Color.DodgerBlue;
             this.circleProgress.Size = new System.Drawing.Size(70, 48);
@@ -235,6 +235,8 @@
             this.Name = "TelaLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tela Login";
+            this.DoubleClick += new System.EventHandler(this.TelaLogin_DoubleClick);
+         
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -311,6 +311,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaCadastro";
             this.Load += new System.EventHandler(this.TelaCadastro_Load);
+            this.DoubleClick += new System.EventHandler(this.TelaCadastro_DoubleClick);
             this.ResumeLayout(false);
             this.PerformLayout();
 

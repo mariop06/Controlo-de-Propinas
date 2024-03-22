@@ -500,10 +500,8 @@
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(1577, 1000);
             this.mainPanel.TabIndex = 5;
-            this.mainPanel.Click += new System.EventHandler(this.mainPanel_Click);
             this.mainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mainPanel_Paint);
             this.mainPanel.DoubleClick += new System.EventHandler(this.mainPanel_DoubleClick);
-            this.mainPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.mainPanel_MouseClick);
             // 
             // timerButtonMore
             // 
@@ -556,7 +554,6 @@
             this.Text = "Teste";
             this.Load += new System.EventHandler(this.TelaPrincipal_Load);
             this.DoubleClick += new System.EventHandler(this.TelaPrincipal_DoubleClick);
-            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TelaPrincipal_MouseClick);
             this.sideBarP.ResumeLayout(false);
             this.sideBarP.PerformLayout();
             this.panelOpcoes.ResumeLayout(false);

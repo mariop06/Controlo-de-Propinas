@@ -34,7 +34,7 @@ namespace ControloDePropinas.Telas
 
         private void TelaInformações_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void guna2ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -144,6 +144,18 @@ namespace ControloDePropinas.Telas
         private void gunaLabel13_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void TelaInformações_DoubleClick(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                WindowState = FormWindowState.Normal;
+            }
         }
     }
 }

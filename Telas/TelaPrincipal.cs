@@ -18,8 +18,8 @@ namespace ControloDePropinas.Telas
         public TelaPrincipal()
         {
             InitializeComponent();
-            this.MouseClick += TelaPrincipal_MouseClick;
-            this.MouseClick += mainPanel_MouseClick;
+            
+            
             if (visible)
             {
                 mainPanel.Visible = false;
@@ -27,6 +27,8 @@ namespace ControloDePropinas.Telas
             }
 
         }
+
+       
 
         public void Acesso(string nome, string username)
         {
@@ -246,10 +248,7 @@ namespace ControloDePropinas.Telas
 
         }
 
-        private void mainPanel_Click(object sender, EventArgs e)
-        {
-            
-        }
+       
 
         private void TelaPrincipal_DoubleClick(object sender, EventArgs e)
         {
@@ -263,13 +262,7 @@ namespace ControloDePropinas.Telas
             }
         }
         
-        private void TelaPrincipal_MouseClick(object sender, MouseEventArgs e)
-        {
-            if (e.Clicks == 3) 
-            {
-                this.WindowState = FormWindowState.Minimized; 
-            }
-        }
+        
 
         private void sideBarP_DoubleClick(object sender, EventArgs e)
         {
@@ -295,12 +288,8 @@ namespace ControloDePropinas.Telas
             }
         }
 
-        private void mainPanel_MouseClick(object sender, MouseEventArgs e)
-        {
-            if (e.Clicks == 3)
-            {
-                this.WindowState = FormWindowState.Minimized;
-            }
-        }
+       
+
+        
     }
 }
