@@ -9,6 +9,7 @@ namespace ControloDePropinas
 {
     class DataBase
     {
+        // Método que retorna a string de conexão do Banco de Dados com todos os alunos do sistema...
         public MySqlConnection conexao(MySqlConnection Conectar)
         {
             Conectar = new MySqlConnection("datasource = localhost; username = root; database = controlo_propinas; password = dudoamarildo; Sslmode=none;");
@@ -16,10 +17,11 @@ namespace ControloDePropinas
 
         }
 
-        public MySqlConnection ConetarUsuari()
+        // Método que retorna a string de conexão do Banco de Dados com todos os usuários do sistema...
+        public string ConetarUsuario()
         {
-            return new MySqlConnection("datasource = localhost; username = root; database = enti_uso; password = dudoamarildo; Sslmode=none;");
-          
+            string Conectar = "Server=localhost;Port=3306;Database=enti_uso;Uid=root;Pwd=dudoamarildo;Sslmode=none;";
+            return Conectar;
 
         }
 

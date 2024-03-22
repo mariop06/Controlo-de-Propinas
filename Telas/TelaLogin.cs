@@ -11,16 +11,17 @@ namespace ControloDePropinas
     public partial class TelaLogin : Form
     {
         MySqlConnection connection;
-       // string sql = "Server=localhost;Port=3306;Database=enti_uso;Uid=root;Pwd=mariopaulos06;Sslmode=none;";
-          string sql = "Server=localhost;Port=3306;Database=enti_uso;Uid=root;Pwd=dudoamarildo;Sslmode=none;";
 
+        //Instanciando a string de conexão da classe DataBase...
+        DataBase sql = new DataBase();
 
         private TelaPrincipal telaPrincipal;
 
         public TelaLogin(TelaPrincipal telaPrincipal)
         {
             InitializeComponent();
-            connection = new MySqlConnection(sql);
+
+            connection = new MySqlConnection(sql.ConetarUsuario());
             this.telaPrincipal = telaPrincipal;
 
         }
