@@ -31,19 +31,19 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaPrincipal));
             this.sideBarP = new Guna.UI.WinForms.GunaPanel();
+            this.sair = new Guna.UI.WinForms.GunaAdvenceButton();
             this.panelOpcoes = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_more = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.gunaCirclePictureBox1 = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.btn_info = new Guna.UI.WinForms.GunaAdvenceButton();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_atividade = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -57,22 +57,23 @@
             this.mainPanel = new System.Windows.Forms.Panel();
             this.timerButtonMore = new System.Windows.Forms.Timer(this.components);
             this.labelUsername = new System.Windows.Forms.Label();
+            this.close = new System.Windows.Forms.PictureBox();
             this.picUser = new Guna.UI.WinForms.GunaPictureBox();
-            this.gunaCirclePictureBox1 = new Guna.UI.WinForms.GunaCirclePictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.labelBV = new System.Windows.Forms.Label();
+            this.timerMainPanel = new System.Windows.Forms.Timer(this.components);
+            this.timerPanelLeave = new System.Windows.Forms.Timer(this.components);
             this.sideBarP.SuspendLayout();
             this.panelOpcoes.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.close)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
             this.SuspendLayout();
             // 
             // sideBarP
@@ -81,8 +82,9 @@
             this.sideBarP.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.sideBarP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
-            this.sideBarP.Controls.Add(this.gunaCirclePictureBox1);
+            this.sideBarP.Controls.Add(this.sair);
             this.sideBarP.Controls.Add(this.panelOpcoes);
+            this.sideBarP.Controls.Add(this.gunaCirclePictureBox1);
             this.sideBarP.Controls.Add(this.btn_info);
             this.sideBarP.Controls.Add(this.label1);
             this.sideBarP.Controls.Add(this.btn_atividade);
@@ -96,15 +98,49 @@
             this.sideBarP.Name = "sideBarP";
             this.sideBarP.Size = new System.Drawing.Size(100, 929);
             this.sideBarP.TabIndex = 0;
-            this.sideBarP.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPrincipal_Paint);
             this.sideBarP.DoubleClick += new System.EventHandler(this.sideBarP_DoubleClick);
-            this.sideBarP.MouseHover += new System.EventHandler(this.sideBarP_MouseHover);
+            this.sideBarP.MouseLeave += new System.EventHandler(this.sideBarP_MouseLeave);
+            this.sideBarP.MouseHover += new System.EventHandler(this.sideBarP_MouseHover_1);
+            // 
+            // sair
+            // 
+            this.sair.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.sair.AnimationHoverSpeed = 0.07F;
+            this.sair.AnimationSpeed = 0.03F;
+            this.sair.BackColor = System.Drawing.Color.Transparent;
+            this.sair.BaseColor = System.Drawing.Color.Transparent;
+            this.sair.BorderColor = System.Drawing.Color.Black;
+            this.sair.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.sair.CheckedBorderColor = System.Drawing.Color.Black;
+            this.sair.CheckedForeColor = System.Drawing.Color.White;
+            this.sair.CheckedImage = ((System.Drawing.Image)(resources.GetObject("sair.CheckedImage")));
+            this.sair.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.sair.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.sair.FocusedColor = System.Drawing.Color.Empty;
+            this.sair.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sair.ForeColor = System.Drawing.Color.White;
+            this.sair.Image = global::ControloDePropinas.Properties.Resources.exit;
+            this.sair.ImageSize = new System.Drawing.Size(25, 25);
+            this.sair.LineColor = System.Drawing.Color.Transparent;
+            this.sair.Location = new System.Drawing.Point(29, 813);
+            this.sair.Name = "sair";
+            this.sair.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.sair.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.sair.OnHoverForeColor = System.Drawing.Color.White;
+            this.sair.OnHoverImage = null;
+            this.sair.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.sair.OnPressedColor = System.Drawing.Color.Black;
+            this.sair.Radius = 5;
+            this.sair.Size = new System.Drawing.Size(62, 41);
+            this.sair.TabIndex = 8;
+            this.sair.Text = "Sair";
+            this.sair.Click += new System.EventHandler(this.sair_Click);
             // 
             // panelOpcoes
             // 
             this.panelOpcoes.Controls.Add(this.panel2);
             this.panelOpcoes.Controls.Add(this.btn_more);
-            this.panelOpcoes.Location = new System.Drawing.Point(23, 291);
+            this.panelOpcoes.Location = new System.Drawing.Point(23, 297);
             this.panelOpcoes.MaximumSize = new System.Drawing.Size(240, 230);
             this.panelOpcoes.MinimumSize = new System.Drawing.Size(233, 60);
             this.panelOpcoes.Name = "panelOpcoes";
@@ -113,11 +149,9 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.pictureBox5);
             this.panel2.Controls.Add(this.pictureBox6);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.pictureBox7);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.pictureBox2);
@@ -127,16 +161,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(233, 148);
             this.panel2.TabIndex = 0;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(127, 115);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 18);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Entidade";
             // 
             // pictureBox5
             // 
@@ -172,17 +196,6 @@
             this.label6.Text = "Aluno";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackgroundImage = global::ControloDePropinas.Properties.Resources.mais;
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox7.Image = global::ControloDePropinas.Properties.Resources.Frame_20;
-            this.pictureBox7.Location = new System.Drawing.Point(96, 117);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(22, 18);
-            this.pictureBox7.TabIndex = 7;
-            this.pictureBox7.TabStop = false;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -192,7 +205,6 @@
             this.label2.Size = new System.Drawing.Size(56, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "Turma";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // pictureBox3
             // 
@@ -272,6 +284,19 @@
             this.btn_more.Click += new System.EventHandler(this.btn_more_Click);
             this.btn_more.MouseHover += new System.EventHandler(this.btn_more_MouseHover);
             // 
+            // gunaCirclePictureBox1
+            // 
+            this.gunaCirclePictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.gunaCirclePictureBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaCirclePictureBox1.Image = global::ControloDePropinas.Properties.Resources.OIG4__2_;
+            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(15, 13);
+            this.gunaCirclePictureBox1.Name = "gunaCirclePictureBox1";
+            this.gunaCirclePictureBox1.Size = new System.Drawing.Size(68, 57);
+            this.gunaCirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.gunaCirclePictureBox1.TabIndex = 0;
+            this.gunaCirclePictureBox1.TabStop = false;
+            this.gunaCirclePictureBox1.UseTransfarantBackground = false;
+            // 
             // btn_info
             // 
             this.btn_info.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -292,7 +317,7 @@
             this.btn_info.Image = global::ControloDePropinas.Properties.Resources.info_2;
             this.btn_info.ImageSize = new System.Drawing.Size(25, 25);
             this.btn_info.LineColor = System.Drawing.Color.Transparent;
-            this.btn_info.Location = new System.Drawing.Point(29, 761);
+            this.btn_info.Location = new System.Drawing.Point(29, 757);
             this.btn_info.Name = "btn_info";
             this.btn_info.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
             this.btn_info.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -301,7 +326,7 @@
             this.btn_info.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
             this.btn_info.OnPressedColor = System.Drawing.Color.Black;
             this.btn_info.Radius = 5;
-            this.btn_info.Size = new System.Drawing.Size(62, 60);
+            this.btn_info.Size = new System.Drawing.Size(62, 48);
             this.btn_info.TabIndex = 6;
             this.btn_info.Text = "INFORMAÇÃO";
             this.btn_info.Click += new System.EventHandler(this.btn_info_Click);
@@ -317,7 +342,6 @@
             this.label1.Size = new System.Drawing.Size(88, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "__________";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btn_atividade
             // 
@@ -476,13 +500,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.mainPanel.BackColor = System.Drawing.Color.White;
-            this.mainPanel.Location = new System.Drawing.Point(103, 94);
+            this.mainPanel.Location = new System.Drawing.Point(100, 89);
             this.mainPanel.MaximumSize = new System.Drawing.Size(1900, 900);
             this.mainPanel.MinimumSize = new System.Drawing.Size(1402, 800);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(1402, 800);
             this.mainPanel.TabIndex = 5;
-            this.mainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mainPanel_Paint);
             this.mainPanel.DoubleClick += new System.EventHandler(this.mainPanel_DoubleClick);
             // 
             // timerButtonMore
@@ -502,7 +525,17 @@
             this.labelUsername.Size = new System.Drawing.Size(23, 17);
             this.labelUsername.TabIndex = 6;
             this.labelUsername.Text = "@";
-            this.labelUsername.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // close
+            // 
+            this.close.BackColor = System.Drawing.Color.Transparent;
+            this.close.Image = global::ControloDePropinas.Properties.Resources.close;
+            this.close.Location = new System.Drawing.Point(1463, 10);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(25, 26);
+            this.close.TabIndex = 0;
+            this.close.TabStop = false;
+            this.close.Click += new System.EventHandler(this.close_Click);
             // 
             // picUser
             // 
@@ -517,27 +550,25 @@
             this.picUser.TabIndex = 2;
             this.picUser.TabStop = false;
             // 
-            // gunaCirclePictureBox1
+            // labelBV
             // 
-            this.gunaCirclePictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.gunaCirclePictureBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaCirclePictureBox1.Image = global::ControloDePropinas.Properties.Resources.OIG4__2_;
-            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(15, 13);
-            this.gunaCirclePictureBox1.Name = "gunaCirclePictureBox1";
-            this.gunaCirclePictureBox1.Size = new System.Drawing.Size(68, 57);
-            this.gunaCirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaCirclePictureBox1.TabIndex = 0;
-            this.gunaCirclePictureBox1.TabStop = false;
-            this.gunaCirclePictureBox1.UseTransfarantBackground = false;
+            this.labelBV.AutoSize = true;
+            this.labelBV.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBV.ForeColor = System.Drawing.Color.DarkGray;
+            this.labelBV.Location = new System.Drawing.Point(355, 363);
+            this.labelBV.Name = "labelBV";
+            this.labelBV.Size = new System.Drawing.Size(317, 58);
+            this.labelBV.TabIndex = 7;
+            this.labelBV.Text = "BEM-VINDO";
+            this.labelBV.Visible = false;
             // 
-            // pictureBox8
+            // timerMainPanel
             // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Black;
-            this.pictureBox8.Location = new System.Drawing.Point(1435, 2);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(33, 22);
-            this.pictureBox8.TabIndex = 0;
-            this.pictureBox8.TabStop = false;
+            this.timerMainPanel.Tick += new System.EventHandler(this.timerMainPanel_Tick);
+            // 
+            // timerPanelLeave
+            // 
+            this.timerPanelLeave.Tick += new System.EventHandler(this.timerPanelLeave_Tick);
             // 
             // TelaPrincipal
             // 
@@ -545,7 +576,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1500, 882);
-            this.Controls.Add(this.pictureBox8);
+            this.Controls.Add(this.labelBV);
+            this.Controls.Add(this.close);
             this.Controls.Add(this.labelUsername);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.labelNome);
@@ -568,14 +600,13 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.close)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picUser)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -604,14 +635,16 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Timer timerButtonMore;
         private System.Windows.Forms.Label labelUsername;
         private Guna.UI.WinForms.GunaCirclePictureBox gunaCirclePictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox close;
+        private Guna.UI.WinForms.GunaAdvenceButton sair;
+        private System.Windows.Forms.Label labelBV;
+        private System.Windows.Forms.Timer timerMainPanel;
+        private System.Windows.Forms.Timer timerPanelLeave;
     }
 }

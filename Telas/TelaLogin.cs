@@ -106,16 +106,6 @@ namespace ControloDePropinas
                 cmd.Parameters.AddWithValue("@usuario", usuario);
                 cmd.Parameters.AddWithValue("@senha", senha);
 
-                //MySqlDataReader reader = cmd.ExecuteReader();
-                //if (reader.Read())
-                //{
-                //    string nome = reader["nome"].ToString();
-
-                //    TelaPrincipal telaPrincipal = new TelaPrincipal();
-                //    telaPrincipal.Acesso(nome, usuario);
-                //}
-
-
                 // Executar a consulta
                 int count = Convert.ToInt32(cmd.ExecuteScalar());
 
@@ -152,30 +142,14 @@ namespace ControloDePropinas
             }
         }
 
-       
+        private void close_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
 
-
-        //public partial class TelaPrincipal : Form
-        //{
-
-
-        //    public TelaPrincipal(string username)
-        //    {
-        //        InitializeComponent();
-        //        //labelNome.Text = nome;
-        //        labelUsername.Text = username;
-
-
-        //    }
-
-
-
-        //MySqlCommand command = new MySqlCommand();
-        //MySqlDataReader reader = command.ExecuteReader();
-
-        //string nome = reader["nome"].ToString();
-        //string usernameFromDB = reader["username"].ToString();
-        //}
-
+        private void TelaLogin_Load(object sender, EventArgs e)
+        {
+            txtUsuario.Focus();
+        }
     }
 }

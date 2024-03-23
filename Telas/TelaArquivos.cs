@@ -104,8 +104,7 @@ namespace ControloDePropinas
 
                 if (labelFiltroM_Pago.Text == "Filtrar Masculino")
                 {
-
-                    MessageBox.Show("Filtrar Masculino");
+                    
 
                     if (labelFiltroM_Pago.Checked)
                     {
@@ -143,7 +142,7 @@ namespace ControloDePropinas
                 //Filtrando os Femeninos da tabela
                 if (labelF_Npag.Text == "Filtrar Femenino" )
                 {
-                    MessageBox.Show("Filtrar Femenino");
+                    //MessageBox.Show("Filtrar Femenino");
                     if (labelF_Npag.Checked)
                     {
                         DataTable dt = new DataTable();
@@ -179,7 +178,7 @@ namespace ControloDePropinas
 
                 if ((labelF_Npag.Text == "Filtrar Femenino" && labelFiltroM_Pago.Text == "Filtrar Masculino"))
                 {
-                    MessageBox.Show("Filtar ambos");
+                    //MessageBox.Show("Filtar ambos");
 
                     if (labelFiltroM_Pago.Checked && labelF_Npag.Checked)
                     {
@@ -280,6 +279,11 @@ namespace ControloDePropinas
         private void comboBox1_TextChanged(object sender, EventArgs e)
         {
             teste();
+        }
+
+        private void btn_RefreshPag_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

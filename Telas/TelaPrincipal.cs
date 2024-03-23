@@ -1,4 +1,5 @@
 ﻿
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,11 +16,12 @@ namespace ControloDePropinas.Telas
     {
         bool sidebarExpand = true;
         bool visible = true;
+        private MySqlConnection connection = new MySqlConnection();
+
         public TelaPrincipal()
         {
             InitializeComponent();
-            
-            
+
             if (visible)
             {
                 mainPanel.Visible = false;
@@ -28,29 +30,17 @@ namespace ControloDePropinas.Telas
 
         }
 
-       
-
         public void Acesso(string nome, string username)
         {
             labelNome.Text = nome;
             labelUsername.Text = "@" + username;
+
+            labelBV.Text = "BEM-VINDO " + nome;
         }
 
 
         public void LoadForm(object Form)
         {
-            //form = new Telas.Configuracoes();
-            //paneljanela.Controls.Clear();
-            //form.TopLevel = false;
-            //form.Visible = true;
-            //form.Dock = DockStyle.Fill;
-            //paneljanela.Controls.Add(form);
-            //btnconfig.FillColor = Color.Orange;
-            //btnhome.FillColor = Color.Transparent;
-            //btnadd.FillColor = Color.Transparent;
-            //btnhelp.FillColor = Color.Transparent;
-            //btn_ver.FillColor = Color.Transparent;
-
             if (this.mainPanel.Controls.Count > 0)
             {
                 this.mainPanel.Controls.RemoveAt(0);
@@ -61,26 +51,22 @@ namespace ControloDePropinas.Telas
             this.mainPanel.Controls.Add(f);
             this.mainPanel.Tag = f;
             f.Show();
-
         }
 
-
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panelPrincipal_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void TelaPrincipal_Load(object sender, EventArgs e)
         {
-           
+            labelBV.Visible = true;
+            mainPanel.Visible = false;
+            btn_Inicio.BaseColor = Color.Gray;
+            btn_dash.BaseColor = Color.Transparent;
+            btn_more.BaseColor = Color.Transparent;
+            btn_atividade.BaseColor = Color.Transparent;
+            btn_info.BaseColor = Color.Transparent;
+            sair.BaseColor = Color.Transparent;
         }
 
+       
         private void sidebarTimer_Tick(object sender, EventArgs e)
         {
             if (sidebarExpand)
@@ -92,6 +78,7 @@ namespace ControloDePropinas.Telas
                 btn_atividade.Width += 10;
                 btn_info.Width += 10;
                 label1.Width += 10;
+                sair.Width += 10;
 
                 if (sideBarP.Width == sideBarP.MaximumSize.Width)
                 {
@@ -107,6 +94,7 @@ namespace ControloDePropinas.Telas
                 btn_more.Width -= 10;
                 btn_atividade.Width -= 10;
                 btn_info.Width -= 10;
+                sair.Width -=10;
 
                 panelOpcoes.Height -= 10;
                 if (panelOpcoes.Height <= panelOpcoes.MinimumSize.Height)
@@ -142,7 +130,14 @@ namespace ControloDePropinas.Telas
         }
         private void btn_Inicio_Click(object sender, EventArgs e)
         {
-
+            labelBV.Visible = true;
+            mainPanel.Visible = false;
+             btn_Inicio.BaseColor = Color.Gray;
+            btn_dash.BaseColor = Color.Transparent;
+            btn_more.BaseColor = Color.Transparent;
+            btn_atividade.BaseColor = Color.Transparent;
+            btn_info.BaseColor = Color.Transparent;
+            sair.BaseColor = Color.Transparent;
         }
 
         private void btn_Inicio_MouseHover(object sender, EventArgs e)
@@ -165,6 +160,15 @@ namespace ControloDePropinas.Telas
 
         private void btn_info_Click(object sender, EventArgs e)
         {
+            labelBV.Visible = false;
+
+            btn_Inicio.BaseColor = Color.Transparent;
+            btn_dash.BaseColor = Color.Transparent;
+            btn_more.BaseColor = Color.Transparent;
+            btn_atividade.BaseColor = Color.Transparent;
+            btn_info.BaseColor = Color.Gray;
+            sair.BaseColor = Color.Transparent;
+
             mainPanel.Visible = true;
             LoadForm(new TelaInformações());
         }
@@ -183,6 +187,14 @@ namespace ControloDePropinas.Telas
 
         private void btn_dash_Click(object sender, EventArgs e)
         {
+            btn_Inicio.BaseColor = Color.Transparent;
+            btn_dash.BaseColor = Color.Gray;
+            btn_more.BaseColor = Color.Transparent;
+            btn_atividade.BaseColor = Color.Transparent;
+            btn_info.BaseColor = Color.Transparent;
+            sair.BaseColor = Color.Transparent;
+
+            labelBV.Visible = false;
             mainPanel.Visible = true;
             LoadForm(new TelaDashboard());
 
@@ -208,6 +220,14 @@ namespace ControloDePropinas.Telas
 
         private void btn_more_Click(object sender, EventArgs e)
         {
+            labelBV.Visible = false;
+
+            btn_Inicio.BaseColor = Color.Transparent;
+            btn_dash.BaseColor = Color.Transparent;
+            btn_more.BaseColor = Color.Gray;
+            btn_atividade.BaseColor = Color.Transparent;
+            btn_info.BaseColor = Color.Transparent;
+            sair.BaseColor = Color.Transparent;
             timerButtonMore.Start();
         }
 
@@ -223,32 +243,21 @@ namespace ControloDePropinas.Telas
             telaCadastro.ShowDialog();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_atividade_Click(object sender, EventArgs e)
         {
+            labelBV.Visible = false;
+
+            btn_Inicio.BaseColor = Color.Transparent;
+            btn_dash.BaseColor = Color.Transparent;
+            btn_more.BaseColor = Color.Transparent;
+            btn_atividade.BaseColor = Color.Gray;
+            btn_info.BaseColor = Color.Transparent;
+            sair.BaseColor = Color.Transparent;
+
+
             mainPanel.Visible = true;
             LoadForm(new TelaArquivos());
-
-            
-        
-
         }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void mainPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-       
 
         private void TelaPrincipal_DoubleClick(object sender, EventArgs e)
         {
@@ -261,8 +270,6 @@ namespace ControloDePropinas.Telas
                 WindowState = FormWindowState.Normal;
             }
         }
-        
-        
 
         private void sideBarP_DoubleClick(object sender, EventArgs e)
         {
@@ -288,8 +295,93 @@ namespace ControloDePropinas.Telas
             }
         }
 
-       
+        private void sair_Click(object sender, EventArgs e)
+        {
+            btn_Inicio.BaseColor = Color.Transparent;
+            btn_dash.BaseColor = Color.Transparent;
+            btn_more.BaseColor = Color.Transparent;
+            btn_atividade.BaseColor = Color.Transparent;
+            btn_info.BaseColor = Color.Transparent;
+            sair.BaseColor = Color.Gray;
 
-        
+
+                connection.Close();
+            
+
+            // Fecha o formulário principal
+            TelaLogin telaLogin = new TelaLogin(new TelaPrincipal());
+            telaLogin.Show();
+            this.Close();
+        }
+
+        private void timerMainPanel_Tick(object sender, EventArgs e)
+        {
+            mainPanel.BringToFront();
+            if (sidebarExpand)
+            {
+              
+                sideBarP.Width += 10;
+                btn_Inicio.Width += 10;
+                btn_dash.Width += 10;
+                btn_more.Width += 10;
+                btn_atividade.Width += 10;
+                btn_info.Width += 10;
+                label1.Width += 10;
+                sair.Width += 10;
+
+                if (sideBarP.Width == sideBarP.MaximumSize.Width)
+                {
+                    sidebarExpand = false;
+                    timerMainPanel.Stop();
+                }
+            }
+        }
+
+        private void close_Click(object sender, EventArgs e)
+        {
+
+            Application.Exit();
+        }
+
+     
+        private void sideBarP_MouseLeave(object sender, EventArgs e)
+        {
+            timerPanelLeave.Start();
+        }
+
+        private void sideBarP_MouseHover_1(object sender, EventArgs e)
+        {
+            timerMainPanel.Start();
+        }
+
+        private void timerPanelLeave_Tick(object sender, EventArgs e)
+        {
+
+            mainPanel.BringToFront();
+            sideBarP.Width -= 10;
+            btn_Inicio.Width -= 10;
+            btn_dash.Width -= 10;
+            btn_more.Width -= 10;
+            btn_atividade.Width -= 10;
+            btn_info.Width -= 10;
+            sair.Width -= 10;
+
+            panelOpcoes.Height -= 10;
+            if (panelOpcoes.Height <= panelOpcoes.MinimumSize.Height)
+                panelOpcoes.Height = panelOpcoes.MinimumSize.Height;
+
+
+            if (panelOpcoes.Height > 65)
+                btn_atividade.Location = new Point(btn_atividade.Location.X, btn_atividade.Location.Y - 10);
+
+
+            if (sideBarP.Width == sideBarP.MinimumSize.Width)
+            {
+                btn_atividade.Location = new Point(btn_atividade.Location.X, 298);
+                panelOpcoes.Height = 65;
+                sidebarExpand = true;
+                timerPanelLeave.Stop();
+            }
+        }
     }
 }
