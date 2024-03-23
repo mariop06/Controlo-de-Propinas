@@ -99,6 +99,12 @@
     <Compile Include="Telas\TelaPrincipal.Designer.cs">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\TelaSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\TelaSplash.Designer.cs">
+      <DependentUpon>TelaSplash.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Telas\TelaArquivos.resx">
       <DependentUpon>TelaArquivos.cs</DependentUpon>
     </EmbeddedResource>
@@ -126,6 +132,9 @@
     </Compile>
     <EmbeddedResource Include="Telas\TelaPrincipal.resx">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\TelaSplash.resx">
+      <DependentUpon>TelaSplash.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -179,6 +188,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\down-arrow.png" />
+    <Content Include="Resources\OIG4 %282%29.png" />
+    <None Include="Resources\Splash %281%29.png" />
+    <None Include="Resources\Splash.png" />
+    <None Include="Resources\Rectangle 211.png" />
+    <None Include="Resources\OIG4 %282%291.png" />
+    <Content Include="Resources\Rectangle 18.png" />
+    <None Include="Resources\Rectangle 181.png" />
+    <Content Include="Resources\Rectangle 21.png" />
     <None Include="Resources\down-arrow1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

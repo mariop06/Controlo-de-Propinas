@@ -45,7 +45,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_more = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btn_info = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.gunaPictureBox6 = new Guna.UI.WinForms.GunaPictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_atividade = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btn_Inicio = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -59,6 +58,8 @@
             this.timerButtonMore = new System.Windows.Forms.Timer(this.components);
             this.labelUsername = new System.Windows.Forms.Label();
             this.picUser = new Guna.UI.WinForms.GunaPictureBox();
+            this.gunaCirclePictureBox1 = new Guna.UI.WinForms.GunaCirclePictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.sideBarP.SuspendLayout();
             this.panelOpcoes.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -69,8 +70,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // sideBarP
@@ -79,9 +81,9 @@
             this.sideBarP.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.sideBarP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
+            this.sideBarP.Controls.Add(this.gunaCirclePictureBox1);
             this.sideBarP.Controls.Add(this.panelOpcoes);
             this.sideBarP.Controls.Add(this.btn_info);
-            this.sideBarP.Controls.Add(this.gunaPictureBox6);
             this.sideBarP.Controls.Add(this.label1);
             this.sideBarP.Controls.Add(this.btn_atividade);
             this.sideBarP.Controls.Add(this.btn_Inicio);
@@ -305,19 +307,6 @@
             this.btn_info.Click += new System.EventHandler(this.btn_info_Click);
             this.btn_info.MouseHover += new System.EventHandler(this.btn_info_MouseHover);
             // 
-            // gunaPictureBox6
-            // 
-            this.gunaPictureBox6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.gunaPictureBox6.BackgroundImage = global::ControloDePropinas.Properties.Resources.Frame_13;
-            this.gunaPictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gunaPictureBox6.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox6.Location = new System.Drawing.Point(16, 13);
-            this.gunaPictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gunaPictureBox6.Name = "gunaPictureBox6";
-            this.gunaPictureBox6.Size = new System.Drawing.Size(71, 64);
-            this.gunaPictureBox6.TabIndex = 1;
-            this.gunaPictureBox6.TabStop = false;
-            // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -521,12 +510,34 @@
             this.picUser.BackgroundImage = global::ControloDePropinas.Properties.Resources.user;
             this.picUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picUser.BaseColor = System.Drawing.Color.White;
-            this.picUser.Location = new System.Drawing.Point(1366, 21);
+            this.picUser.Location = new System.Drawing.Point(1385, 36);
             this.picUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picUser.Name = "picUser";
-            this.picUser.Size = new System.Drawing.Size(57, 49);
+            this.picUser.Size = new System.Drawing.Size(47, 39);
             this.picUser.TabIndex = 2;
             this.picUser.TabStop = false;
+            // 
+            // gunaCirclePictureBox1
+            // 
+            this.gunaCirclePictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.gunaCirclePictureBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaCirclePictureBox1.Image = global::ControloDePropinas.Properties.Resources.OIG4__2_;
+            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(15, 13);
+            this.gunaCirclePictureBox1.Name = "gunaCirclePictureBox1";
+            this.gunaCirclePictureBox1.Size = new System.Drawing.Size(68, 57);
+            this.gunaCirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.gunaCirclePictureBox1.TabIndex = 0;
+            this.gunaCirclePictureBox1.TabStop = false;
+            this.gunaCirclePictureBox1.UseTransfarantBackground = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.Black;
+            this.pictureBox8.Location = new System.Drawing.Point(1435, 2);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(33, 22);
+            this.pictureBox8.TabIndex = 0;
+            this.pictureBox8.TabStop = false;
             // 
             // TelaPrincipal
             // 
@@ -534,6 +545,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1500, 882);
+            this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.labelUsername);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.labelNome);
@@ -561,8 +573,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -572,7 +585,6 @@
 
         private Guna.UI.WinForms.GunaPanel sideBarP;
         private System.Windows.Forms.Label label1;
-        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox6;
         private System.Windows.Forms.Label label3;
         private Guna.UI.WinForms.GunaPictureBox picUser;
         private System.Windows.Forms.Label labelNome;
@@ -599,5 +611,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Timer timerButtonMore;
         private System.Windows.Forms.Label labelUsername;
+        private Guna.UI.WinForms.GunaCirclePictureBox gunaCirclePictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox8;
     }
 }
