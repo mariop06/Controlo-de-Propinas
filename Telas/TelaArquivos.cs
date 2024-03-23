@@ -44,7 +44,8 @@ namespace ControloDePropinas
         private void TelaArquivos_Load(object sender, EventArgs e)
         { 
             combox();
-            teste();
+            ListaTurmas();
+
 
             Btn_Visualizar.BaseColor = Color.DarkGray;
             btn_ListaPag.BaseColor = Color.DimGray;
@@ -90,6 +91,8 @@ namespace ControloDePropinas
 
             labelMes.Visible = false;
             comboxMeses.Visible = false;
+
+            ListaTurmas();
 
         }
 
@@ -241,11 +244,15 @@ namespace ControloDePropinas
 
         private void comboBox1_TextChanged(object sender, EventArgs e)
         {
-            teste();
+            if (Btn_Visualizar.BaseColor == Color.DarkGray)
+            { 
+                ListaTurmas();
+            }   
+            
         }
 
         //#######################################################                        Métodos                    ###############################################################
-        public void teste()
+        public void ListaTurmas()
         {
             DataTable dt = new DataTable();
             MySqlDataReader resultado;
@@ -343,13 +350,17 @@ namespace ControloDePropinas
                 MySqlConnection conexao = br.conexao(conectar);
 
                 int pst = comboBox1.SelectedIndex + 1;
+   
 
-                string sql = "select lista.num as 'Nº',lista.nome as 'Aluno', '" + comboxMeses.Text + "' from lista inner join est_mes on proc_a = lista.proc;";
+                string sql = " select lista.nome as 'Nome do Aluno', est_mes.Janeiro from lista inner join est_mes on est_mes.proc_a = lista.proc where lista.Turma = @Turma;";
+
 
                 MySqlCommand comando = new MySqlCommand(sql, conexao);
                 comando.CommandType = CommandType.Text;
 
                 conexao.Open();
+                comando.Parameters.AddWithValue("@Turma",pst);
+
                 resultado = comando.ExecuteReader();
                 dt.Load(resultado);
 
@@ -377,6 +388,7 @@ namespace ControloDePropinas
 
         private void comboxMeses_TextChanged(object sender, EventArgs e)
         {
+
             MesFiltro();
         }
 
