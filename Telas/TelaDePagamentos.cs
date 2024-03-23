@@ -35,7 +35,6 @@ namespace ControloDePropinas
         {
             TelaArquivos telaArquivos = new TelaArquivos();
             telaArquivos.Show();
-            this.Close();
             this.Hide();
         }
 
