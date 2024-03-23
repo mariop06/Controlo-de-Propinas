@@ -61,10 +61,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataBase.cs" />
-    <Compile Include="TelaDePagamentos.cs">
+    <Compile Include="Telas\TelaDePagamentos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TelaDePagamentos.Designer.cs">
+    <Compile Include="Telas\TelaDePagamentos.Designer.cs">
       <DependentUpon>TelaDePagamentos.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\TelaArquivos.cs">
@@ -111,7 +111,7 @@
     <Compile Include="Telas\TelaSplash.Designer.cs">
       <DependentUpon>TelaSplash.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="TelaDePagamentos.resx">
+    <EmbeddedResource Include="Telas\TelaDePagamentos.resx">
       <DependentUpon>TelaDePagamentos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\TelaArquivos.resx">
