@@ -12,8 +12,8 @@ namespace ControloDePropinas
         // Método que retorna a string de conexão do Banco de Dados com todos os alunos do sistema...
         public MySqlConnection conexao(MySqlConnection Conectar)
         {
-            Conectar = new MySqlConnection("datasource = localhost; username = root; database = controlo_propinas; password = mariopaulos06; Sslmode=none;");
-           // Conectar = new MySqlConnection("datasource = localhost; username = root; database = controlo_propinas; password = dudoamarildo; Sslmode=none;");
+           // Conectar = new MySqlConnection("datasource = localhost; username = root; database = controlo_propinas; password = mariopaulos06; Sslmode=none;");
+           Conectar = new MySqlConnection("datasource = localhost; username = root; database = controlo_propinas; password = dudoamarildo; Sslmode=none;");
             return Conectar;
 
         }
@@ -24,8 +24,8 @@ namespace ControloDePropinas
         // Método que retorna a string de conexão do Banco de Dados com todos os usuários do sistema...
         public string ConetarUsuario()
         {
-            string Conectar = "Server=localhost;Port=3306;Database=enti_uso;Uid=root;Pwd=mariopaulos06;Sslmode=none;";
-          //  string Conectar = "Server=localhost;Port=3306;Database=enti_uso;Uid=root;Pwd=dudoamarildo;Sslmode=none;";
+            //string Conectar = "Server=localhost;Port=3306;Database=enti_uso;Uid=root;Pwd=mariopaulos06;Sslmode=none;";
+            string Conectar = "Server=localhost;Port=3306;Database=enti_uso;Uid=root;Pwd=dudoamarildo;Sslmode=none;";
             return Conectar;
 
         }

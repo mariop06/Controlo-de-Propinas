@@ -126,3 +126,4 @@ C:\Users\Lausio Watela\Desktop\TLP\mariop06\Controlo-de-Propinas\obj\Debug\Contr
 C:\Users\Lausio Watela\Desktop\TLP\mariop06\Controlo-de-Propinas\obj\Debug\ControloDePropinas.exe
 C:\Users\Lausio Watela\Desktop\TLP\mariop06\Controlo-de-Propinas\obj\Debug\ControloDePropinas.pdb
 C:\Users\Mário Paulo\OneDrive\Documents\Projectos\Controlo-de-Propinas\obj\Debug\ControloDePropinas.Telas.TelaSplash.resources
+C:\Users\HUAWEI\Documents\TLP_work\CodePropinas\obj\Debug\ControloDePropinas.Telas.TelaSplash.resources

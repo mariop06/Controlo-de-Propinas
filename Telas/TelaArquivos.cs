@@ -35,6 +35,7 @@ namespace ControloDePropinas
 
             labelMes.Visible = true;
             comboxMeses.Visible = true;
+     
         }
 
         private void TelaArquivos_Load(object sender, EventArgs e)
