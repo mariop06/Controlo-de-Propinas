@@ -530,7 +530,7 @@
             // 
             this.close.BackColor = System.Drawing.Color.Transparent;
             this.close.Image = global::ControloDePropinas.Properties.Resources.close;
-            this.close.Location = new System.Drawing.Point(1463, 10);
+            this.close.Location = new System.Drawing.Point(1458, 10);
             this.close.Name = "close";
             this.close.Size = new System.Drawing.Size(25, 26);
             this.close.TabIndex = 0;
