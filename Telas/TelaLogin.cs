@@ -76,7 +76,6 @@ namespace ControloDePropinas
                             nome = leitura.GetString("nome");
                             MessageBox.Show("Login bem-sucedido!");
 
-                            //Faça aqui o redirecionamento para a próxima tela, se necessário
                             TelaPrincipal telaPrincipal = new TelaPrincipal();
                             telaPrincipal.Acesso(nome, usuario);
                             this.Hide();
@@ -96,7 +95,6 @@ namespace ControloDePropinas
         {
             try
             {
-                // Abre a conexão com o banco de dados
                 connection.Open();
 
                 // Query para verificar se o usuário e senha existem no banco de dados

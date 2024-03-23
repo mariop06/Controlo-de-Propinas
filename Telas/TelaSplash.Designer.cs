@@ -89,12 +89,12 @@ namespace ControloDePropinas.Telas
             this.ProgressBar.BorderColor = System.Drawing.Color.Black;
             this.ProgressBar.ColorStyle = Guna.UI.WinForms.ColorStyle.Default;
             this.ProgressBar.IdleColor = System.Drawing.Color.Gainsboro;
-            this.ProgressBar.Location = new System.Drawing.Point(249, 146);
+            this.ProgressBar.Location = new System.Drawing.Point(169, 152);
             this.ProgressBar.Name = "ProgressBar";
             this.ProgressBar.ProgressMaxColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(112)))), ((int)(((byte)(112)))));
             this.ProgressBar.ProgressMinColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(112)))), ((int)(((byte)(112)))));
             this.ProgressBar.Radius = 8;
-            this.ProgressBar.Size = new System.Drawing.Size(470, 23);
+            this.ProgressBar.Size = new System.Drawing.Size(550, 17);
             this.ProgressBar.TabIndex = 3;
             // 
             // guna2HtmlLabel1

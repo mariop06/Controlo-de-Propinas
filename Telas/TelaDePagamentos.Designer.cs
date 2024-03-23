@@ -45,6 +45,7 @@
             // 
             // gunaElipse1
             // 
+            this.gunaElipse1.Radius = 15;
             this.gunaElipse1.TargetControl = this;
             // 
             // comboTurmas
@@ -53,10 +54,10 @@
             this.comboTurmas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboTurmas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboTurmas.FormattingEnabled = true;
-            this.comboTurmas.Location = new System.Drawing.Point(86, 208);
+            this.comboTurmas.Location = new System.Drawing.Point(76, 166);
             this.comboTurmas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboTurmas.Name = "comboTurmas";
-            this.comboTurmas.Size = new System.Drawing.Size(478, 37);
+            this.comboTurmas.Size = new System.Drawing.Size(425, 33);
             this.comboTurmas.TabIndex = 28;
             this.comboTurmas.TextChanged += new System.EventHandler(this.comboTurmas_TextChanged);
             // 
@@ -64,9 +65,9 @@
             // 
             this.gunaLabel6.AutoSize = true;
             this.gunaLabel6.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel6.Location = new System.Drawing.Point(85, 318);
+            this.gunaLabel6.Location = new System.Drawing.Point(76, 254);
             this.gunaLabel6.Name = "gunaLabel6";
-            this.gunaLabel6.Size = new System.Drawing.Size(177, 30);
+            this.gunaLabel6.Size = new System.Drawing.Size(153, 25);
             this.gunaLabel6.TabIndex = 37;
             this.gunaLabel6.Text = "Nome do Aluno:";
             // 
@@ -74,11 +75,11 @@
             // 
             this.gunaElipsePanel1.BackColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.gunaElipsePanel1.Location = new System.Drawing.Point(687, 29);
+            this.gunaElipsePanel1.Location = new System.Drawing.Point(598, 23);
             this.gunaElipsePanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaElipsePanel1.Name = "gunaElipsePanel1";
             this.gunaElipsePanel1.Radius = 10;
-            this.gunaElipsePanel1.Size = new System.Drawing.Size(649, 751);
+            this.gunaElipsePanel1.Size = new System.Drawing.Size(577, 601);
             this.gunaElipsePanel1.TabIndex = 34;
             // 
             // buttonCancelar
@@ -101,7 +102,7 @@
             this.buttonCancelar.Image = null;
             this.buttonCancelar.ImageSize = new System.Drawing.Size(20, 20);
             this.buttonCancelar.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.buttonCancelar.Location = new System.Drawing.Point(382, 644);
+            this.buttonCancelar.Location = new System.Drawing.Point(340, 515);
             this.buttonCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(202)))), ((int)(((byte)(202)))));
@@ -111,7 +112,7 @@
             this.buttonCancelar.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
             this.buttonCancelar.OnPressedColor = System.Drawing.Color.Black;
             this.buttonCancelar.Radius = 10;
-            this.buttonCancelar.Size = new System.Drawing.Size(186, 58);
+            this.buttonCancelar.Size = new System.Drawing.Size(165, 46);
             this.buttonCancelar.TabIndex = 33;
             this.buttonCancelar.Text = "SAIR";
             this.buttonCancelar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -137,7 +138,7 @@
             this.buttonEntrar.Image = null;
             this.buttonEntrar.ImageSize = new System.Drawing.Size(20, 20);
             this.buttonEntrar.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.buttonEntrar.Location = new System.Drawing.Point(90, 644);
+            this.buttonEntrar.Location = new System.Drawing.Point(80, 515);
             this.buttonEntrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonEntrar.Name = "buttonEntrar";
             this.buttonEntrar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(202)))), ((int)(((byte)(202)))));
@@ -147,7 +148,7 @@
             this.buttonEntrar.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
             this.buttonEntrar.OnPressedColor = System.Drawing.Color.Black;
             this.buttonEntrar.Radius = 10;
-            this.buttonEntrar.Size = new System.Drawing.Size(186, 58);
+            this.buttonEntrar.Size = new System.Drawing.Size(165, 46);
             this.buttonEntrar.TabIndex = 32;
             this.buttonEntrar.Text = "CONFIRMAR";
             this.buttonEntrar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -157,9 +158,9 @@
             // 
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.Location = new System.Drawing.Point(81, 175);
+            this.gunaLabel3.Location = new System.Drawing.Point(72, 140);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(177, 30);
+            this.gunaLabel3.Size = new System.Drawing.Size(154, 25);
             this.gunaLabel3.TabIndex = 31;
             this.gunaLabel3.Text = "Turma do Aluno:";
             // 
@@ -167,9 +168,9 @@
             // 
             this.TituloTela.AutoSize = true;
             this.TituloTela.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TituloTela.Location = new System.Drawing.Point(63, 43);
+            this.TituloTela.Location = new System.Drawing.Point(56, 34);
             this.TituloTela.Name = "TituloTela";
-            this.TituloTela.Size = new System.Drawing.Size(523, 54);
+            this.TituloTela.Size = new System.Drawing.Size(447, 46);
             this.TituloTela.TabIndex = 29;
             this.TituloTela.Text = "CONFIRMAR PAGAMENTO\r\n";
             // 
@@ -190,19 +191,19 @@
             "Abril",
             "Maio",
             "Junho"});
-            this.comboBox1.Location = new System.Drawing.Point(90, 506);
+            this.comboBox1.Location = new System.Drawing.Point(80, 405);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(478, 37);
+            this.comboBox1.Size = new System.Drawing.Size(425, 33);
             this.comboBox1.TabIndex = 38;
             // 
             // gunaLabel1
             // 
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.Location = new System.Drawing.Point(85, 473);
+            this.gunaLabel1.Location = new System.Drawing.Point(76, 378);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(138, 30);
+            this.gunaLabel1.Size = new System.Drawing.Size(122, 25);
             this.gunaLabel1.TabIndex = 39;
             this.gunaLabel1.Text = "Mês a Pagar:";
             // 
@@ -212,17 +213,17 @@
             this.comboAlunos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboAlunos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboAlunos.FormattingEnabled = true;
-            this.comboAlunos.Location = new System.Drawing.Point(90, 350);
+            this.comboAlunos.Location = new System.Drawing.Point(80, 280);
             this.comboAlunos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboAlunos.Name = "comboAlunos";
-            this.comboAlunos.Size = new System.Drawing.Size(478, 37);
+            this.comboAlunos.Size = new System.Drawing.Size(425, 33);
             this.comboAlunos.TabIndex = 40;
             // 
             // TelaDePagamentos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1402, 808);
+            this.ClientSize = new System.Drawing.Size(1208, 646);
             this.Controls.Add(this.comboAlunos);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.gunaLabel1);
@@ -234,6 +235,7 @@
             this.Controls.Add(this.gunaLabel3);
             this.Controls.Add(this.TituloTela);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "TelaDePagamentos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaDePagamentos";
