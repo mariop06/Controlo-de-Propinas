@@ -284,7 +284,9 @@ namespace ControloDePropinas
 
         private void btn_RefreshPag_Click(object sender, EventArgs e)
         {
-
+            TelaDePagamentos telaDePagamentos = new TelaDePagamentos();
+            telaDePagamentos.Show();
+            this.Hide();
         }
     }
 }
