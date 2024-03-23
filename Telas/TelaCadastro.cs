@@ -15,7 +15,7 @@ namespace ControloDePropinas.Telas
 {
     public partial class TelaCadastro : Form
     {
-        MySqlConnection conectar;
+       private MySqlConnection conectar;
 
         // Classe com o médoto que possui as credencias de conexão
         DataBase br = new DataBase();
