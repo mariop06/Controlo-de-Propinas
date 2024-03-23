@@ -254,7 +254,7 @@ namespace ControloDePropinas.Telas
         {
             if(WindowState == FormWindowState.Normal)
             {
-                WindowState = FormWindowState.Maximized;
+                WindowState = FormWindowState.Minimized;
             }
             else
             {
@@ -268,7 +268,7 @@ namespace ControloDePropinas.Telas
         {
             if (WindowState == FormWindowState.Normal)
             {
-                WindowState = FormWindowState.Maximized;
+                WindowState = FormWindowState.Minimized;
             }
             else
             {
@@ -280,7 +280,7 @@ namespace ControloDePropinas.Telas
         {
             if (WindowState == FormWindowState.Normal)
             {
-                WindowState = FormWindowState.Maximized;
+                WindowState = FormWindowState.Minimized;
             }
             else
             {
