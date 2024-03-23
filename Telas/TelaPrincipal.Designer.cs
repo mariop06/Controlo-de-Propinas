@@ -289,9 +289,9 @@
             this.gunaCirclePictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.gunaCirclePictureBox1.BaseColor = System.Drawing.Color.White;
             this.gunaCirclePictureBox1.Image = global::ControloDePropinas.Properties.Resources.OIG4__2_;
-            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(15, 13);
+            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(23, 15);
             this.gunaCirclePictureBox1.Name = "gunaCirclePictureBox1";
-            this.gunaCirclePictureBox1.Size = new System.Drawing.Size(68, 57);
+            this.gunaCirclePictureBox1.Size = new System.Drawing.Size(50, 50);
             this.gunaCirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gunaCirclePictureBox1.TabIndex = 0;
             this.gunaCirclePictureBox1.TabStop = false;
@@ -477,7 +477,7 @@
             this.labelNome.AutoSize = true;
             this.labelNome.BackColor = System.Drawing.Color.Transparent;
             this.labelNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNome.Location = new System.Drawing.Point(1135, 31);
+            this.labelNome.Location = new System.Drawing.Point(1117, 31);
             this.labelNome.MaximumSize = new System.Drawing.Size(300, 30);
             this.labelNome.Name = "labelNome";
             this.labelNome.Size = new System.Drawing.Size(20, 29);
@@ -519,7 +519,7 @@
             this.labelUsername.BackColor = System.Drawing.Color.Transparent;
             this.labelUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUsername.ForeColor = System.Drawing.Color.Silver;
-            this.labelUsername.Location = new System.Drawing.Point(1141, 62);
+            this.labelUsername.Location = new System.Drawing.Point(1123, 62);
             this.labelUsername.MaximumSize = new System.Drawing.Size(300, 30);
             this.labelUsername.Name = "labelUsername";
             this.labelUsername.Size = new System.Drawing.Size(23, 17);
@@ -530,9 +530,9 @@
             // 
             this.close.BackColor = System.Drawing.Color.Transparent;
             this.close.Image = global::ControloDePropinas.Properties.Resources.close;
-            this.close.Location = new System.Drawing.Point(1458, 10);
+            this.close.Location = new System.Drawing.Point(1435, 7);
             this.close.Name = "close";
-            this.close.Size = new System.Drawing.Size(25, 26);
+            this.close.Size = new System.Drawing.Size(24, 24);
             this.close.TabIndex = 0;
             this.close.TabStop = false;
             this.close.Click += new System.EventHandler(this.close_Click);
@@ -543,7 +543,7 @@
             this.picUser.BackgroundImage = global::ControloDePropinas.Properties.Resources.user;
             this.picUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picUser.BaseColor = System.Drawing.Color.White;
-            this.picUser.Location = new System.Drawing.Point(1385, 36);
+            this.picUser.Location = new System.Drawing.Point(1371, 36);
             this.picUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picUser.Name = "picUser";
             this.picUser.Size = new System.Drawing.Size(47, 39);

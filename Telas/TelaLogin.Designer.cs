@@ -41,8 +41,6 @@
             this.txtSenha = new Guna.UI2.WinForms.Guna2TextBox();
             this.buttonCancelar = new Guna.UI.WinForms.GunaAdvenceButton();
             this.buttonEntrar = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.close = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.close)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaElipse1
@@ -237,23 +235,11 @@
             this.buttonEntrar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.buttonEntrar.Click += new System.EventHandler(this.button_Click);
             // 
-            // close
-            // 
-            this.close.BackColor = System.Drawing.Color.White;
-            this.close.Image = global::ControloDePropinas.Properties.Resources.close;
-            this.close.Location = new System.Drawing.Point(12, 12);
-            this.close.Name = "close";
-            this.close.Size = new System.Drawing.Size(25, 26);
-            this.close.TabIndex = 11;
-            this.close.TabStop = false;
-            this.close.Click += new System.EventHandler(this.close_Click);
-            // 
             // TelaLogin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1159, 660);
-            this.Controls.Add(this.close);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.circleProgress);
@@ -270,7 +256,6 @@
             this.Text = "Tela Login";
             this.Load += new System.EventHandler(this.TelaLogin_Load);
             this.DoubleClick += new System.EventHandler(this.TelaLogin_DoubleClick);
-            ((System.ComponentModel.ISupportInitialize)(this.close)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -289,7 +274,6 @@
         private System.Windows.Forms.Timer timer1;
         private Guna.UI2.WinForms.Guna2TextBox txtSenha;
         private Guna.UI2.WinForms.Guna2TextBox txtUsuario;
-        private System.Windows.Forms.PictureBox close;
     }
 }
 
