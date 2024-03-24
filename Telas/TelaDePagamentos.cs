@@ -28,7 +28,7 @@ namespace ControloDePropinas
 
         private void buttonEntrar_Click(object sender, EventArgs e)
         {
-
+         
         }
 
         private void buttonCancelar_Click(object sender, EventArgs e)

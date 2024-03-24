@@ -23,7 +23,7 @@ namespace ControloDePropinas
             TelaArquivos telaArquivos = new TelaArquivos();
             TelaLogin telaLogin = new TelaLogin(telaPrincipal);
 
-            Application.Run(telaArquivos);
+            Application.Run(new TelaDePagamentos());
 
         }
     }

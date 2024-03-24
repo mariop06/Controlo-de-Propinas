@@ -353,7 +353,9 @@ namespace ControloDePropinas
     
                 if (comboxMeses.SelectedIndex==0) 
                 {
-                    string sql = " select lista.num as 'Nº', lista.nome as 'Nome do Aluno', est_mes.* from lista inner join est_mes on est_mes.proc_a = lista.proc where lista.Turma = @Turma;";
+                    string sql = " select lista.nome as 'Aluno',est_mes.Setembro as 'SET', est_mes.Outubro as 'OUT', est_mes.Novembro as 'NOV'," +
+                        " est_mes.Dezembro as 'DEZ', est_mes.Janeiro as 'JAN', est_mes.Fevereiro as 'FEV', est_mes.Marco as 'MAR', est_mes.Abril as 'ABR', est_mes.Maio as 'MAI'," +
+                        " est_mes.Junho as 'JUN' from lista inner join est_mes on est_mes.proc_a = lista.proc where lista.Turma = @Turma;";
 
 
                     MySqlCommand comando = new MySqlCommand(sql, conexao);
@@ -384,7 +386,7 @@ namespace ControloDePropinas
                 }
                 else 
                 {
-                    string sql = " select lista.num as 'Nº', lista.nome as 'Nome do Aluno', " + (comboxMeses.Text).ToString() + " from lista inner join est_mes on est_mes.proc_a = lista.proc where lista.Turma = @Turma;";
+                    string sql = " select lista.proc as 'Processo', lista.num as 'Nº', lista.nome as 'Nome do Aluno', " + (comboxMeses.Text).ToString() + " from lista inner join est_mes on est_mes.proc_a = lista.proc where lista.Turma = @Turma;";
 
 
                     MySqlCommand comando = new MySqlCommand(sql, conexao);
@@ -417,7 +419,7 @@ namespace ControloDePropinas
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                //MessageBox.Show(ex.Message);
             }
             gunaDataGridView1.DataSource = dt;
         }
