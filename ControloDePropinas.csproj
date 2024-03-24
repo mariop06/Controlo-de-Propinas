@@ -99,6 +99,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Telas\TelaNovaTurma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\TelaNovaTurma.Designer.cs">
+      <DependentUpon>TelaNovaTurma.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\TelaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +145,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Telas\TelaNovaTurma.resx">
+      <DependentUpon>TelaNovaTurma.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\TelaPrincipal.resx">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
