@@ -77,9 +77,7 @@ namespace ControloDePropinas
 
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
-            TelaArquivos telaArquivos = new TelaArquivos();
-            telaArquivos.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void TelaDePagamentos_Load(object sender, EventArgs e)

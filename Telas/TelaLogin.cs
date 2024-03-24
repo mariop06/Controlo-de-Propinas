@@ -12,14 +12,15 @@ namespace ControloDePropinas
     {
         MySqlConnection connection;
 
-        //Instanciando a string de conexão da classe DataBase...
+        //Instanciando a string de conexão da classe DataBase... {Amarildo]
         DataBase sql = new DataBase();
-
+        bool t = true;
         private TelaPrincipal telaPrincipal;
 
         public TelaLogin(TelaPrincipal telaPrincipal)
         {
             InitializeComponent();
+            
 
             connection = new MySqlConnection(sql.ConetarUsuario());
             this.telaPrincipal = telaPrincipal;
@@ -51,16 +52,14 @@ namespace ControloDePropinas
                 // Realizar a validação do login
                 bool loginValido = ValidarLogin(usuario, senha);
 
-                // Atualizar a UI na thread principal
                 this.Invoke((MethodInvoker)delegate
                 {
-                    // Esconder a ProgressBar
+                    
                     circleProgress.Visible = false;
 
-                    // Ativar o botão novamente
                     buttonEntrar.Enabled = true;
 
-                    // Verificar se o login é válido
+                    
                     if (loginValido)
                     {
 
@@ -97,7 +96,7 @@ namespace ControloDePropinas
             {
                 connection.Open();
 
-                // Query para verificar se o usuário e senha existem no banco de dados
+                // Query para verificar se o usuário e senha existem no banco de dados {Mario}
                 string query = "SELECT COUNT(*)  FROM autorizado WHERE username = @usuario AND senha = @senha";
 
                 MySqlCommand cmd = new MySqlCommand(query, connection);
@@ -148,6 +147,24 @@ namespace ControloDePropinas
         private void TelaLogin_Load(object sender, EventArgs e)
         {
             txtUsuario.Focus();
+            pictureBox1.BringToFront();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+           
+            if (t)
+            {
+                pictureBox1.BackgroundImage = Properties.Resources.eye;
+                txtSenha.UseSystemPasswordChar = !txtSenha.UseSystemPasswordChar;
+                t = false;
+            }
+            else
+            {
+                pictureBox1.BackgroundImage = Properties.Resources.eyebrow;
+                txtSenha.UseSystemPasswordChar = !txtSenha.UseSystemPasswordChar;
+                t = true;
+            }
         }
     }
 }

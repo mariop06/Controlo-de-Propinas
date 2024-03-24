@@ -39,8 +39,10 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.txtUsuario = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtSenha = new Guna.UI2.WinForms.Guna2TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonCancelar = new Guna.UI.WinForms.GunaAdvenceButton();
             this.buttonEntrar = new Guna.UI.WinForms.GunaAdvenceButton();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaElipse1
@@ -163,6 +165,18 @@
             this.txtSenha.TabIndex = 10;
             this.txtSenha.UseSystemPasswordChar = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::ControloDePropinas.Properties.Resources.eyebrow;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(472, 316);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(40, 50);
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Visible = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // buttonCancelar
             // 
             this.buttonCancelar.AnimationHoverSpeed = 0.07F;
@@ -240,6 +254,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1159, 660);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.circleProgress);
@@ -256,6 +271,7 @@
             this.Text = "Tela Login";
             this.Load += new System.EventHandler(this.TelaLogin_Load);
             this.DoubleClick += new System.EventHandler(this.TelaLogin_DoubleClick);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -274,6 +290,7 @@
         private System.Windows.Forms.Timer timer1;
         private Guna.UI2.WinForms.Guna2TextBox txtSenha;
         private Guna.UI2.WinForms.Guna2TextBox txtUsuario;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

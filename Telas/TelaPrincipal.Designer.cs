@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaPrincipal));
             this.sideBarP = new Guna.UI.WinForms.GunaPanel();
+            this.buttonExpand = new System.Windows.Forms.Button();
             this.sair = new Guna.UI.WinForms.GunaAdvenceButton();
             this.panelOpcoes = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -82,6 +83,7 @@
             this.sideBarP.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.sideBarP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
+            this.sideBarP.Controls.Add(this.buttonExpand);
             this.sideBarP.Controls.Add(this.sair);
             this.sideBarP.Controls.Add(this.panelOpcoes);
             this.sideBarP.Controls.Add(this.gunaCirclePictureBox1);
@@ -99,8 +101,17 @@
             this.sideBarP.Size = new System.Drawing.Size(100, 929);
             this.sideBarP.TabIndex = 0;
             this.sideBarP.DoubleClick += new System.EventHandler(this.sideBarP_DoubleClick);
-            this.sideBarP.MouseLeave += new System.EventHandler(this.sideBarP_MouseLeave);
-            this.sideBarP.MouseHover += new System.EventHandler(this.sideBarP_MouseHover_1);
+            // 
+            // buttonExpand
+            // 
+            this.buttonExpand.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonExpand.Location = new System.Drawing.Point(79, 28);
+            this.buttonExpand.Name = "buttonExpand";
+            this.buttonExpand.Size = new System.Drawing.Size(21, 32);
+            this.buttonExpand.TabIndex = 0;
+            this.buttonExpand.Text = "button1";
+            this.buttonExpand.UseVisualStyleBackColor = true;
+            this.buttonExpand.Click += new System.EventHandler(this.buttonExpand_Click);
             // 
             // sair
             // 
@@ -282,7 +293,6 @@
             this.btn_more.TabIndex = 8;
             this.btn_more.Text = "MORE";
             this.btn_more.Click += new System.EventHandler(this.btn_more_Click);
-            this.btn_more.MouseHover += new System.EventHandler(this.btn_more_MouseHover);
             // 
             // gunaCirclePictureBox1
             // 
@@ -330,7 +340,6 @@
             this.btn_info.TabIndex = 6;
             this.btn_info.Text = "INFORMAÇÃO";
             this.btn_info.Click += new System.EventHandler(this.btn_info_Click);
-            this.btn_info.MouseHover += new System.EventHandler(this.btn_info_MouseHover);
             // 
             // label1
             // 
@@ -375,7 +384,6 @@
             this.btn_atividade.TabIndex = 6;
             this.btn_atividade.Text = "ATIVIDADES";
             this.btn_atividade.Click += new System.EventHandler(this.btn_atividade_Click);
-            this.btn_atividade.MouseHover += new System.EventHandler(this.btn_atividade_MouseHover);
             // 
             // btn_Inicio
             // 
@@ -409,8 +417,6 @@
             this.btn_Inicio.TabIndex = 5;
             this.btn_Inicio.Text = "ÍNICIO";
             this.btn_Inicio.Click += new System.EventHandler(this.btn_Inicio_Click);
-            this.btn_Inicio.MouseHover += new System.EventHandler(this.btn_Inicio_MouseHover);
-            this.btn_Inicio.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_Inicio_MouseUp);
             // 
             // label4
             // 
@@ -455,7 +461,6 @@
             this.btn_dash.TabIndex = 7;
             this.btn_dash.Text = "DASHBOARD";
             this.btn_dash.Click += new System.EventHandler(this.btn_dash_Click);
-            this.btn_dash.MouseHover += new System.EventHandler(this.btn_dash_MouseHover);
             // 
             // label3
             // 
@@ -477,7 +482,7 @@
             this.labelNome.AutoSize = true;
             this.labelNome.BackColor = System.Drawing.Color.Transparent;
             this.labelNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNome.Location = new System.Drawing.Point(1117, 31);
+            this.labelNome.Location = new System.Drawing.Point(1058, 31);
             this.labelNome.MaximumSize = new System.Drawing.Size(300, 30);
             this.labelNome.Name = "labelNome";
             this.labelNome.Size = new System.Drawing.Size(20, 29);
@@ -519,7 +524,7 @@
             this.labelUsername.BackColor = System.Drawing.Color.Transparent;
             this.labelUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUsername.ForeColor = System.Drawing.Color.Silver;
-            this.labelUsername.Location = new System.Drawing.Point(1123, 62);
+            this.labelUsername.Location = new System.Drawing.Point(1064, 62);
             this.labelUsername.MaximumSize = new System.Drawing.Size(300, 30);
             this.labelUsername.Name = "labelUsername";
             this.labelUsername.Size = new System.Drawing.Size(23, 17);
@@ -528,11 +533,13 @@
             // 
             // close
             // 
+            this.close.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.close.BackColor = System.Drawing.Color.Transparent;
             this.close.Image = global::ControloDePropinas.Properties.Resources.close;
-            this.close.Location = new System.Drawing.Point(1435, 7);
+            this.close.Location = new System.Drawing.Point(1430, 12);
             this.close.Name = "close";
-            this.close.Size = new System.Drawing.Size(24, 24);
+            this.close.Size = new System.Drawing.Size(45, 27);
             this.close.TabIndex = 0;
             this.close.TabStop = false;
             this.close.Click += new System.EventHandler(this.close_Click);
@@ -543,7 +550,7 @@
             this.picUser.BackgroundImage = global::ControloDePropinas.Properties.Resources.user;
             this.picUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picUser.BaseColor = System.Drawing.Color.White;
-            this.picUser.Location = new System.Drawing.Point(1371, 36);
+            this.picUser.Location = new System.Drawing.Point(1347, 36);
             this.picUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picUser.Name = "picUser";
             this.picUser.Size = new System.Drawing.Size(47, 39);
@@ -646,5 +653,6 @@
         private System.Windows.Forms.Label labelBV;
         private System.Windows.Forms.Timer timerMainPanel;
         private System.Windows.Forms.Timer timerPanelLeave;
+        private System.Windows.Forms.Button buttonExpand;
     }
 }

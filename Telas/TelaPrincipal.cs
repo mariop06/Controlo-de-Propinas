@@ -69,6 +69,7 @@ namespace ControloDePropinas.Telas
        
         private void sidebarTimer_Tick(object sender, EventArgs e)
         {
+            sideBarP.BringToFront();
             if (sidebarExpand)
             {
                 sideBarP.Width += 10;
@@ -115,19 +116,6 @@ namespace ControloDePropinas.Telas
             }
         }
 
-
-
-        private void sideBarP_MouseHover(object sender, EventArgs e)
-        {
-            sideBarP.BringToFront();
-            sidebarTimer.Start();
-        }
-
-        private void btn_more_MouseHover(object sender, EventArgs e)
-        {
-            sideBarP.BringToFront();
-            sidebarTimer.Start();
-        }
         private void btn_Inicio_Click(object sender, EventArgs e)
         {
             labelBV.Visible = true;
@@ -138,24 +126,6 @@ namespace ControloDePropinas.Telas
             btn_atividade.BaseColor = Color.Transparent;
             btn_info.BaseColor = Color.Transparent;
             sair.BaseColor = Color.Transparent;
-        }
-
-        private void btn_Inicio_MouseHover(object sender, EventArgs e)
-        {
-            sideBarP.BringToFront();
-            sidebarTimer.Start();
-        }
-
-        private void btn_dash_MouseHover(object sender, EventArgs e)
-        {
-            sideBarP.BringToFront();
-            sidebarTimer.Start();
-        }
-
-        private void btn_atividade_MouseHover(object sender, EventArgs e)
-        {
-            sideBarP.BringToFront();
-            sidebarTimer.Start();
         }
 
         private void btn_info_Click(object sender, EventArgs e)
@@ -171,18 +141,6 @@ namespace ControloDePropinas.Telas
 
             mainPanel.Visible = true;
             LoadForm(new TelaInformações());
-        }
-
-        private void btn_info_MouseHover(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void btn_Inicio_MouseUp(object sender, MouseEventArgs e)
-        {
-            sideBarP.BringToFront();
-            sidebarTimer.Start();
         }
 
         private void btn_dash_Click(object sender, EventArgs e)
@@ -220,6 +178,9 @@ namespace ControloDePropinas.Telas
 
         private void btn_more_Click(object sender, EventArgs e)
         {
+
+            sideBarP.BringToFront();
+            sidebarTimer.Start();
             labelBV.Visible = false;
 
             btn_Inicio.BaseColor = Color.Transparent;
@@ -316,7 +277,7 @@ namespace ControloDePropinas.Telas
 
         private void timerMainPanel_Tick(object sender, EventArgs e)
         {
-            mainPanel.BringToFront();
+            
             if (sidebarExpand)
             {
               
@@ -344,20 +305,12 @@ namespace ControloDePropinas.Telas
         }
 
      
-        private void sideBarP_MouseLeave(object sender, EventArgs e)
-        {
-            timerPanelLeave.Start();
-        }
-
-        private void sideBarP_MouseHover_1(object sender, EventArgs e)
-        {
-            timerMainPanel.Start();
-        }
+     
 
         private void timerPanelLeave_Tick(object sender, EventArgs e)
         {
 
-            mainPanel.BringToFront();
+        
             sideBarP.Width -= 10;
             btn_Inicio.Width -= 10;
             btn_dash.Width -= 10;
@@ -371,17 +324,24 @@ namespace ControloDePropinas.Telas
                 panelOpcoes.Height = panelOpcoes.MinimumSize.Height;
 
 
+
             if (panelOpcoes.Height > 65)
                 btn_atividade.Location = new Point(btn_atividade.Location.X, btn_atividade.Location.Y - 10);
 
 
             if (sideBarP.Width == sideBarP.MinimumSize.Width)
             {
+               
                 btn_atividade.Location = new Point(btn_atividade.Location.X, 298);
                 panelOpcoes.Height = 65;
                 sidebarExpand = true;
                 timerPanelLeave.Stop();
             }
+        }
+
+        private void buttonExpand_Click(object sender, EventArgs e)
+        {
+            sidebarTimer.Start();
         }
     }
 }

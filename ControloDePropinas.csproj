@@ -199,6 +199,8 @@
     <None Include="Resources\close.png" />
     <Content Include="Resources\down-arrow.png" />
     <None Include="Resources\exit.png" />
+    <None Include="Resources\eye.png" />
+    <None Include="Resources\eyebrow.png" />
     <Content Include="Resources\OIG4 %282%29.png" />
     <None Include="Resources\Splash %281%29.png" />
     <None Include="Resources\Splash.png" />

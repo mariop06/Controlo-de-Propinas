@@ -27,22 +27,6 @@ namespace ControloDePropinas.Telas
             teste();
             teste1();
         }
-
-        private void Charts()
-        {
-            //MySqlConnection conexao = br.conexao(conectar);
-
-            //try
-            //{
-
-            //}
-            //catch ()
-            //{
-
-            //}
-
-        }
-
         public void teste()
         {
             MySqlDataReader resultado;
@@ -105,7 +89,6 @@ namespace ControloDePropinas.Telas
         void obterTurma()
         {
             labels = new Label[] { label8, label11, label13, label15, label17, label19};
-          //  MySqlDataReader resultado;
 
             try
             {
@@ -127,7 +110,6 @@ namespace ControloDePropinas.Telas
                     labelIndex++;
                 }
 
-                // Fecha o leitor de dados
                 reader.Close();
 
                 conexao.Close();
@@ -190,7 +172,6 @@ namespace ControloDePropinas.Telas
                     labelIndex++;
                 }
 
-                // Fecha o leitor de dados
                 reader.Close();
 
                 conexao.Close();
