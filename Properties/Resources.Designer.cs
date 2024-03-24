@@ -63,6 +63,16 @@ namespace ControloDePropinas.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1671042297660_1_ {
+            get {
+                object obj = ResourceManager.GetObject("1671042297660[1]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap adicionar_um_sinal_de_interface_de_contorno_de_pessoa_2 {
             get {
                 object obj = ResourceManager.GetObject("adicionar-um-sinal-de-interface-de-contorno-de-pessoa 2", resourceCulture);
@@ -183,6 +193,16 @@ namespace ControloDePropinas.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap left_arrow {
+            get {
+                object obj = ResourceManager.GetObject("left-arrow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mais {
             get {
                 object obj = ResourceManager.GetObject("mais", resourceCulture);
@@ -196,6 +216,16 @@ namespace ControloDePropinas.Properties {
         internal static System.Drawing.Bitmap mais_2 {
             get {
                 object obj = ResourceManager.GetObject("mais 2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap next {
+            get {
+                object obj = ResourceManager.GetObject("next", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

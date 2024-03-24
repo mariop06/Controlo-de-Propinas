@@ -56,7 +56,6 @@
             this.gunaLabel3.Size = new System.Drawing.Size(79, 30);
             this.gunaLabel3.TabIndex = 14;
             this.gunaLabel3.Text = "Turma:";
-            this.gunaLabel3.Click += new System.EventHandler(this.gunaLabel3_Click);
             // 
             // gunaLabel2
             // 
@@ -87,7 +86,6 @@
             this.TxtNum.SelectedText = "";
             this.TxtNum.Size = new System.Drawing.Size(478, 58);
             this.TxtNum.TabIndex = 2;
-            this.TxtNum.TextChanged += new System.EventHandler(this.TxtNum_TextChanged);
             // 
             // gunaLabel1
             // 

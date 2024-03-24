@@ -24,11 +24,6 @@ namespace ControloDePropinas.Telas
             InitializeComponent();
         }
 
-        private void gunaLabel3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void TelaCadastro_Load(object sender, EventArgs e)
         {
             combox();
@@ -166,12 +161,10 @@ namespace ControloDePropinas.Telas
 
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
+            TelaPrincipal telaPrincipal = new TelaPrincipal();
+            WindowState = FormWindowState.Normal;
+
             this.Hide();
-        }
-
-        private void TxtNum_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private bool ValidarNum(string Numero, string Turma)

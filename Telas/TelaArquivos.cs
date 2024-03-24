@@ -17,7 +17,7 @@ namespace ControloDePropinas
        private MySqlConnection conectar;
         // Classe com o médoto que possui as credencias de conexão
         DataBase br = new DataBase();
-
+        Telas.TelaPrincipal telaPrincipal = new Telas.TelaPrincipal();
 
         public TelaArquivos()
         {
@@ -434,7 +434,14 @@ namespace ControloDePropinas
         {
             TelaDePagamentos telaDePagamentos = new TelaDePagamentos();
             telaDePagamentos.Show();
-            this.Hide();
+
+             
+           WindowState = FormWindowState.Minimized;
+
+            btn_ListaPag.BaseColor = Color.DimGray;
+            Btn_Visualizar.BaseColor = Color.DimGray;
+            btn_RefreshPag.BaseColor = Color.DarkGray;
+
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

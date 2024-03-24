@@ -15,12 +15,19 @@ namespace ControloDePropinas.Telas
     public partial class TelaPrincipal : Form
     {
         bool sidebarExpand = true;
-        bool visible = true;
+        bool visible = true, t=true;
         private MySqlConnection connection = new MySqlConnection();
 
         public TelaPrincipal()
         {
             InitializeComponent();
+
+
+            if (labelUsername.Text == "@mariop06")
+            {
+                picUser.BackgroundImage = Properties.Resources._1671042297660_1_;
+            }
+
 
             if (visible)
             {
@@ -45,6 +52,14 @@ namespace ControloDePropinas.Telas
             {
                 this.mainPanel.Controls.RemoveAt(0);
             }
+
+
+            if (labelUsername.Text == "@amarildo_vieira")
+            {
+                // picUser.BackgroundImage = Properties.Resources //coloca ponto depois do resouces e escolha a foto;
+            }
+
+
             Form f = Form as Form;
             f.TopLevel = false;
             f.Dock = DockStyle.Fill;
@@ -179,8 +194,21 @@ namespace ControloDePropinas.Telas
         private void btn_more_Click(object sender, EventArgs e)
         {
 
-            sideBarP.BringToFront();
-            sidebarTimer.Start();
+            if (t)
+            {
+                sidebarTimer.Start();
+                pictureBox7.BackgroundImage = Properties.Resources.left_arrow;
+                t = false;
+            }
+            else
+            {
+                sidebarTimer.Start();
+                pictureBox7.BackgroundImage = Properties.Resources.next;
+                t = true;
+            }
+
+            //sideBarP.BringToFront();
+            //sidebarTimer.Start();
             labelBV.Visible = false;
 
             btn_Inicio.BaseColor = Color.Transparent;
@@ -342,6 +370,30 @@ namespace ControloDePropinas.Telas
         private void buttonExpand_Click(object sender, EventArgs e)
         {
             sidebarTimer.Start();
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+
+            btn_Inicio.BaseColor = Color.Transparent;
+            btn_dash.BaseColor = Color.Transparent;
+            btn_more.BaseColor = Color.Transparent;
+            btn_atividade.BaseColor = Color.Transparent;
+            btn_info.BaseColor = Color.Transparent;
+            sair.BaseColor = Color.Transparent;
+            if (t)
+            {
+                sidebarTimer.Start();
+                pictureBox7.BackgroundImage = Properties.Resources.left_arrow;
+                t = false;
+            }
+            else
+            {
+                sidebarTimer.Start();
+                pictureBox7.BackgroundImage = Properties.Resources.next;
+                t = true;
+            }
+        
         }
     }
 }
