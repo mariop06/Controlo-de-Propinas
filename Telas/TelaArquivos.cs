@@ -14,7 +14,7 @@ namespace ControloDePropinas
 {
     public partial class TelaArquivos : Form
     {
-        MySqlConnection conectar;
+       private MySqlConnection conectar;
         // Classe com o médoto que possui as credencias de conexão
         DataBase br = new DataBase();
 
@@ -38,13 +38,15 @@ namespace ControloDePropinas
             labelMes.Visible = true;
             comboxMeses.Visible = true;
 
-            MostraPagos();
+           comboxMeses.Text = comboxMeses.Items[0].ToString();
+            MesFiltro(); 
         }
 
         private void TelaArquivos_Load(object sender, EventArgs e)
         { 
             combox();
-            teste();
+            ListaTurmas();
+
 
             Btn_Visualizar.BaseColor = Color.DarkGray;
             btn_ListaPag.BaseColor = Color.DimGray;
@@ -91,13 +93,9 @@ namespace ControloDePropinas
             labelMes.Visible = false;
             comboxMeses.Visible = false;
 
-        }
-
-        private void gunaCheckBox4_CheckedChanged(object sender, EventArgs e)
-        {
+            ListaTurmas();
 
         }
-        
            
 
         private void gunaButton1_Click(object sender, EventArgs e)
@@ -241,11 +239,20 @@ namespace ControloDePropinas
 
         private void comboBox1_TextChanged(object sender, EventArgs e)
         {
-            teste();
+            if (Btn_Visualizar.BaseColor == Color.DarkGray)
+            {
+                ListaTurmas();
+            }if (btn_ListaPag.BaseColor == Color.DarkGray)
+            {
+                comboxMeses.Text = comboxMeses.Items[0].ToString();
+
+                MesFiltro();
+            }
+            
         }
 
         //#######################################################                        Métodos                    ###############################################################
-        public void teste()
+        public void ListaTurmas()
         {
             DataTable dt = new DataTable();
             MySqlDataReader resultado;
@@ -343,48 +350,96 @@ namespace ControloDePropinas
                 MySqlConnection conexao = br.conexao(conectar);
 
                 int pst = comboBox1.SelectedIndex + 1;
-
-                string sql = "select lista.num as 'Nº',lista.nome as 'Aluno', '" + comboxMeses.Text + "' from lista inner join est_mes on proc_a = lista.proc;";
-
-                MySqlCommand comando = new MySqlCommand(sql, conexao);
-                comando.CommandType = CommandType.Text;
-
-                conexao.Open();
-                resultado = comando.ExecuteReader();
-                dt.Load(resultado);
-
-                String sala = "select * from turma where nome_tur = '" + comboBox1.Text + "'";
-                MySqlCommand s_sala = new MySqlCommand(sala, conexao);
-                MySqlDataReader leitura;
-                leitura = s_sala.ExecuteReader();
-                while (leitura.Read())
+    
+                if (comboxMeses.SelectedIndex==0) 
                 {
-                    gunaLabel5.Text = leitura.GetString("classe");
-                    gunaLabel6.Text = leitura.GetString("sala");
-                    gunaLabel7.Text = leitura.GetString("turno");
+                    string sql = " select lista.nome as 'Aluno',est_mes.Setembro as 'SET', est_mes.Outubro as 'OUT', est_mes.Novembro as 'NOV'," +
+                        " est_mes.Dezembro as 'DEZ', est_mes.Janeiro as 'JAN', est_mes.Fevereiro as 'FEV', est_mes.Marco as 'MAR', est_mes.Abril as 'ABR', est_mes.Maio as 'MAI'," +
+                        " est_mes.Junho as 'JUN' from lista inner join est_mes on est_mes.proc_a = lista.proc where lista.Turma = @Turma;";
+
+
+                    MySqlCommand comando = new MySqlCommand(sql, conexao);
+                    comando.CommandType = CommandType.Text;
+
+                    conexao.Open();
+                    comando.Parameters.AddWithValue("@Turma", pst);
+
+                    resultado = comando.ExecuteReader();
+                    dt.Load(resultado);
+
+
+                    String sala = "select * from turma where nome_tur = '" + comboBox1.Text + "'";
+                    MySqlCommand s_sala = new MySqlCommand(sala, conexao);
+                    MySqlDataReader leitura;
+                    leitura = s_sala.ExecuteReader();
+                    while (leitura.Read())
+                    {
+                        gunaLabel5.Text = leitura.GetString("classe");
+                        gunaLabel6.Text = leitura.GetString("sala");
+                        gunaLabel7.Text = leitura.GetString("turno");
+
+                    }
+
+                    conexao.Close();
+                    conexao.Dispose();
 
                 }
+                else 
+                {
+                    string sql = " select lista.proc as 'Processo', lista.num as 'Nº', lista.nome as 'Nome do Aluno', " + (comboxMeses.Text).ToString() + " from lista inner join est_mes on est_mes.proc_a = lista.proc where lista.Turma = @Turma;";
 
-                conexao.Close();
-                conexao.Dispose();
+
+                    MySqlCommand comando = new MySqlCommand(sql, conexao);
+                    comando.CommandType = CommandType.Text;
+
+                    conexao.Open();
+                    comando.Parameters.AddWithValue("@Turma", pst);
+
+                    resultado = comando.ExecuteReader();
+                    dt.Load(resultado);
+
+
+                    String sala = "select * from turma where nome_tur = '" + comboBox1.Text + "'";
+                    MySqlCommand s_sala = new MySqlCommand(sala, conexao);
+                    MySqlDataReader leitura;
+                    leitura = s_sala.ExecuteReader();
+                    while (leitura.Read())
+                    {
+                        gunaLabel5.Text = leitura.GetString("classe");
+                        gunaLabel6.Text = leitura.GetString("sala");
+                        gunaLabel7.Text = leitura.GetString("turno");
+
+                    }
+
+                    conexao.Close();
+                    conexao.Dispose();
+                }
+
+                
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                //MessageBox.Show(ex.Message);
             }
             gunaDataGridView1.DataSource = dt;
         }
 
         private void comboxMeses_TextChanged(object sender, EventArgs e)
         {
+
             MesFiltro();
         }
 
         private void btn_RefreshPag_Click(object sender, EventArgs e)
         {
             TelaDePagamentos telaDePagamentos = new TelaDePagamentos();
-            telaDePagamentos.ShowDialog();
-            
+            telaDePagamentos.Show();
+            this.Hide();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
