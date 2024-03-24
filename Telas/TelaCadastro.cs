@@ -71,7 +71,12 @@ namespace ControloDePropinas.Telas
             MySqlConnection conexao = br.conexao(conectar);
             try
             {
-                string sql = "insert into est_mes(est_mes.id, est_mes.proc_a, est_mes.Setembro) value (default,'"+TxtProc.Text+"','Pago');";
+                // string sql = "insert into est_mes(est_mes.id, est_mes.proc_a, est_mes.Setembro) value (default,'"+TxtProc.Text+"','Pago');";
+                 string sql = "insert into est_mes(est_mes.id, est_mes.proc_a, est_mes.Setembro, est_mes.Outubro, est_mes.Novembro, est_mes.Dezembro," +
+                    " est_mes.Janeiro, est_mes.Fevereiro, est_mes.Marco, est_mes.Abril,est_mes.Maio, est_mes.Junho) value (default,'"+TxtProc.Text+ "'," +
+                    "'Pago','NÃO Pago','NÃO Pago','NÃO Pago','NÃO Pago','NÃO Pago','NÃO Pago','NÃO Pago','NÃO Pago','NÃO Pago');";
+
+
                 MySqlCommand comando = new MySqlCommand(sql, conexao);
                 conexao.Open();
 
