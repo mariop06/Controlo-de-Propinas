@@ -25,11 +25,55 @@ namespace ControloDePropinas
         {
             InitializeComponent();
         }
-
         private void buttonEntrar_Click(object sender, EventArgs e)
         {
+            MySqlConnection conexao = br.conexao(conectar);
+            try
+            {
+                string campo = comboBox1.Text;
+                string valor = "Pago";
+                string aluno = comboAlunos.Text;
+                int turmaIndex = comboTurmas.SelectedIndex + 1;
 
+                string verificacaoSql = "SELECT COUNT(*) FROM est_mes WHERE " + campo + " = @valor AND proc_a = (SELECT proc FROM lista WHERE Turma = @turma AND nome = @aluno)";
+
+                MySqlCommand comandoVerificacao = new MySqlCommand(verificacaoSql, conexao);
+                comandoVerificacao.Parameters.AddWithValue("@valor", valor);
+                comandoVerificacao.Parameters.AddWithValue("@turma", turmaIndex);
+                comandoVerificacao.Parameters.AddWithValue("@aluno", aluno);
+
+                conexao.Open();
+                int registrosExistentes = Convert.ToInt32(comandoVerificacao.ExecuteScalar());
+                conexao.Close();
+
+                if (registrosExistentes > 0)
+                {
+                    MessageBox.Show("Já existe um registro com o valor '" + valor + "' para o aluno selecionado nesta turma.");
+                    return; 
+                }
+
+                string sql = "UPDATE est_mes SET " + campo + " = @valor WHERE proc_a = (SELECT proc FROM lista WHERE Turma = @turma AND nome = @aluno)";
+
+                MySqlCommand comando = new MySqlCommand(sql, conexao);
+                comando.Parameters.AddWithValue("@valor", valor);
+                comando.Parameters.AddWithValue("@turma", turmaIndex);
+                comando.Parameters.AddWithValue("@aluno", aluno);
+
+                conexao.Open();
+                comando.ExecuteNonQuery();
+
+                MessageBox.Show("OPERAÇÃO BEM SUCEDIDA!");
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("ERRO: " + ex.Message);
+            }
+            finally
+            {
+                conexao.Close();
+            }
         }
+
 
         private void buttonCancelar_Click(object sender, EventArgs e)
         {

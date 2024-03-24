@@ -19,6 +19,7 @@ namespace ControloDePropinas.Telas
         DataBase br = new DataBase();
 
         private Label[] labels;
+        private Label[] labels2;
         public TelaDashboard()
         {
             InitializeComponent();
@@ -104,7 +105,7 @@ namespace ControloDePropinas.Telas
         void obterTurma()
         {
             labels = new Label[] { label8, label11, label13, label15, label17, label19};
-            MySqlDataReader resultado;
+          //  MySqlDataReader resultado;
 
             try
             {
@@ -139,6 +140,67 @@ namespace ControloDePropinas.Telas
         }
 
 
+
+
+        void Testeon()
+        {
+            MySqlConnection conexao = br.conexao(conectar);
+            conexao.Open();
+
+            MySqlCommand countCommand = new MySqlCommand("SELECT COUNT(*) FROM sua_tabela", conexao);
+            int totalRecords = Convert.ToInt32(countCommand.ExecuteScalar());
+
+            // Conta quantos registros têm um determinado valor (por exemplo, "Pago") na coluna desejada
+            MySqlCommand paidCommand = new MySqlCommand("SELECT COUNT(*) FROM sua_tabela WHERE sua_coluna = 'Pago'", conexao);
+            int paidRecords = Convert.ToInt32(paidCommand.ExecuteScalar());
+
+            // Calcula a porcentagem de registros que têm o valor "Pago"
+            double paymentPercentage = (double)paidRecords / totalRecords * 100;
+
+            // Atualiza a ProgressBar com o valor da porcentagem calculada
+            progressBar1.Value = (int)Math.Round(paymentPercentage);
+
+        }
+
+
+
+
+
+
+        void obterPercentagem()
+        {
+            labels2 = new Label[] {label9, label10, label12, label14, label16, label18};
+            try
+            {
+                MySqlConnection conexao = br.conexao(conectar);
+                conexao.Open();
+
+                string sqlQuery = "SELECT nome_tur FROM turma LIMIT 6";
+                MySqlCommand command = new MySqlCommand(sqlQuery, conexao);
+
+                MySqlDataReader reader = command.ExecuteReader();
+
+                int labelIndex = 0;
+
+
+                while (reader.Read() && labelIndex < 6)
+                {
+                    string columnValue = reader.GetString(0);
+                    labels2[labelIndex].Text = columnValue;
+                    labelIndex++;
+                }
+
+                // Fecha o leitor de dados
+                reader.Close();
+
+                conexao.Close();
+                conexao.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
 
 
 

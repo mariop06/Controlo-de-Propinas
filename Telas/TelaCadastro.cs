@@ -66,27 +66,62 @@ namespace ControloDePropinas.Telas
             }
         }
 
-        
+        void insereNaTabela_est_mes()
+        {
+            MySqlConnection conexao = br.conexao(conectar);
+            try
+            {
+                string sql = "insert into est_mes(est_mes.id, est_mes.proc_a, est_mes.Janeiro) value (default,'"+TxtProc.Text+"','Pago' )";
+                MySqlCommand comando = new MySqlCommand(sql, conexao);
+                conexao.Open();
+                comando.ExecuteReader();
+
+                MessageBox.Show("OPERAÇÃO BEM SUCEDIDA!");
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("ERRO: " + ex.Message);
+            }
+            finally
+            {
+                conexao.Close();
+            }
+        }
 
         private void buttonEntrar_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(TxtProc.Text) ||
+                string.IsNullOrWhiteSpace(TxtNum.Text) ||
+                string.IsNullOrWhiteSpace(TxtNome.Text) ||
+                string.IsNullOrWhiteSpace(comboSexo.Text) ||
+                string.IsNullOrWhiteSpace(comboTurmas.Text))
+            {
+                MessageBox.Show("Por favor, preencha todos os campos antes de continuar.");
+                TxtProc.Text = "";
+                TxtNum.Text = "";
+                TxtNome.Text = "";
+                comboSexo.Text = "";
+                comboTurmas.Text = "";
+                return;
+            }
+
+            insereNaTabela_est_mes();
+
             MySqlConnection conexao = br.conexao(conectar);
 
             try
             {
-      
-
                 string sql = "insert into lista values (default, @TxtProc, @TxtNum, @TxtNome, @comboSexo, @comboTurmas);";
                 MySqlCommand comando = new MySqlCommand(sql, conexao);
 
-                bool validarNum = ValidarNum(TxtNum.Text, (comboTurmas.SelectedIndex+1).ToString());
+                bool validarNum = ValidarNum(TxtNum.Text, (comboTurmas.SelectedIndex + 1).ToString());
                 conexao.Open();
 
-                if (validarNum == true) 
+                if (validarNum == true)
                 {
-                    MessageBox.Show("Nº na turma Já existente");
+                    MessageBox.Show("Nº na turma já existente");
                 }
-                else 
+                else
                 {
                     comando.Parameters.AddWithValue("@TxtProc", TxtProc.Text);
                     comando.Parameters.AddWithValue("@TxtNum", TxtNum.Text);
@@ -97,8 +132,6 @@ namespace ControloDePropinas.Telas
 
                     MessageBox.Show("OPERAÇÃO BEM SUCEDIDA!");
                 }
-                
-
             }
             catch (Exception ex)
             {
@@ -111,16 +144,15 @@ namespace ControloDePropinas.Telas
                     conexao.Close();
                     conexao.Dispose();
                 }
-                
-               
 
                 TxtProc.Text = "";
                 TxtNum.Text = "";
                 TxtNome.Text = "";
-                comboSexo.Text="";
+                comboSexo.Text = "";
                 comboTurmas.Text = "";
             }
         }
+
 
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
