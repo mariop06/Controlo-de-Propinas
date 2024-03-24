@@ -68,15 +68,14 @@ namespace ControloDePropinas.Telas
 
         void insereNaTabela_est_mes()
         {
-          
             MySqlConnection conexao = br.conexao(conectar);
             try
             {
-                string sql = "insert into est_mes(est_mes.id, est_mes.proc_a, est_mes.Janeiro) value (default,@num,'Pago');";
+                string sql = "insert into est_mes(est_mes.id, est_mes.proc_a, est_mes.Setembro) value (default,'"+TxtProc.Text+"','Pago');";
                 MySqlCommand comando = new MySqlCommand(sql, conexao);
                 conexao.Open();
 
-                comando.Parameters.AddWithValue("@num", TxtProc.Text);
+                //comando.Parameters.AddWithValue("@num", (TxtProc.Text));
                 comando.ExecuteReader();
 
                 MessageBox.Show("OPERAÇÃO BEM SUCEDIDA!");
@@ -146,14 +145,17 @@ namespace ControloDePropinas.Telas
                     conexao.Dispose();
                 }
 
+                
+            insereNaTabela_est_mes();
+
                 TxtProc.Text = "";
                 TxtNum.Text = "";
                 TxtNome.Text = "";
                 comboSexo.Text = "";
                 comboTurmas.Text = "";
+
             }
 
-            insereNaTabela_est_mes();
         }
 
 
