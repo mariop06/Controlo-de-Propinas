@@ -426,7 +426,6 @@ namespace ControloDePropinas
 
         private void comboxMeses_TextChanged(object sender, EventArgs e)
         {
-
             MesFiltro();
         }
 
@@ -434,10 +433,7 @@ namespace ControloDePropinas
         {
             TelaDePagamentos telaDePagamentos = new TelaDePagamentos();
             telaDePagamentos.Show();
-
              
-           WindowState = FormWindowState.Minimized;
-
             btn_ListaPag.BaseColor = Color.DimGray;
             Btn_Visualizar.BaseColor = Color.DimGray;
             btn_RefreshPag.BaseColor = Color.DarkGray;

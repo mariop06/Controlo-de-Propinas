@@ -162,8 +162,6 @@ namespace ControloDePropinas.Telas
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
             TelaPrincipal telaPrincipal = new TelaPrincipal();
-            WindowState = FormWindowState.Normal;
-
             this.Hide();
         }
 
