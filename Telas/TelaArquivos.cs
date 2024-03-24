@@ -31,6 +31,9 @@ namespace ControloDePropinas
             Btn_Visualizar.BaseColor = Color.DimGray;
             btn_RefreshPag.BaseColor = Color.DimGray;
 
+            panelsexo.Visible = false;
+
+
             labelFiltroM_Pago.Text = "Filtrar Pago";
             labelFiltroM_Pago.Checked = true;
             labelF_Npag.Text = "Filtrar Não Pago";
@@ -93,6 +96,7 @@ namespace ControloDePropinas
 
             labelMes.Visible = false;
             comboxMeses.Visible = false;
+            panelsexo.Visible = true;
 
             ListaTurmas();
 
@@ -433,9 +437,13 @@ namespace ControloDePropinas
 
         private void btn_RefreshPag_Click(object sender, EventArgs e)
         {
+            btn_ListaPag.BaseColor = Color.DimGray;
+            Btn_Visualizar.BaseColor = Color.DimGray;
+            btn_RefreshPag.BaseColor = Color.DarkGray;
+
             TelaDePagamentos telaDePagamentos = new TelaDePagamentos();
-            telaDePagamentos.Show();
-            this.Hide();
+            telaDePagamentos.ShowDialog();
+          
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

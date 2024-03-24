@@ -432,7 +432,7 @@
             this.btn_more.Radius = 5;
             this.btn_more.Size = new System.Drawing.Size(50, 54);
             this.btn_more.TabIndex = 8;
-            this.btn_more.Text = "MORE";
+            this.btn_more.Text = "ADICIONAR";
             this.btn_more.Click += new System.EventHandler(this.btn_more_Click);
             // 
             // gunaCirclePictureBox1
