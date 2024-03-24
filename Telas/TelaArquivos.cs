@@ -441,5 +441,69 @@ namespace ControloDePropinas
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaDataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int indexRow = e.RowIndex;
+
+            DataGridViewRow linha = gunaDataGridView1.Rows[indexRow];
+
+            lbApagar.Text = linha.Cells[0].Value.ToString();
+        }
+
+        private void btApagar_Click(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            MySqlDataReader resultado, resultado1;
+            MySqlConnection conexao = br.conexao(conectar);
+
+            try 
+            {
+                string sql = " delete from est_mes where proc_a = '"+lbApagar.Text+"';";
+                string sql1 = " delete from lista where proc = '"+ lbApagar.Text + "';";
+
+
+
+                MySqlCommand comando = new MySqlCommand(sql, conexao);
+                MySqlCommand comando1 = new MySqlCommand(sql1, conexao);
+
+                comando.CommandType = CommandType.Text;
+                comando1.CommandType = CommandType.Text;
+
+
+                conexao.Open();
+                resultado = comando.ExecuteReader();
+                dt.Load(resultado);
+                conexao.Close();
+                conexao.Dispose();
+
+
+                conexao.Open();
+                resultado1 = comando1.ExecuteReader();
+                dt.Load(resultado1);
+                conexao.Close();
+                conexao.Dispose();
+
+
+
+            } 
+
+            catch (Exception ex)
+            { 
+                MessageBox.Show(ex.Message);
+            }
+
+            finally 
+            {
+                ListaTurmas();
+            }
+          
+
+        }
     }
 }
