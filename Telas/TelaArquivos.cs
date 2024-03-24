@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using static System.Windows.Forms.LinkLabel;
 
 namespace ControloDePropinas
 {
@@ -17,7 +18,7 @@ namespace ControloDePropinas
        private MySqlConnection conectar;
         // Classe com o médoto que possui as credencias de conexão
         DataBase br = new DataBase();
-        Telas.TelaPrincipal telaPrincipal = new Telas.TelaPrincipal();
+
 
         public TelaArquivos()
         {
@@ -426,6 +427,7 @@ namespace ControloDePropinas
 
         private void comboxMeses_TextChanged(object sender, EventArgs e)
         {
+
             MesFiltro();
         }
 
@@ -433,11 +435,7 @@ namespace ControloDePropinas
         {
             TelaDePagamentos telaDePagamentos = new TelaDePagamentos();
             telaDePagamentos.Show();
-             
-            btn_ListaPag.BaseColor = Color.DimGray;
-            Btn_Visualizar.BaseColor = Color.DimGray;
-            btn_RefreshPag.BaseColor = Color.DarkGray;
-
+            this.Hide();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -445,11 +443,7 @@ namespace ControloDePropinas
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+     
         private void gunaDataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int indexRow = e.RowIndex;
@@ -457,6 +451,11 @@ namespace ControloDePropinas
             DataGridViewRow linha = gunaDataGridView1.Rows[indexRow];
 
             lbApagar.Text = linha.Cells[0].Value.ToString();
+            lbnum.Text = linha.Cells[1].Value.ToString();
+            lbnome.Text = linha.Cells[2].Value.ToString();
+            lbsexo.Text = linha.Cells[3].Value.ToString();
+
+
         }
 
         private void btApagar_Click(object sender, EventArgs e)
@@ -507,6 +506,56 @@ namespace ControloDePropinas
             }
           
 
+        }
+
+        private void btactualizar_Click(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            MySqlDataReader resultado;
+            MySqlConnection conexao = br.conexao(conectar);
+
+            try
+            {
+
+
+
+                string sql = " update  lista set  num = '" + lbnum.Text + "', nome='" + lbnome.Text + "', sexo ='" + lbsexo.Text + "' where proc = '"+lbApagar.Text+"';";
+
+
+
+                MySqlCommand comando = new MySqlCommand(sql, conexao);
+
+                comando.CommandType = CommandType.Text;
+
+                conexao.Open();
+
+                resultado = comando.ExecuteReader();
+                dt.Load(resultado);
+                conexao.Close();
+                conexao.Dispose();
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            finally
+            {
+                ListaTurmas();
+            }
+        }
+
+        private void gunaDataGridView1_CellEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            int indexRow = e.RowIndex;
+
+            DataGridViewRow linha = gunaDataGridView1.Rows[indexRow];
+
+            lbApagar.Text = linha.Cells[0].Value.ToString();
+            lbnum.Text = linha.Cells[1].Value.ToString();
+            lbnome.Text = linha.Cells[2].Value.ToString();
+            lbsexo.Text = linha.Cells[3].Value.ToString();
         }
     }
 }
