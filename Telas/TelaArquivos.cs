@@ -30,6 +30,8 @@ namespace ControloDePropinas
             btn_ListaPag.BaseColor = Color.DarkGray;
             Btn_Visualizar.BaseColor = Color.DimGray;
             btn_RefreshPag.BaseColor = Color.DimGray;
+            btactualizar.Visible = false;
+            btApagar.Visible = false;   
 
             panelsexo.Visible = false;
 
@@ -90,6 +92,8 @@ namespace ControloDePropinas
             Btn_Visualizar.BaseColor = Color.DarkGray;
             btn_ListaPag.BaseColor = Color.DimGray;
             btn_RefreshPag.BaseColor = Color.DimGray;
+            btactualizar.Visible = true;
+            btApagar.Visible = true;    
 
             labelFiltroM_Pago.Text = "Filtrar Masculino";
             labelF_Npag.Text = "Filtrar Femenino";
