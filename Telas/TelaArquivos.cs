@@ -32,14 +32,15 @@ namespace ControloDePropinas
             btn_RefreshPag.BaseColor = Color.DimGray;
             btactualizar.Visible = false;
             btApagar.Visible = false;   
+            lbmesf.Visible = true;
 
             panelsexo.Visible = false;
 
 
             labelFiltroM_Pago.Text = "Filtrar Pago";
-            labelFiltroM_Pago.Checked = true;
+            labelFiltroM_Pago.Visible = false;
             labelF_Npag.Text = "Filtrar Não Pago";
-            labelF_Npag.Checked = true;
+            labelF_Npag.Visible = false;
 
             labelMes.Visible = true;
             comboxMeses.Visible = true;
@@ -96,7 +97,10 @@ namespace ControloDePropinas
             btApagar.Visible = true;    
 
             labelFiltroM_Pago.Text = "Filtrar Masculino";
+            labelFiltroM_Pago.Visible = true;
             labelF_Npag.Text = "Filtrar Femenino";
+            labelF_Npag.Visible = true;
+            lbmesf.Visible = false;
 
             labelMes.Visible = false;
             comboxMeses.Visible = false;
@@ -568,6 +572,11 @@ namespace ControloDePropinas
             lbnum.Text = linha.Cells[1].Value.ToString();
             lbnome.Text = linha.Cells[2].Value.ToString();
             lbsexo.Text = linha.Cells[3].Value.ToString();
+        }
+
+        private void lbmesf_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -129,3 +129,4 @@ C:\Users\Mário Paulo\OneDrive\Documents\Projectos\Controlo-de-Propinas\obj\Debu
 C:\Users\HUAWEI\Documents\TLP_work\CodePropinas\obj\Debug\ControloDePropinas.Telas.TelaSplash.resources
 C:\Users\HUAWEI\Documents\TLP_work\CodePropinas\obj\Debug\ControloDePropinas.TelaDePagamentos.resources
 C:\Users\Mário Paulo\OneDrive\Documents\Projectos\Controlo-de-Propinas\obj\Debug\ControloDePropinas.TelaDePagamentos.resources
+C:\Users\HUAWEI\Documents\TLP_work\CodePropinas\obj\Debug\ControloDePropinas.TelaNovaTurma.resources
