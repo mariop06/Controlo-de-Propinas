@@ -32,17 +32,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaLogin));
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaElipsePanel1 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.circleProgress = new Guna.UI.WinForms.GunaWinCircleProgressIndicator();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.buttonEntrar = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.buttonCancelar = new Guna.UI.WinForms.GunaAdvenceButton();
             this.txtUsuario = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtSenha = new Guna.UI2.WinForms.Guna2TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.buttonCancelar = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.buttonEntrar = new Guna.UI.WinForms.GunaAdvenceButton();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaElipse1
@@ -52,30 +50,22 @@
             // 
             // gunaElipsePanel1
             // 
+            this.gunaElipsePanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaElipsePanel1.BackColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.gunaElipsePanel1.Location = new System.Drawing.Point(621, 19);
+            this.gunaElipsePanel1.Location = new System.Drawing.Point(503, 19);
             this.gunaElipsePanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaElipsePanel1.Name = "gunaElipsePanel1";
             this.gunaElipsePanel1.Radius = 10;
-            this.gunaElipsePanel1.Size = new System.Drawing.Size(519, 620);
+            this.gunaElipsePanel1.Size = new System.Drawing.Size(519, 618);
             this.gunaElipsePanel1.TabIndex = 0;
-            // 
-            // gunaLabel1
-            // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.Location = new System.Drawing.Point(217, 38);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(153, 46);
-            this.gunaLabel1.TabIndex = 1;
-            this.gunaLabel1.Text = "ENTRAR";
             // 
             // gunaLabel2
             // 
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.Location = new System.Drawing.Point(89, 150);
+            this.gunaLabel2.Location = new System.Drawing.Point(41, 150);
             this.gunaLabel2.Name = "gunaLabel2";
             this.gunaLabel2.Size = new System.Drawing.Size(82, 25);
             this.gunaLabel2.TabIndex = 4;
@@ -85,7 +75,7 @@
             // 
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.Location = new System.Drawing.Point(89, 278);
+            this.gunaLabel3.Location = new System.Drawing.Point(41, 278);
             this.gunaLabel3.Name = "gunaLabel3";
             this.gunaLabel3.Size = new System.Drawing.Size(69, 25);
             this.gunaLabel3.TabIndex = 6;
@@ -93,13 +83,14 @@
             // 
             // circleProgress
             // 
+            this.circleProgress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.circleProgress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(202)))), ((int)(((byte)(202)))));
             this.circleProgress.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.circleProgress.Location = new System.Drawing.Point(150, 480);
+            this.circleProgress.Location = new System.Drawing.Point(102, 480);
             this.circleProgress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.circleProgress.Name = "circleProgress";
             this.circleProgress.ProgressColor = System.Drawing.Color.DodgerBlue;
-            this.circleProgress.Size = new System.Drawing.Size(70, 48);
+            this.circleProgress.Size = new System.Drawing.Size(70, 46);
             this.circleProgress.TabIndex = 5;
             this.circleProgress.Visible = false;
             // 
@@ -107,114 +98,21 @@
             // 
             this.timer1.Enabled = true;
             // 
-            // txtUsuario
+            // gunaLabel1
             // 
-            this.txtUsuario.AutoCompleteCustomSource.AddRange(new string[] {
-            "mariop06",
-            "amarildo_vieira"});
-            this.txtUsuario.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.txtUsuario.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.txtUsuario.BackColor = System.Drawing.Color.White;
-            this.txtUsuario.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
-            this.txtUsuario.BorderRadius = 10;
-            this.txtUsuario.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUsuario.DefaultText = "";
-            this.txtUsuario.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtUsuario.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtUsuario.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUsuario.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUsuario.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsuario.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.ForeColor = System.Drawing.Color.Black;
-            this.txtUsuario.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsuario.Location = new System.Drawing.Point(94, 183);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.PasswordChar = '\0';
-            this.txtUsuario.PlaceholderText = "Digite o seu nome de @usuario...";
-            this.txtUsuario.SelectedText = "";
-            this.txtUsuario.Size = new System.Drawing.Size(431, 58);
-            this.txtUsuario.TabIndex = 9;
-            // 
-            // txtSenha
-            // 
-            this.txtSenha.AutoCompleteCustomSource.AddRange(new string[] {
-            "mariop06",
-            "amarildo_vieira"});
-            this.txtSenha.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.txtSenha.BackColor = System.Drawing.Color.White;
-            this.txtSenha.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
-            this.txtSenha.BorderRadius = 10;
-            this.txtSenha.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSenha.DefaultText = "";
-            this.txtSenha.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSenha.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSenha.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSenha.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSenha.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSenha.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSenha.ForeColor = System.Drawing.Color.Black;
-            this.txtSenha.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSenha.Location = new System.Drawing.Point(94, 312);
-            this.txtSenha.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtSenha.Name = "txtSenha";
-            this.txtSenha.PasswordChar = '●';
-            this.txtSenha.PlaceholderText = "Digite a sua senha...";
-            this.txtSenha.SelectedText = "";
-            this.txtSenha.Size = new System.Drawing.Size(431, 58);
-            this.txtSenha.TabIndex = 10;
-            this.txtSenha.UseSystemPasswordChar = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::ControloDePropinas.Properties.Resources.eyebrow;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(472, 316);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 50);
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Visible = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // buttonCancelar
-            // 
-            this.buttonCancelar.AnimationHoverSpeed = 0.07F;
-            this.buttonCancelar.AnimationSpeed = 0.03F;
-            this.buttonCancelar.BackColor = System.Drawing.Color.Transparent;
-            this.buttonCancelar.BaseColor = System.Drawing.Color.White;
-            this.buttonCancelar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
-            this.buttonCancelar.BorderSize = 1;
-            this.buttonCancelar.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.buttonCancelar.CheckedBorderColor = System.Drawing.Color.Black;
-            this.buttonCancelar.CheckedForeColor = System.Drawing.Color.White;
-            this.buttonCancelar.CheckedImage = ((System.Drawing.Image)(resources.GetObject("buttonCancelar.CheckedImage")));
-            this.buttonCancelar.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.buttonCancelar.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.buttonCancelar.FocusedColor = System.Drawing.Color.Empty;
-            this.buttonCancelar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCancelar.ForeColor = System.Drawing.Color.Black;
-            this.buttonCancelar.Image = null;
-            this.buttonCancelar.ImageSize = new System.Drawing.Size(20, 20);
-            this.buttonCancelar.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.buttonCancelar.Location = new System.Drawing.Point(331, 475);
-            this.buttonCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(202)))), ((int)(((byte)(202)))));
-            this.buttonCancelar.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.buttonCancelar.OnHoverForeColor = System.Drawing.Color.White;
-            this.buttonCancelar.OnHoverImage = null;
-            this.buttonCancelar.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
-            this.buttonCancelar.OnPressedColor = System.Drawing.Color.Black;
-            this.buttonCancelar.Radius = 10;
-            this.buttonCancelar.Size = new System.Drawing.Size(186, 58);
-            this.buttonCancelar.TabIndex = 8;
-            this.buttonCancelar.Text = "CANCELAR";
-            this.buttonCancelar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
+            this.gunaLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel1.Location = new System.Drawing.Point(179, 38);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(153, 46);
+            this.gunaLabel1.TabIndex = 1;
+            this.gunaLabel1.Text = "ENTRAR";
             // 
             // buttonEntrar
             // 
+            this.buttonEntrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonEntrar.AnimationHoverSpeed = 0.07F;
             this.buttonEntrar.AnimationSpeed = 0.03F;
             this.buttonEntrar.BackColor = System.Drawing.Color.Transparent;
@@ -233,7 +131,7 @@
             this.buttonEntrar.Image = null;
             this.buttonEntrar.ImageSize = new System.Drawing.Size(20, 20);
             this.buttonEntrar.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.buttonEntrar.Location = new System.Drawing.Point(94, 475);
+            this.buttonEntrar.Location = new System.Drawing.Point(46, 475);
             this.buttonEntrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonEntrar.Name = "buttonEntrar";
             this.buttonEntrar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(202)))), ((int)(((byte)(202)))));
@@ -243,18 +141,116 @@
             this.buttonEntrar.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
             this.buttonEntrar.OnPressedColor = System.Drawing.Color.Black;
             this.buttonEntrar.Radius = 10;
-            this.buttonEntrar.Size = new System.Drawing.Size(186, 58);
+            this.buttonEntrar.Size = new System.Drawing.Size(186, 56);
             this.buttonEntrar.TabIndex = 7;
             this.buttonEntrar.Text = "ENTRAR";
             this.buttonEntrar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.buttonEntrar.Click += new System.EventHandler(this.button_Click);
             // 
+            // buttonCancelar
+            // 
+            this.buttonCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonCancelar.AnimationHoverSpeed = 0.07F;
+            this.buttonCancelar.AnimationSpeed = 0.03F;
+            this.buttonCancelar.BackColor = System.Drawing.Color.Transparent;
+            this.buttonCancelar.BaseColor = System.Drawing.Color.White;
+            this.buttonCancelar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
+            this.buttonCancelar.BorderSize = 1;
+            this.buttonCancelar.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.buttonCancelar.CheckedBorderColor = System.Drawing.Color.Black;
+            this.buttonCancelar.CheckedForeColor = System.Drawing.Color.White;
+            this.buttonCancelar.CheckedImage = ((System.Drawing.Image)(resources.GetObject("buttonCancelar.CheckedImage")));
+            this.buttonCancelar.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.buttonCancelar.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.buttonCancelar.FocusedColor = System.Drawing.Color.Empty;
+            this.buttonCancelar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCancelar.ForeColor = System.Drawing.Color.Black;
+            this.buttonCancelar.Image = null;
+            this.buttonCancelar.ImageSize = new System.Drawing.Size(20, 20);
+            this.buttonCancelar.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.buttonCancelar.Location = new System.Drawing.Point(283, 475);
+            this.buttonCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonCancelar.Name = "buttonCancelar";
+            this.buttonCancelar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(202)))), ((int)(((byte)(202)))));
+            this.buttonCancelar.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.buttonCancelar.OnHoverForeColor = System.Drawing.Color.White;
+            this.buttonCancelar.OnHoverImage = null;
+            this.buttonCancelar.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
+            this.buttonCancelar.OnPressedColor = System.Drawing.Color.Black;
+            this.buttonCancelar.Radius = 10;
+            this.buttonCancelar.Size = new System.Drawing.Size(186, 56);
+            this.buttonCancelar.TabIndex = 8;
+            this.buttonCancelar.Text = "CANCELAR";
+            this.buttonCancelar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
+            // 
+            // txtUsuario
+            // 
+            this.txtUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtUsuario.AutoCompleteCustomSource.AddRange(new string[] {
+            "mariop06",
+            "amarildo_vieira"});
+            this.txtUsuario.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.txtUsuario.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.txtUsuario.BackColor = System.Drawing.Color.White;
+            this.txtUsuario.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
+            this.txtUsuario.BorderRadius = 10;
+            this.txtUsuario.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtUsuario.DefaultText = "";
+            this.txtUsuario.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtUsuario.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtUsuario.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUsuario.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUsuario.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUsuario.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuario.ForeColor = System.Drawing.Color.Black;
+            this.txtUsuario.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUsuario.Location = new System.Drawing.Point(46, 183);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.PasswordChar = '\0';
+            this.txtUsuario.PlaceholderText = "Digite o seu nome de @usuario...";
+            this.txtUsuario.SelectedText = "";
+            this.txtUsuario.Size = new System.Drawing.Size(431, 56);
+            this.txtUsuario.TabIndex = 9;
+            // 
+            // txtSenha
+            // 
+            this.txtSenha.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtSenha.AutoCompleteCustomSource.AddRange(new string[] {
+            "mariop06",
+            "amarildo_vieira"});
+            this.txtSenha.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.txtSenha.BackColor = System.Drawing.Color.White;
+            this.txtSenha.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(158)))), ((int)(((byte)(240)))));
+            this.txtSenha.BorderRadius = 10;
+            this.txtSenha.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSenha.DefaultText = "";
+            this.txtSenha.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSenha.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSenha.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSenha.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSenha.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSenha.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSenha.ForeColor = System.Drawing.Color.Black;
+            this.txtSenha.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSenha.Location = new System.Drawing.Point(46, 312);
+            this.txtSenha.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '●';
+            this.txtSenha.PlaceholderText = "Digite a sua senha...";
+            this.txtSenha.SelectedText = "";
+            this.txtSenha.Size = new System.Drawing.Size(431, 56);
+            this.txtSenha.TabIndex = 10;
+            this.txtSenha.UseSystemPasswordChar = true;
+            // 
             // TelaLogin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1159, 660);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(1041, 658);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.circleProgress);
@@ -269,9 +265,7 @@
             this.Name = "TelaLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tela Login";
-            this.Load += new System.EventHandler(this.TelaLogin_Load);
             this.DoubleClick += new System.EventHandler(this.TelaLogin_DoubleClick);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -281,16 +275,15 @@
 
         private Guna.UI.WinForms.GunaElipse gunaElipse1;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel1;
-        private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
-        private Guna.UI.WinForms.GunaAdvenceButton buttonEntrar;
-        private Guna.UI.WinForms.GunaAdvenceButton buttonCancelar;
         private Guna.UI.WinForms.GunaWinCircleProgressIndicator circleProgress;
         private System.Windows.Forms.Timer timer1;
         private Guna.UI2.WinForms.Guna2TextBox txtSenha;
         private Guna.UI2.WinForms.Guna2TextBox txtUsuario;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private Guna.UI.WinForms.GunaAdvenceButton buttonCancelar;
+        private Guna.UI.WinForms.GunaAdvenceButton buttonEntrar;
+        private Guna.UI.WinForms.GunaLabel gunaLabel1;
     }
 }
 

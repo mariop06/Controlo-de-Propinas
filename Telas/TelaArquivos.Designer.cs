@@ -28,15 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.comboxMeses = new System.Windows.Forms.ComboBox();
-            this.labelMes = new Guna.UI.WinForms.GunaLabel();
+            this.lbmesf = new Guna.UI.WinForms.GunaLabel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panelsexo = new Guna.UI.WinForms.GunaPanel();
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
+            this.labelMes = new Guna.UI.WinForms.GunaLabel();
             this.labelF_Npag = new Guna.UI.WinForms.GunaCheckBox();
             this.labelFiltroM_Pago = new Guna.UI.WinForms.GunaCheckBox();
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
@@ -50,13 +51,12 @@
             this.btn_ListaPag = new Guna.UI.WinForms.GunaButton();
             this.Btn_Visualizar = new Guna.UI.WinForms.GunaButton();
             this.btn_RefreshPag = new Guna.UI.WinForms.GunaButton();
-            this.btactualizar = new System.Windows.Forms.Label();
-            this.btApagar = new System.Windows.Forms.Label();
             this.lbApagar = new System.Windows.Forms.Label();
             this.lbnum = new System.Windows.Forms.Label();
             this.lbsexo = new System.Windows.Forms.Label();
             this.lbnome = new System.Windows.Forms.Label();
-            this.lbmesf = new Guna.UI.WinForms.GunaLabel();
+            this.btactualizar = new Guna.UI.WinForms.GunaButton();
+            this.btApagar = new Guna.UI.WinForms.GunaButton();
             this.gunaPanel1.SuspendLayout();
             this.panelsexo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
@@ -76,10 +76,10 @@
             this.gunaPanel1.Controls.Add(this.gunaLabel3);
             this.gunaPanel1.Controls.Add(this.gunaLabel2);
             this.gunaPanel1.Controls.Add(this.gunaLabel1);
-            this.gunaPanel1.Location = new System.Drawing.Point(115, 139);
+            this.gunaPanel1.Location = new System.Drawing.Point(102, 111);
             this.gunaPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(1338, 200);
+            this.gunaPanel1.Size = new System.Drawing.Size(1190, 160);
             this.gunaPanel1.TabIndex = 0;
             // 
             // comboxMeses
@@ -97,35 +97,33 @@
             "Abril",
             "Maio",
             "Junho"});
-            this.comboxMeses.Location = new System.Drawing.Point(1031, 130);
+            this.comboxMeses.Location = new System.Drawing.Point(916, 104);
             this.comboxMeses.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboxMeses.Name = "comboxMeses";
-            this.comboxMeses.Size = new System.Drawing.Size(208, 28);
+            this.comboxMeses.Size = new System.Drawing.Size(185, 24);
             this.comboxMeses.TabIndex = 11;
             this.comboxMeses.Visible = false;
             this.comboxMeses.TextChanged += new System.EventHandler(this.comboxMeses_TextChanged);
             // 
-            // labelMes
+            // lbmesf
             // 
-            this.labelMes.AutoSize = true;
-            this.labelMes.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.labelMes.Location = new System.Drawing.Point(104, 17);
-            this.labelMes.Name = "labelMes";
-            this.labelMes.Size = new System.Drawing.Size(66, 25);
-            this.labelMes.TabIndex = 10;
-            this.labelMes.Text = "Meses:";
-            this.labelMes.Visible = false;
+            this.lbmesf.AutoSize = true;
+            this.lbmesf.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lbmesf.Location = new System.Drawing.Point(921, 82);
+            this.lbmesf.Name = "lbmesf";
+            this.lbmesf.Size = new System.Drawing.Size(98, 20);
+            this.lbmesf.TabIndex = 10;
+            this.lbmesf.Text = "Mês de Filtro:";
             // 
             // comboBox1
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(1031, 63);
+            this.comboBox1.Location = new System.Drawing.Point(916, 50);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(208, 28);
+            this.comboBox1.Size = new System.Drawing.Size(185, 24);
             this.comboBox1.TabIndex = 9;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             this.comboBox1.TextChanged += new System.EventHandler(this.comboBox1_TextChanged);
             // 
             // panelsexo
@@ -134,10 +132,10 @@
             this.panelsexo.Controls.Add(this.labelMes);
             this.panelsexo.Controls.Add(this.labelF_Npag);
             this.panelsexo.Controls.Add(this.labelFiltroM_Pago);
-            this.panelsexo.Location = new System.Drawing.Point(454, 49);
+            this.panelsexo.Location = new System.Drawing.Point(404, 39);
             this.panelsexo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelsexo.Name = "panelsexo";
-            this.panelsexo.Size = new System.Drawing.Size(403, 104);
+            this.panelsexo.Size = new System.Drawing.Size(358, 83);
             this.panelsexo.TabIndex = 8;
             // 
             // gunaButton1
@@ -153,7 +151,7 @@
             this.gunaButton1.ForeColor = System.Drawing.Color.White;
             this.gunaButton1.Image = null;
             this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton1.Location = new System.Drawing.Point(243, 32);
+            this.gunaButton1.Location = new System.Drawing.Point(216, 26);
             this.gunaButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaButton1.Name = "gunaButton1";
             this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.Silver;
@@ -162,11 +160,22 @@
             this.gunaButton1.OnHoverImage = null;
             this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
             this.gunaButton1.Radius = 2;
-            this.gunaButton1.Size = new System.Drawing.Size(133, 35);
+            this.gunaButton1.Size = new System.Drawing.Size(118, 28);
             this.gunaButton1.TabIndex = 2;
             this.gunaButton1.Text = "Filtrar";
             this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click);
+            // 
+            // labelMes
+            // 
+            this.labelMes.AutoSize = true;
+            this.labelMes.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.labelMes.Location = new System.Drawing.Point(92, 14);
+            this.labelMes.Name = "labelMes";
+            this.labelMes.Size = new System.Drawing.Size(53, 20);
+            this.labelMes.TabIndex = 10;
+            this.labelMes.Text = "Meses:";
+            this.labelMes.Visible = false;
             // 
             // labelF_Npag
             // 
@@ -175,10 +184,10 @@
             this.labelF_Npag.CheckedOffColor = System.Drawing.Color.Gray;
             this.labelF_Npag.CheckedOnColor = System.Drawing.Color.DimGray;
             this.labelF_Npag.FillColor = System.Drawing.Color.White;
-            this.labelF_Npag.Location = new System.Drawing.Point(51, 61);
+            this.labelF_Npag.Location = new System.Drawing.Point(45, 49);
             this.labelF_Npag.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelF_Npag.Name = "labelF_Npag";
-            this.labelF_Npag.Size = new System.Drawing.Size(151, 22);
+            this.labelF_Npag.Size = new System.Drawing.Size(128, 20);
             this.labelF_Npag.TabIndex = 1;
             this.labelF_Npag.Text = "Filtrar Femenino";
             // 
@@ -189,10 +198,10 @@
             this.labelFiltroM_Pago.CheckedOffColor = System.Drawing.Color.Gray;
             this.labelFiltroM_Pago.CheckedOnColor = System.Drawing.Color.DimGray;
             this.labelFiltroM_Pago.FillColor = System.Drawing.Color.White;
-            this.labelFiltroM_Pago.Location = new System.Drawing.Point(50, 20);
+            this.labelFiltroM_Pago.Location = new System.Drawing.Point(44, 16);
             this.labelFiltroM_Pago.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelFiltroM_Pago.Name = "labelFiltroM_Pago";
-            this.labelFiltroM_Pago.Size = new System.Drawing.Size(152, 22);
+            this.labelFiltroM_Pago.Size = new System.Drawing.Size(129, 20);
             this.labelFiltroM_Pago.TabIndex = 0;
             this.labelFiltroM_Pago.Text = "Filtrar Masculino";
             // 
@@ -200,36 +209,36 @@
             // 
             this.gunaLabel5.AutoSize = true;
             this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel5.Location = new System.Drawing.Point(66, 48);
+            this.gunaLabel5.Location = new System.Drawing.Point(59, 38);
             this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(0, 25);
+            this.gunaLabel5.Size = new System.Drawing.Size(0, 20);
             this.gunaLabel5.TabIndex = 7;
             // 
             // gunaLabel6
             // 
             this.gunaLabel6.AutoSize = true;
             this.gunaLabel6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel6.Location = new System.Drawing.Point(108, 88);
+            this.gunaLabel6.Location = new System.Drawing.Point(96, 70);
             this.gunaLabel6.Name = "gunaLabel6";
-            this.gunaLabel6.Size = new System.Drawing.Size(0, 25);
+            this.gunaLabel6.Size = new System.Drawing.Size(0, 20);
             this.gunaLabel6.TabIndex = 6;
             // 
             // gunaLabel7
             // 
             this.gunaLabel7.AutoSize = true;
             this.gunaLabel7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel7.Location = new System.Drawing.Point(122, 128);
+            this.gunaLabel7.Location = new System.Drawing.Point(108, 102);
             this.gunaLabel7.Name = "gunaLabel7";
-            this.gunaLabel7.Size = new System.Drawing.Size(0, 25);
+            this.gunaLabel7.Size = new System.Drawing.Size(0, 20);
             this.gunaLabel7.TabIndex = 5;
             // 
             // gunaLabel4
             // 
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel4.Location = new System.Drawing.Point(79, 48);
+            this.gunaLabel4.Location = new System.Drawing.Point(70, 38);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(73, 25);
+            this.gunaLabel4.Size = new System.Drawing.Size(60, 20);
             this.gunaLabel4.TabIndex = 4;
             this.gunaLabel4.Text = "ª Classe";
             // 
@@ -237,9 +246,9 @@
             // 
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel3.Location = new System.Drawing.Point(63, 88);
+            this.gunaLabel3.Location = new System.Drawing.Point(56, 70);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(48, 25);
+            this.gunaLabel3.Size = new System.Drawing.Size(40, 20);
             this.gunaLabel3.TabIndex = 3;
             this.gunaLabel3.Text = "Sala:";
             // 
@@ -247,9 +256,9 @@
             // 
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel2.Location = new System.Drawing.Point(61, 128);
+            this.gunaLabel2.Location = new System.Drawing.Point(54, 102);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(62, 25);
+            this.gunaLabel2.Size = new System.Drawing.Size(50, 20);
             this.gunaLabel2.TabIndex = 2;
             this.gunaLabel2.Text = "Turno:";
             // 
@@ -257,42 +266,42 @@
             // 
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel1.Location = new System.Drawing.Point(1027, 31);
+            this.gunaLabel1.Location = new System.Drawing.Point(913, 25);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(66, 25);
+            this.gunaLabel1.Size = new System.Drawing.Size(54, 20);
             this.gunaLabel1.TabIndex = 1;
             this.gunaLabel1.Text = "Turma:";
             // 
             // gunaDataGridView1
             // 
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.gunaDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
+            this.gunaDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.gunaDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gunaDataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.gunaDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gunaDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gunaDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.gunaDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.gunaDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.gunaDataGridView1.ColumnHeadersHeight = 25;
             this.gunaDataGridView1.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(133)))), ((int)(((byte)(147)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(133)))), ((int)(((byte)(147)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
             this.gunaDataGridView1.EnableHeadersVisualStyles = false;
             this.gunaDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(199)))), ((int)(((byte)(206)))));
-            this.gunaDataGridView1.Location = new System.Drawing.Point(115, 381);
+            this.gunaDataGridView1.Location = new System.Drawing.Point(102, 305);
             this.gunaDataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaDataGridView1.Name = "gunaDataGridView1";
             this.gunaDataGridView1.RowHeadersVisible = false;
@@ -300,7 +309,7 @@
             this.gunaDataGridView1.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             this.gunaDataGridView1.RowTemplate.Height = 28;
             this.gunaDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gunaDataGridView1.Size = new System.Drawing.Size(1339, 536);
+            this.gunaDataGridView1.Size = new System.Drawing.Size(1190, 429);
             this.gunaDataGridView1.TabIndex = 1;
             this.gunaDataGridView1.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.WetAsphalt;
             this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
@@ -340,7 +349,7 @@
             this.btn_ListaPag.ForeColor = System.Drawing.Color.White;
             this.btn_ListaPag.Image = null;
             this.btn_ListaPag.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_ListaPag.Location = new System.Drawing.Point(594, 22);
+            this.btn_ListaPag.Location = new System.Drawing.Point(528, 18);
             this.btn_ListaPag.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_ListaPag.Name = "btn_ListaPag";
             this.btn_ListaPag.OnHoverBaseColor = System.Drawing.Color.Silver;
@@ -348,8 +357,8 @@
             this.btn_ListaPag.OnHoverForeColor = System.Drawing.Color.White;
             this.btn_ListaPag.OnHoverImage = null;
             this.btn_ListaPag.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_ListaPag.Radius = 2;
-            this.btn_ListaPag.Size = new System.Drawing.Size(364, 65);
+            this.btn_ListaPag.Radius = 10;
+            this.btn_ListaPag.Size = new System.Drawing.Size(324, 52);
             this.btn_ListaPag.TabIndex = 3;
             this.btn_ListaPag.Text = "LISTA DE PAGAMENTOS";
             this.btn_ListaPag.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -368,7 +377,7 @@
             this.Btn_Visualizar.ForeColor = System.Drawing.Color.White;
             this.Btn_Visualizar.Image = null;
             this.Btn_Visualizar.ImageSize = new System.Drawing.Size(20, 20);
-            this.Btn_Visualizar.Location = new System.Drawing.Point(115, 22);
+            this.Btn_Visualizar.Location = new System.Drawing.Point(102, 18);
             this.Btn_Visualizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Btn_Visualizar.Name = "Btn_Visualizar";
             this.Btn_Visualizar.OnHoverBaseColor = System.Drawing.Color.Silver;
@@ -376,8 +385,8 @@
             this.Btn_Visualizar.OnHoverForeColor = System.Drawing.Color.White;
             this.Btn_Visualizar.OnHoverImage = null;
             this.Btn_Visualizar.OnPressedColor = System.Drawing.Color.Black;
-            this.Btn_Visualizar.Radius = 2;
-            this.Btn_Visualizar.Size = new System.Drawing.Size(364, 65);
+            this.Btn_Visualizar.Radius = 10;
+            this.Btn_Visualizar.Size = new System.Drawing.Size(324, 52);
             this.Btn_Visualizar.TabIndex = 4;
             this.Btn_Visualizar.Text = "VISUALIZAR TURMAS";
             this.Btn_Visualizar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -396,7 +405,7 @@
             this.btn_RefreshPag.ForeColor = System.Drawing.Color.White;
             this.btn_RefreshPag.Image = null;
             this.btn_RefreshPag.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_RefreshPag.Location = new System.Drawing.Point(1089, 22);
+            this.btn_RefreshPag.Location = new System.Drawing.Point(968, 18);
             this.btn_RefreshPag.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_RefreshPag.Name = "btn_RefreshPag";
             this.btn_RefreshPag.OnHoverBaseColor = System.Drawing.Color.Silver;
@@ -404,39 +413,19 @@
             this.btn_RefreshPag.OnHoverForeColor = System.Drawing.Color.White;
             this.btn_RefreshPag.OnHoverImage = null;
             this.btn_RefreshPag.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_RefreshPag.Radius = 2;
-            this.btn_RefreshPag.Size = new System.Drawing.Size(364, 65);
+            this.btn_RefreshPag.Radius = 10;
+            this.btn_RefreshPag.Size = new System.Drawing.Size(324, 52);
             this.btn_RefreshPag.TabIndex = 5;
             this.btn_RefreshPag.Text = "ACTUALIZAR PAGAMENTO";
             this.btn_RefreshPag.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_RefreshPag.Click += new System.EventHandler(this.btn_RefreshPag_Click);
             // 
-            // btactualizar
-            // 
-            this.btactualizar.AutoSize = true;
-            this.btactualizar.Location = new System.Drawing.Point(111, 945);
-            this.btactualizar.Name = "btactualizar";
-            this.btactualizar.Size = new System.Drawing.Size(172, 20);
-            this.btactualizar.TabIndex = 6;
-            this.btactualizar.Text = "ACTULIAZAR DADOS";
-            this.btactualizar.Click += new System.EventHandler(this.btactualizar_Click);
-            // 
-            // btApagar
-            // 
-            this.btApagar.AutoSize = true;
-            this.btApagar.Location = new System.Drawing.Point(331, 945);
-            this.btApagar.Name = "btApagar";
-            this.btApagar.Size = new System.Drawing.Size(148, 20);
-            this.btApagar.TabIndex = 7;
-            this.btApagar.Text = "ELIMINAR DADOS";
-            this.btApagar.Click += new System.EventHandler(this.btApagar_Click);
-            // 
             // lbApagar
             // 
             this.lbApagar.AutoSize = true;
-            this.lbApagar.Location = new System.Drawing.Point(1497, 398);
+            this.lbApagar.Location = new System.Drawing.Point(1331, 318);
             this.lbApagar.Name = "lbApagar";
-            this.lbApagar.Size = new System.Drawing.Size(13, 20);
+            this.lbApagar.Size = new System.Drawing.Size(12, 17);
             this.lbApagar.TabIndex = 8;
             this.lbApagar.Text = ".";
             this.lbApagar.Visible = false;
@@ -444,9 +433,9 @@
             // lbnum
             // 
             this.lbnum.AutoSize = true;
-            this.lbnum.Location = new System.Drawing.Point(1497, 492);
+            this.lbnum.Location = new System.Drawing.Point(1331, 394);
             this.lbnum.Name = "lbnum";
-            this.lbnum.Size = new System.Drawing.Size(13, 20);
+            this.lbnum.Size = new System.Drawing.Size(12, 17);
             this.lbnum.TabIndex = 9;
             this.lbnum.Text = ".";
             this.lbnum.Visible = false;
@@ -454,9 +443,9 @@
             // lbsexo
             // 
             this.lbsexo.AutoSize = true;
-            this.lbsexo.Location = new System.Drawing.Point(1497, 574);
+            this.lbsexo.Location = new System.Drawing.Point(1331, 459);
             this.lbsexo.Name = "lbsexo";
-            this.lbsexo.Size = new System.Drawing.Size(13, 20);
+            this.lbsexo.Size = new System.Drawing.Size(12, 17);
             this.lbsexo.TabIndex = 11;
             this.lbsexo.Text = ".";
             this.lbsexo.Visible = false;
@@ -464,37 +453,84 @@
             // lbnome
             // 
             this.lbnome.AutoSize = true;
-            this.lbnome.Location = new System.Drawing.Point(1497, 536);
+            this.lbnome.Location = new System.Drawing.Point(1331, 429);
             this.lbnome.Name = "lbnome";
-            this.lbnome.Size = new System.Drawing.Size(13, 20);
+            this.lbnome.Size = new System.Drawing.Size(12, 17);
             this.lbnome.TabIndex = 10;
             this.lbnome.Text = ".";
             this.lbnome.Visible = false;
             // 
-            // lbmesf
+            // btactualizar
             // 
-            this.lbmesf.AutoSize = true;
-            this.lbmesf.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lbmesf.Location = new System.Drawing.Point(1036, 103);
-            this.lbmesf.Name = "lbmesf";
-            this.lbmesf.Size = new System.Drawing.Size(119, 25);
-            this.lbmesf.TabIndex = 10;
-            this.lbmesf.Text = "Mês de Filtro:";
-            this.lbmesf.Click += new System.EventHandler(this.lbmesf_Click);
+            this.btactualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btactualizar.AnimationHoverSpeed = 0.07F;
+            this.btactualizar.AnimationSpeed = 0.03F;
+            this.btactualizar.BackColor = System.Drawing.Color.Transparent;
+            this.btactualizar.BaseColor = System.Drawing.Color.DimGray;
+            this.btactualizar.BorderColor = System.Drawing.Color.Black;
+            this.btactualizar.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btactualizar.FocusedColor = System.Drawing.Color.Empty;
+            this.btactualizar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btactualizar.ForeColor = System.Drawing.Color.White;
+            this.btactualizar.Image = null;
+            this.btactualizar.ImageSize = new System.Drawing.Size(20, 20);
+            this.btactualizar.Location = new System.Drawing.Point(102, 756);
+            this.btactualizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btactualizar.Name = "btactualizar";
+            this.btactualizar.OnHoverBaseColor = System.Drawing.Color.Silver;
+            this.btactualizar.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btactualizar.OnHoverForeColor = System.Drawing.Color.White;
+            this.btactualizar.OnHoverImage = null;
+            this.btactualizar.OnPressedColor = System.Drawing.Color.Black;
+            this.btactualizar.Radius = 2;
+            this.btactualizar.Size = new System.Drawing.Size(158, 28);
+            this.btactualizar.TabIndex = 12;
+            this.btactualizar.Text = "ATUALIZAR CAMPO";
+            this.btactualizar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btactualizar.Click += new System.EventHandler(this.btactualizar_Click_1);
+            // 
+            // btApagar
+            // 
+            this.btApagar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btApagar.AnimationHoverSpeed = 0.07F;
+            this.btApagar.AnimationSpeed = 0.03F;
+            this.btApagar.BackColor = System.Drawing.Color.Transparent;
+            this.btApagar.BaseColor = System.Drawing.Color.DimGray;
+            this.btApagar.BorderColor = System.Drawing.Color.Black;
+            this.btApagar.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btApagar.FocusedColor = System.Drawing.Color.Empty;
+            this.btApagar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btApagar.ForeColor = System.Drawing.Color.White;
+            this.btApagar.Image = null;
+            this.btApagar.ImageSize = new System.Drawing.Size(20, 20);
+            this.btApagar.Location = new System.Drawing.Point(290, 756);
+            this.btApagar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btApagar.Name = "btApagar";
+            this.btApagar.OnHoverBaseColor = System.Drawing.Color.Silver;
+            this.btApagar.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btApagar.OnHoverForeColor = System.Drawing.Color.White;
+            this.btApagar.OnHoverImage = null;
+            this.btApagar.OnPressedColor = System.Drawing.Color.Black;
+            this.btApagar.Radius = 2;
+            this.btApagar.Size = new System.Drawing.Size(156, 28);
+            this.btApagar.TabIndex = 13;
+            this.btApagar.Text = "ELIMINAR REGISTRO";
+            this.btApagar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btApagar.Click += new System.EventHandler(this.btApagar_Click_1);
             // 
             // TelaArquivos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1577, 1010);
+            this.ClientSize = new System.Drawing.Size(1402, 808);
+            this.Controls.Add(this.btApagar);
+            this.Controls.Add(this.btactualizar);
             this.Controls.Add(this.lbsexo);
             this.Controls.Add(this.lbnome);
             this.Controls.Add(this.lbnum);
             this.Controls.Add(this.lbApagar);
-            this.Controls.Add(this.btApagar);
-            this.Controls.Add(this.btactualizar);
             this.Controls.Add(this.btn_RefreshPag);
             this.Controls.Add(this.Btn_Visualizar);
             this.Controls.Add(this.btn_ListaPag);
@@ -537,13 +573,13 @@
         private Guna.UI.WinForms.GunaButton btn_RefreshPag;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboxMeses;
-        private Guna.UI.WinForms.GunaLabel labelMes;
-        private System.Windows.Forms.Label btactualizar;
-        private System.Windows.Forms.Label btApagar;
         private System.Windows.Forms.Label lbApagar;
         private System.Windows.Forms.Label lbnum;
         private System.Windows.Forms.Label lbsexo;
         private System.Windows.Forms.Label lbnome;
         private Guna.UI.WinForms.GunaLabel lbmesf;
+        private Guna.UI.WinForms.GunaLabel labelMes;
+        private Guna.UI.WinForms.GunaButton btactualizar;
+        private Guna.UI.WinForms.GunaButton btApagar;
     }
 }

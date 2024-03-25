@@ -15,26 +15,17 @@ namespace ControloDePropinas.Telas
     public partial class TelaPrincipal : Form
     {
         bool sidebarExpand = true;
-        bool visible = true, t=true;
+        bool visible = true, t=true, v=false;
         private MySqlConnection connection = new MySqlConnection();
 
         public TelaPrincipal()
         {
             InitializeComponent();
 
-
-            if (labelUsername.Text == "@mariop06")
-            {
-                picUser.BackgroundImage = Properties.Resources._1671042297660_1_;
-            }
-
-
             if (visible)
             {
                 mainPanel.Visible = false;
-
             }
-
         }
 
         public void Acesso(string nome, string username)
@@ -52,13 +43,6 @@ namespace ControloDePropinas.Telas
             {
                 this.mainPanel.Controls.RemoveAt(0);
             }
-
-
-            if (labelUsername.Text == "@amarildo_vieira")
-            {
-                // picUser.BackgroundImage = Properties.Resources //coloca ponto depois do resouces e escolha a foto;
-            }
-
 
             Form f = Form as Form;
             f.TopLevel = false;
@@ -98,6 +82,7 @@ namespace ControloDePropinas.Telas
 
                 if (sideBarP.Width == sideBarP.MaximumSize.Width)
                 {
+                    v = true;
                     sidebarExpand = false;
                     sidebarTimer.Stop();
                 }
@@ -123,6 +108,7 @@ namespace ControloDePropinas.Telas
 
                 if (sideBarP.Width == sideBarP.MinimumSize.Width)
                 {
+                    v = false;
                     btn_atividade.Location = new Point(btn_atividade.Location.X, 298);
                     panelOpcoes.Height = 65;
                     sidebarExpand = true;
@@ -193,22 +179,27 @@ namespace ControloDePropinas.Telas
 
         private void btn_more_Click(object sender, EventArgs e)
         {
-
-            if (t)
+            if (v)
             {
-                sidebarTimer.Start();
-                pictureBox7.BackgroundImage = Properties.Resources.left_arrow;
-                t = false;
+                timerButtonMore.Start();
             }
             else
             {
-                sidebarTimer.Start();
-                pictureBox7.BackgroundImage = Properties.Resources.next;
-                t = true;
-            }
+                if (t)
+                {
+                    sidebarTimer.Start();
+                    timerButtonMore.Start();
+                    pictureBox7.BackgroundImage = Properties.Resources.left_arrow;
+                    t = false;
+                }
+                else
+                {
+                    sidebarTimer.Start();
+                    pictureBox7.BackgroundImage = Properties.Resources.next;
+                    t = true;
 
-            //sideBarP.BringToFront();
-            //sidebarTimer.Start();
+                }
+            }
             labelBV.Visible = false;
 
             btn_Inicio.BaseColor = Color.Transparent;
@@ -217,7 +208,7 @@ namespace ControloDePropinas.Telas
             btn_atividade.BaseColor = Color.Transparent;
             btn_info.BaseColor = Color.Transparent;
             sair.BaseColor = Color.Transparent;
-            timerButtonMore.Start();
+          
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -293,11 +284,8 @@ namespace ControloDePropinas.Telas
             btn_info.BaseColor = Color.Transparent;
             sair.BaseColor = Color.Gray;
 
-
                 connection.Close();
-            
 
-            // Fecha o formulário principal
             TelaLogin telaLogin = new TelaLogin(new TelaPrincipal());
             telaLogin.Show();
             this.Close();
@@ -332,13 +320,8 @@ namespace ControloDePropinas.Telas
             Application.Exit();
         }
 
-     
-     
-
         private void timerPanelLeave_Tick(object sender, EventArgs e)
         {
-
-        
             sideBarP.Width -= 10;
             btn_Inicio.Width -= 10;
             btn_dash.Width -= 10;
@@ -370,6 +353,18 @@ namespace ControloDePropinas.Telas
         private void buttonExpand_Click(object sender, EventArgs e)
         {
             sidebarTimer.Start();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            TelaNovaTurma telaNovaTurma = new TelaNovaTurma();
+            telaNovaTurma.ShowDialog();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            TelaNovaTurma telaNovaTurma = new TelaNovaTurma();
+            telaNovaTurma.ShowDialog();
         }
 
         private void pictureBox7_Click(object sender, EventArgs e)

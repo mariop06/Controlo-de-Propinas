@@ -53,34 +53,36 @@ namespace ControloDePropinas.Telas
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.gunaCircleProgressBar1 = new Guna.UI.WinForms.GunaCircleProgressBar();
+            this.CircleProgressBar1 = new Guna.UI.WinForms.GunaCircleProgressBar();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.guna2ProgressBar6 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.progressBar6 = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.guna2ProgressBar5 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.progressBar5 = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.guna2ProgressBar4 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.progressBar4 = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.guna2ProgressBar3 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.progressBar3 = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.guna2ProgressBar2 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.progressBar2 = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.progressBar1 = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.CircleProgressBar1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
@@ -185,27 +187,28 @@ namespace ControloDePropinas.Telas
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Gray;
-            this.panel3.Controls.Add(this.gunaCircleProgressBar1);
+            this.panel3.Controls.Add(this.CircleProgressBar1);
             this.panel3.Location = new System.Drawing.Point(992, 29);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(344, 212);
             this.panel3.TabIndex = 4;
             // 
-            // gunaCircleProgressBar1
+            // CircleProgressBar1
             // 
-            this.gunaCircleProgressBar1.AnimationSpeed = 0.6F;
-            this.gunaCircleProgressBar1.BaseColor = System.Drawing.Color.White;
-            this.gunaCircleProgressBar1.IdleColor = System.Drawing.Color.Gainsboro;
-            this.gunaCircleProgressBar1.IdleOffset = 20;
-            this.gunaCircleProgressBar1.Image = null;
-            this.gunaCircleProgressBar1.ImageSize = new System.Drawing.Size(52, 52);
-            this.gunaCircleProgressBar1.Location = new System.Drawing.Point(49, 3);
-            this.gunaCircleProgressBar1.Name = "gunaCircleProgressBar1";
-            this.gunaCircleProgressBar1.ProgressMaxColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCircleProgressBar1.ProgressMinColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCircleProgressBar1.ProgressOffset = 20;
-            this.gunaCircleProgressBar1.Size = new System.Drawing.Size(252, 206);
-            this.gunaCircleProgressBar1.TabIndex = 0;
+            this.CircleProgressBar1.AnimationSpeed = 0.6F;
+            this.CircleProgressBar1.BaseColor = System.Drawing.Color.White;
+            this.CircleProgressBar1.Controls.Add(this.label22);
+            this.CircleProgressBar1.IdleColor = System.Drawing.Color.Gainsboro;
+            this.CircleProgressBar1.IdleOffset = 20;
+            this.CircleProgressBar1.Image = null;
+            this.CircleProgressBar1.ImageSize = new System.Drawing.Size(52, 52);
+            this.CircleProgressBar1.Location = new System.Drawing.Point(49, 3);
+            this.CircleProgressBar1.Name = "CircleProgressBar1";
+            this.CircleProgressBar1.ProgressMaxColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.CircleProgressBar1.ProgressMinColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.CircleProgressBar1.ProgressOffset = 20;
+            this.CircleProgressBar1.Size = new System.Drawing.Size(252, 206);
+            this.CircleProgressBar1.TabIndex = 0;
             // 
             // chart1
             // 
@@ -277,19 +280,19 @@ namespace ControloDePropinas.Telas
             this.guna2Panel1.Controls.Add(this.label20);
             this.guna2Panel1.Controls.Add(this.label18);
             this.guna2Panel1.Controls.Add(this.label19);
-            this.guna2Panel1.Controls.Add(this.guna2ProgressBar6);
+            this.guna2Panel1.Controls.Add(this.progressBar6);
             this.guna2Panel1.Controls.Add(this.label16);
             this.guna2Panel1.Controls.Add(this.label17);
-            this.guna2Panel1.Controls.Add(this.guna2ProgressBar5);
+            this.guna2Panel1.Controls.Add(this.progressBar5);
             this.guna2Panel1.Controls.Add(this.label14);
             this.guna2Panel1.Controls.Add(this.label15);
-            this.guna2Panel1.Controls.Add(this.guna2ProgressBar4);
+            this.guna2Panel1.Controls.Add(this.progressBar4);
             this.guna2Panel1.Controls.Add(this.label12);
             this.guna2Panel1.Controls.Add(this.label13);
-            this.guna2Panel1.Controls.Add(this.guna2ProgressBar3);
+            this.guna2Panel1.Controls.Add(this.progressBar3);
             this.guna2Panel1.Controls.Add(this.label10);
             this.guna2Panel1.Controls.Add(this.label11);
-            this.guna2Panel1.Controls.Add(this.guna2ProgressBar2);
+            this.guna2Panel1.Controls.Add(this.progressBar2);
             this.guna2Panel1.Controls.Add(this.label9);
             this.guna2Panel1.Controls.Add(this.label8);
             this.guna2Panel1.Controls.Add(this.progressBar1);
@@ -344,16 +347,16 @@ namespace ControloDePropinas.Telas
             this.label19.TabIndex = 19;
             this.label19.Text = "Turma";
             // 
-            // guna2ProgressBar6
+            // progressBar6
             // 
-            this.guna2ProgressBar6.BorderRadius = 5;
-            this.guna2ProgressBar6.Location = new System.Drawing.Point(124, 334);
-            this.guna2ProgressBar6.Name = "guna2ProgressBar6";
-            this.guna2ProgressBar6.Size = new System.Drawing.Size(375, 14);
-            this.guna2ProgressBar6.TabIndex = 20;
-            this.guna2ProgressBar6.Text = "guna2ProgressBar6";
-            this.guna2ProgressBar6.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2ProgressBar6.Value = 50;
+            this.progressBar6.BorderRadius = 5;
+            this.progressBar6.Location = new System.Drawing.Point(124, 334);
+            this.progressBar6.Name = "progressBar6";
+            this.progressBar6.Size = new System.Drawing.Size(375, 14);
+            this.progressBar6.TabIndex = 20;
+            this.progressBar6.Text = "guna2ProgressBar6";
+            this.progressBar6.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.progressBar6.Value = 50;
             // 
             // label16
             // 
@@ -377,16 +380,16 @@ namespace ControloDePropinas.Telas
             this.label17.TabIndex = 16;
             this.label17.Text = "Turma";
             // 
-            // guna2ProgressBar5
+            // progressBar5
             // 
-            this.guna2ProgressBar5.BorderRadius = 5;
-            this.guna2ProgressBar5.Location = new System.Drawing.Point(124, 301);
-            this.guna2ProgressBar5.Name = "guna2ProgressBar5";
-            this.guna2ProgressBar5.Size = new System.Drawing.Size(375, 14);
-            this.guna2ProgressBar5.TabIndex = 17;
-            this.guna2ProgressBar5.Text = "guna2ProgressBar5";
-            this.guna2ProgressBar5.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2ProgressBar5.Value = 50;
+            this.progressBar5.BorderRadius = 5;
+            this.progressBar5.Location = new System.Drawing.Point(124, 301);
+            this.progressBar5.Name = "progressBar5";
+            this.progressBar5.Size = new System.Drawing.Size(375, 14);
+            this.progressBar5.TabIndex = 17;
+            this.progressBar5.Text = "guna2ProgressBar5";
+            this.progressBar5.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.progressBar5.Value = 50;
             // 
             // label14
             // 
@@ -410,16 +413,16 @@ namespace ControloDePropinas.Telas
             this.label15.TabIndex = 13;
             this.label15.Text = "Turma";
             // 
-            // guna2ProgressBar4
+            // progressBar4
             // 
-            this.guna2ProgressBar4.BorderRadius = 5;
-            this.guna2ProgressBar4.Location = new System.Drawing.Point(124, 268);
-            this.guna2ProgressBar4.Name = "guna2ProgressBar4";
-            this.guna2ProgressBar4.Size = new System.Drawing.Size(375, 14);
-            this.guna2ProgressBar4.TabIndex = 14;
-            this.guna2ProgressBar4.Text = "guna2ProgressBar4";
-            this.guna2ProgressBar4.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2ProgressBar4.Value = 50;
+            this.progressBar4.BorderRadius = 5;
+            this.progressBar4.Location = new System.Drawing.Point(124, 268);
+            this.progressBar4.Name = "progressBar4";
+            this.progressBar4.Size = new System.Drawing.Size(375, 14);
+            this.progressBar4.TabIndex = 14;
+            this.progressBar4.Text = "guna2ProgressBar4";
+            this.progressBar4.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.progressBar4.Value = 50;
             // 
             // label12
             // 
@@ -443,16 +446,16 @@ namespace ControloDePropinas.Telas
             this.label13.TabIndex = 10;
             this.label13.Text = "Turma";
             // 
-            // guna2ProgressBar3
+            // progressBar3
             // 
-            this.guna2ProgressBar3.BorderRadius = 5;
-            this.guna2ProgressBar3.Location = new System.Drawing.Point(124, 236);
-            this.guna2ProgressBar3.Name = "guna2ProgressBar3";
-            this.guna2ProgressBar3.Size = new System.Drawing.Size(375, 14);
-            this.guna2ProgressBar3.TabIndex = 11;
-            this.guna2ProgressBar3.Text = "guna2ProgressBar3";
-            this.guna2ProgressBar3.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2ProgressBar3.Value = 50;
+            this.progressBar3.BorderRadius = 5;
+            this.progressBar3.Location = new System.Drawing.Point(124, 236);
+            this.progressBar3.Name = "progressBar3";
+            this.progressBar3.Size = new System.Drawing.Size(375, 14);
+            this.progressBar3.TabIndex = 11;
+            this.progressBar3.Text = "guna2ProgressBar3";
+            this.progressBar3.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.progressBar3.Value = 50;
             // 
             // label10
             // 
@@ -476,16 +479,16 @@ namespace ControloDePropinas.Telas
             this.label11.TabIndex = 7;
             this.label11.Text = "Turma";
             // 
-            // guna2ProgressBar2
+            // progressBar2
             // 
-            this.guna2ProgressBar2.BorderRadius = 5;
-            this.guna2ProgressBar2.Location = new System.Drawing.Point(124, 204);
-            this.guna2ProgressBar2.Name = "guna2ProgressBar2";
-            this.guna2ProgressBar2.Size = new System.Drawing.Size(375, 14);
-            this.guna2ProgressBar2.TabIndex = 8;
-            this.guna2ProgressBar2.Text = "guna2ProgressBar2";
-            this.guna2ProgressBar2.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2ProgressBar2.Value = 50;
+            this.progressBar2.BorderRadius = 5;
+            this.progressBar2.Location = new System.Drawing.Point(124, 204);
+            this.progressBar2.Name = "progressBar2";
+            this.progressBar2.Size = new System.Drawing.Size(375, 14);
+            this.progressBar2.TabIndex = 8;
+            this.progressBar2.Text = "guna2ProgressBar2";
+            this.progressBar2.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.progressBar2.Value = 50;
             // 
             // label9
             // 
@@ -542,6 +545,17 @@ namespace ControloDePropinas.Telas
             this.label7.TabIndex = 3;
             this.label7.Text = "Percentagem (%) de Propinas Pagas por Turma";
             // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.Transparent;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(103, 91);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(45, 25);
+            this.label22.TabIndex = 0;
+            this.label22.Text = "P%";
+            // 
             // TelaDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -559,11 +573,14 @@ namespace ControloDePropinas.Telas
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaDashboard";
+            this.Load += new System.EventHandler(this.TelaDashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
+            this.CircleProgressBar1.ResumeLayout(false);
+            this.CircleProgressBar1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
@@ -583,23 +600,23 @@ namespace ControloDePropinas.Telas
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private Guna.UI.WinForms.GunaCircleProgressBar gunaCircleProgressBar1;
+        private Guna.UI.WinForms.GunaCircleProgressBar CircleProgressBar1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
-        private Guna.UI2.WinForms.Guna2ProgressBar guna2ProgressBar6;
+        private Guna.UI2.WinForms.Guna2ProgressBar progressBar6;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
-        private Guna.UI2.WinForms.Guna2ProgressBar guna2ProgressBar5;
+        private Guna.UI2.WinForms.Guna2ProgressBar progressBar5;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
-        private Guna.UI2.WinForms.Guna2ProgressBar guna2ProgressBar4;
+        private Guna.UI2.WinForms.Guna2ProgressBar progressBar4;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private Guna.UI2.WinForms.Guna2ProgressBar guna2ProgressBar3;
+        private Guna.UI2.WinForms.Guna2ProgressBar progressBar3;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private Guna.UI2.WinForms.Guna2ProgressBar guna2ProgressBar2;
+        private Guna.UI2.WinForms.Guna2ProgressBar progressBar2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2ProgressBar progressBar1;
@@ -607,5 +624,6 @@ namespace ControloDePropinas.Telas
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label22;
     }
 }

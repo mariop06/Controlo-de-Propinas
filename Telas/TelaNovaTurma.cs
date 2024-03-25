@@ -22,19 +22,43 @@ namespace ControloDePropinas
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+
+        private void button1_Click_1(object sender, EventArgs e)
         {
+            this.Close();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(tClasse.Text) ||
+               string.IsNullOrWhiteSpace(tNome.Text) ||
+               string.IsNullOrWhiteSpace(tSala.Text) ||
+               string.IsNullOrWhiteSpace(tTurno.Text))
+            {
+                MessageBox.Show("Por favor, preencha todos os campos antes de continuar.");
+                tClasse.Text = "";
+                tNome.Text = "";
+                tSala.Text = "";
+                tTurno.Text = "";
+                return;
+            }
+
+
 
             MySqlConnection conexao = br.conexao(conectar);
             try
             {
-                string sql = "insert into turma values (default,'"+tClasse.Text+"',''"+tNome.Text+"'','"+tSala.Text+"','"+tTurno.Text+"');";
-
+                //insert into turma  values (default,'8','BT','5','Manhã');
+                string sql = "insert into turma  values (default,@classe,@turma,@Nu_sala,@turno);";
 
                 MySqlCommand comando = new MySqlCommand(sql, conexao);
                 conexao.Open();
-
-                //comando.Parameters.AddWithValue("@num", (TxtProc.Text));
+              
+                //string sql = "insert into turma values (default,'" + tClasse.Text + "',''" + tNome.Text + "'','" + tSala.Text + "','" + tTurno.Text + "');";
+                comando.Parameters.AddWithValue("@classe", tClasse.Text);
+                comando.Parameters.AddWithValue("@turma", tNome.Text);
+                comando.Parameters.AddWithValue("@Nu_sala", tSala.Text);
+                comando.Parameters.AddWithValue("@turno", tTurno.Text);
                 comando.ExecuteReader();
 
                 MessageBox.Show("OPERAÇÃO BEM SUCEDIDA!");
@@ -45,6 +69,10 @@ namespace ControloDePropinas
             }
             finally
             {
+               tClasse.Text="";
+               tNome.Text="";
+               tSala.Text="";
+               tTurno.Text="";
                 conexao.Close();
             }
         }

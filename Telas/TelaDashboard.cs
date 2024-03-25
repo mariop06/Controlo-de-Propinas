@@ -183,8 +183,31 @@ namespace ControloDePropinas.Telas
             }
         }
 
+        private void TelaDashboard_Load(object sender, EventArgs e)
+        {
+            int num = 45;
+            CircleProgressBar1.Value = num;
+            label22.Text = num + "%";
 
 
+            progressBar1.Value = 60;
+            label9.Text =60+"%";
 
+            progressBar2.Value = 3;
+            label10.Text = 3 + "%";
+
+            progressBar3.Value = 52;
+            label12.Text = 52 + "%";
+
+            progressBar4.Value = 23;
+            label14.Text = 23 + "%";
+
+            progressBar5.Value = 10;
+            label16.Text = 10 + "%";
+
+            progressBar6.Value = 15;
+            label18.Text = 15 + "%";
+
+        }
     }
 }

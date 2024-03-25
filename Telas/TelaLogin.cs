@@ -73,13 +73,12 @@ namespace ControloDePropinas
                         if (leitura.Read())
                         {
                             nome = leitura.GetString("nome");
-                            MessageBox.Show("Login bem-sucedido!");
+                           // MessageBox.Show("Login bem-sucedido!");
 
                             TelaPrincipal telaPrincipal = new TelaPrincipal();
                             telaPrincipal.Acesso(nome, usuario);
                             this.Hide();
                             telaPrincipal.Show();
-
                         }
                     }
                     else
@@ -124,7 +123,7 @@ namespace ControloDePropinas
 
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void TelaLogin_DoubleClick(object sender, EventArgs e)
@@ -144,27 +143,6 @@ namespace ControloDePropinas
             Application.Exit();
         }
 
-        private void TelaLogin_Load(object sender, EventArgs e)
-        {
-            txtUsuario.Focus();
-            pictureBox1.BringToFront();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-           
-            if (t)
-            {
-                pictureBox1.BackgroundImage = Properties.Resources.eye;
-                txtSenha.UseSystemPasswordChar = !txtSenha.UseSystemPasswordChar;
-                t = false;
-            }
-            else
-            {
-                pictureBox1.BackgroundImage = Properties.Resources.eyebrow;
-                txtSenha.UseSystemPasswordChar = !txtSenha.UseSystemPasswordChar;
-                t = true;
-            }
-        }
+     
     }
 }

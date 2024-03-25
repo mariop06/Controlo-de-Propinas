@@ -54,7 +54,6 @@ namespace ControloDePropinas
             combox();
             ListaTurmas();
 
-
             Btn_Visualizar.BaseColor = Color.DarkGray;
             btn_ListaPag.BaseColor = Color.DimGray;
             btn_RefreshPag.BaseColor = Color.DimGray;
@@ -75,11 +74,9 @@ namespace ControloDePropinas
                 adpt.Fill(ds);
                 comboBox1.DataSource = ds.Tables[0];
                 comboBox1.DisplayMember = "nome_tur";
-
    
                 conexao.Close();
                 conexao.Dispose();
-
             }
             catch (Exception ex) 
             { 
@@ -110,31 +107,22 @@ namespace ControloDePropinas
 
         }
            
-
         private void gunaButton1_Click(object sender, EventArgs e)
         {
             if (Btn_Visualizar.BaseColor == Color.DarkGray && (btn_ListaPag.BaseColor == Color.DimGray && btn_RefreshPag.BaseColor == Color.DimGray))
             {
                 //Filtrando os Masculinos da tabela
-
                 if (labelFiltroM_Pago.Text == "Filtrar Masculino")
                 {
-
-                    MessageBox.Show("Filtrar Masculino");
-
                     if (labelFiltroM_Pago.Checked)
                     {
-
                         DataTable dt = new DataTable();
                         MySqlDataReader resultado;
 
                         try
                         {
-
                             MySqlConnection conexao = br.conexao(conectar);
-
                             int pst = comboBox1.SelectedIndex + 1;
-
                             string sql = "select lista.proc as 'Processo',lista.num as 'Nº',nome as 'Nome do Aluno',lista.sexo as 'Sexo' from lista inner join turma on turma.id = lista.Turma where Turma = '" + pst + "' AND sexo = 'M';";
 
                             MySqlCommand comando = new MySqlCommand(sql, conexao);
@@ -158,18 +146,14 @@ namespace ControloDePropinas
                 //Filtrando os Femeninos da tabela
                 if (labelF_Npag.Text == "Filtrar Femenino" )
                 {
-                    MessageBox.Show("Filtrar Femenino");
                     if (labelF_Npag.Checked)
                     {
                         DataTable dt = new DataTable();
                         MySqlDataReader resultado;
-
                         try
                         {
                             MySqlConnection conexao = br.conexao(conectar);
-
                             int pst = comboBox1.SelectedIndex + 1;
-
                             string sql = "select lista.proc as 'Processo',lista.num as 'Nº',nome as 'Nome do Aluno',lista.sexo as 'Sexo' from lista inner join turma on turma.id = lista.Turma where Turma = '" + pst + "' AND sexo = 'F';";
 
                             MySqlCommand comando = new MySqlCommand(sql, conexao);
@@ -191,11 +175,8 @@ namespace ControloDePropinas
                 }
 
                 //Filtrando MAsculino e Femenino
-
                 if ((labelF_Npag.Text == "Filtrar Femenino" && labelFiltroM_Pago.Text == "Filtrar Masculino"))
                 {
-                    MessageBox.Show("Filtar ambos");
-
                     if (labelFiltroM_Pago.Checked && labelF_Npag.Checked)
                     {
                         DataTable dt = new DataTable();
@@ -204,9 +185,7 @@ namespace ControloDePropinas
                         try
                         {
                             MySqlConnection conexao = br.conexao(conectar);
-
                             int pst = comboBox1.SelectedIndex + 1;
-
                             string sql = "select lista.proc as 'Processo',lista.num as 'Nº',nome as 'Nome do Aluno',lista.sexo as 'Sexo' from lista inner join turma on turma.id = lista.Turma where Turma = '" + pst + "';";
 
                             MySqlCommand comando = new MySqlCommand(sql, conexao);
@@ -229,13 +208,10 @@ namespace ControloDePropinas
 
             }
 
-
             if (btn_ListaPag.BaseColor==Color.DarkGray)
             {
-                MessageBox.Show("Botao Lista de Pagamento");
+                
             }
-
-            
         }
 
         private void TelaArquivos_DoubleClick(object sender, EventArgs e)
@@ -258,7 +234,6 @@ namespace ControloDePropinas
             }if (btn_ListaPag.BaseColor == Color.DarkGray)
             {
                 comboxMeses.Text = comboxMeses.Items[0].ToString();
-
                 MesFiltro();
             }
             
@@ -273,9 +248,7 @@ namespace ControloDePropinas
             try
             {
                 MySqlConnection conexao = br.conexao(conectar);
-
                 int pst = comboBox1.SelectedIndex + 1;
-
                 string sql = "select lista.proc as 'Processo',lista.num as 'Nº',nome as 'Nome do Aluno',lista.sexo as 'Sexo' from lista inner join turma on turma.id = lista.Turma where Turma = '" + pst + "';";
 
                 MySqlCommand comando = new MySqlCommand(sql, conexao);
@@ -294,9 +267,7 @@ namespace ControloDePropinas
                     gunaLabel5.Text = leitura.GetString("classe");
                     gunaLabel6.Text = leitura.GetString("sala");
                     gunaLabel7.Text = leitura.GetString("turno");
-
                 }
-
                 conexao.Close();
                 conexao.Dispose();
             }
@@ -312,11 +283,9 @@ namespace ControloDePropinas
         {
             DataTable dt = new DataTable();
             MySqlDataReader resultado;
-
             try
             {
                 MySqlConnection conexao = br.conexao(conectar);
-
                 int pst = comboBox1.SelectedIndex + 1;
 
                 string sql = "select lista.num as 'Nº',lista.nome as 'Aluno',est_mes.Setembro as 'SET',est_mes.Outubro as 'OUT', est_mes.Novembro as 'NOV', est_mes.Dezembro as 'DEZ'," +
@@ -340,7 +309,6 @@ namespace ControloDePropinas
                     gunaLabel7.Text = leitura.GetString("turno");
 
                 }
-
                 conexao.Close();
                 conexao.Dispose();
             }
@@ -354,14 +322,11 @@ namespace ControloDePropinas
 
         public void MesFiltro() 
         {
-
             DataTable dt = new DataTable();
             MySqlDataReader resultado;
-
             try
             {
                 MySqlConnection conexao = br.conexao(conectar);
-
                 int pst = comboBox1.SelectedIndex + 1;
     
                 if (comboxMeses.SelectedIndex==0) 
@@ -370,7 +335,6 @@ namespace ControloDePropinas
                         " est_mes.Dezembro as 'DEZ', est_mes.Janeiro as 'JAN', est_mes.Fevereiro as 'FEV', est_mes.Marco as 'MAR', est_mes.Abril as 'ABR', est_mes.Maio as 'MAI'," +
                         " est_mes.Junho as 'JUN' from lista inner join est_mes on est_mes.proc_a = lista.proc where lista.Turma = @Turma;";
 
-
                     MySqlCommand comando = new MySqlCommand(sql, conexao);
                     comando.CommandType = CommandType.Text;
 
@@ -379,7 +343,6 @@ namespace ControloDePropinas
 
                     resultado = comando.ExecuteReader();
                     dt.Load(resultado);
-
 
                     String sala = "select * from turma where nome_tur = '" + comboBox1.Text + "'";
                     MySqlCommand s_sala = new MySqlCommand(sala, conexao);
@@ -392,16 +355,13 @@ namespace ControloDePropinas
                         gunaLabel7.Text = leitura.GetString("turno");
 
                     }
-
                     conexao.Close();
                     conexao.Dispose();
-
                 }
                 else 
                 {
                     string sql = " select lista.proc as 'Processo', lista.num as 'Nº', lista.nome as 'Nome do Aluno', " + (comboxMeses.Text).ToString() + " from lista inner join est_mes on est_mes.proc_a = lista.proc where lista.Turma = @Turma;";
 
-
                     MySqlCommand comando = new MySqlCommand(sql, conexao);
                     comando.CommandType = CommandType.Text;
 
@@ -423,12 +383,9 @@ namespace ControloDePropinas
                         gunaLabel7.Text = leitura.GetString("turno");
 
                     }
-
                     conexao.Close();
                     conexao.Dispose();
                 }
-
-                
             }
             catch (Exception ex)
             {
@@ -439,7 +396,6 @@ namespace ControloDePropinas
 
         private void comboxMeses_TextChanged(object sender, EventArgs e)
         {
-
             MesFiltro();
         }
 
@@ -449,14 +405,11 @@ namespace ControloDePropinas
             Btn_Visualizar.BaseColor = Color.DimGray;
             btn_RefreshPag.BaseColor = Color.DarkGray;
 
+            panelsexo.Visible = false;
+            btactualizar.Visible = false;
+            btApagar.Visible = false;
             TelaDePagamentos telaDePagamentos = new TelaDePagamentos();
             telaDePagamentos.ShowDialog();
-          
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
      
@@ -474,71 +427,28 @@ namespace ControloDePropinas
 
         }
 
-        private void btApagar_Click(object sender, EventArgs e)
+        private void gunaDataGridView1_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
-            DataTable dt = new DataTable();
-            MySqlDataReader resultado, resultado1;
-            MySqlConnection conexao = br.conexao(conectar);
+            int indexRow = e.RowIndex;
 
-            try 
-            {
-                string sql = " delete from est_mes where proc_a = '"+lbApagar.Text+"';";
-                string sql1 = " delete from lista where proc = '"+ lbApagar.Text + "';";
+            DataGridViewRow linha = gunaDataGridView1.Rows[indexRow];
 
-
-
-                MySqlCommand comando = new MySqlCommand(sql, conexao);
-                MySqlCommand comando1 = new MySqlCommand(sql1, conexao);
-
-                comando.CommandType = CommandType.Text;
-                comando1.CommandType = CommandType.Text;
-
-
-                conexao.Open();
-                resultado = comando.ExecuteReader();
-                dt.Load(resultado);
-                conexao.Close();
-                conexao.Dispose();
-
-
-                conexao.Open();
-                resultado1 = comando1.ExecuteReader();
-                dt.Load(resultado1);
-                conexao.Close();
-                conexao.Dispose();
-
-
-
-            } 
-
-            catch (Exception ex)
-            { 
-                MessageBox.Show(ex.Message);
-            }
-
-            finally 
-            {
-                ListaTurmas();
-            }
-          
-
+            lbApagar.Text = linha.Cells[0].Value.ToString();
+            lbnum.Text = linha.Cells[1].Value.ToString();
+            lbnome.Text = linha.Cells[2].Value.ToString();
+            lbsexo.Text = linha.Cells[3].Value.ToString();
         }
 
-        private void btactualizar_Click(object sender, EventArgs e)
+        private void btactualizar_Click_1(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
             MySqlDataReader resultado;
             MySqlConnection conexao = br.conexao(conectar);
+            btactualizar.BackColor = Color.Gainsboro;
 
             try
             {
-
-
-
-                string sql = " update  lista set  num = '" + lbnum.Text + "', nome='" + lbnome.Text + "', sexo ='" + lbsexo.Text + "' where proc = '"+lbApagar.Text+"';";
-
-
-
+                string sql = " update  lista set  num = '" + lbnum.Text + "', nome='" + lbnome.Text + "', sexo ='" + lbsexo.Text + "' where proc = '" + lbApagar.Text + "';";
                 MySqlCommand comando = new MySqlCommand(sql, conexao);
 
                 comando.CommandType = CommandType.Text;
@@ -559,24 +469,49 @@ namespace ControloDePropinas
             finally
             {
                 ListaTurmas();
+
             }
         }
 
-        private void gunaDataGridView1_CellEnter(object sender, DataGridViewCellEventArgs e)
+        private void btApagar_Click_1(object sender, EventArgs e)
         {
-            int indexRow = e.RowIndex;
+            DataTable dt = new DataTable();
+            MySqlDataReader resultado, resultado1;
+            MySqlConnection conexao = br.conexao(conectar);
 
-            DataGridViewRow linha = gunaDataGridView1.Rows[indexRow];
+            try
+            {
+                string sql = " delete from est_mes where proc_a = '" + lbApagar.Text + "';";
+                string sql1 = " delete from lista where proc = '" + lbApagar.Text + "';";
 
-            lbApagar.Text = linha.Cells[0].Value.ToString();
-            lbnum.Text = linha.Cells[1].Value.ToString();
-            lbnome.Text = linha.Cells[2].Value.ToString();
-            lbsexo.Text = linha.Cells[3].Value.ToString();
-        }
+                MySqlCommand comando = new MySqlCommand(sql, conexao);
+                MySqlCommand comando1 = new MySqlCommand(sql1, conexao);
 
-        private void lbmesf_Click(object sender, EventArgs e)
-        {
+                comando.CommandType = CommandType.Text;
+                comando1.CommandType = CommandType.Text;
 
+                conexao.Open();
+                resultado = comando.ExecuteReader();
+                dt.Load(resultado);
+                conexao.Close();
+                conexao.Dispose();
+
+                conexao.Open();
+                resultado1 = comando1.ExecuteReader();
+                dt.Load(resultado1);
+                conexao.Close();
+                conexao.Dispose();
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            finally
+            {
+                ListaTurmas();
+            }
         }
     }
 }

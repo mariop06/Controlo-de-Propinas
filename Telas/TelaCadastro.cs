@@ -144,7 +144,6 @@ namespace ControloDePropinas.Telas
                     conexao.Close();
                     conexao.Dispose();
                 }
-
                 
             insereNaTabela_est_mes();
 
@@ -153,11 +152,9 @@ namespace ControloDePropinas.Telas
                 TxtNome.Text = "";
                 comboSexo.Text = "";
                 comboTurmas.Text = "";
-
             }
 
         }
-
 
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
@@ -179,8 +176,6 @@ namespace ControloDePropinas.Telas
                 MySqlCommand cmd = new MySqlCommand(query, conexao);
                 cmd.Parameters.AddWithValue("@Numero", Numero);
                 cmd.Parameters.AddWithValue("@Turma", Turma);
-
-
 
                 // Executar a consulta
                 int count = Convert.ToInt32(cmd.ExecuteScalar());

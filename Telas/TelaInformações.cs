@@ -17,46 +17,6 @@ namespace ControloDePropinas.Telas
             InitializeComponent();
         }
 
-        private void guna2ComboBox3_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gunaLabel4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TelaInformações_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void guna2ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gunaLabel9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gunaLabel3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gunaLabel16_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void guna2PictureBox1_Click(object sender, EventArgs e)
         {
             if(gunaLabel9.Visible == false)
@@ -140,12 +100,6 @@ namespace ControloDePropinas.Telas
                 guna2PictureBox6.Image = ControloDePropinas.Properties.Resources.baixo;
             }
         }
-
-        private void gunaLabel13_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void TelaInformações_DoubleClick(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Normal)

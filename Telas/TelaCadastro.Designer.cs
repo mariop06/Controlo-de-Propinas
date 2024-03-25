@@ -89,6 +89,9 @@
             // 
             // gunaLabel1
             // 
+            this.gunaLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel1.Location = new System.Drawing.Point(144, 17);
@@ -99,6 +102,7 @@
             // 
             // buttonCancelar
             // 
+            this.buttonCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonCancelar.AnimationHoverSpeed = 0.07F;
             this.buttonCancelar.AnimationSpeed = 0.03F;
             this.buttonCancelar.BackColor = System.Drawing.Color.Transparent;
@@ -135,6 +139,7 @@
             // 
             // buttonEntrar
             // 
+            this.buttonEntrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonEntrar.AnimationHoverSpeed = 0.07F;
             this.buttonEntrar.AnimationSpeed = 0.03F;
             this.buttonEntrar.BackColor = System.Drawing.Color.Transparent;
@@ -171,6 +176,8 @@
             // 
             // gunaElipsePanel1
             // 
+            this.gunaElipsePanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaElipsePanel1.BackColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.gunaElipsePanel1.Location = new System.Drawing.Point(650, 17);
