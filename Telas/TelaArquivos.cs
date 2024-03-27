@@ -57,6 +57,7 @@ namespace ControloDePropinas
             Btn_Visualizar.BaseColor = Color.DarkGray;
             btn_ListaPag.BaseColor = Color.DimGray;
             btn_RefreshPag.BaseColor = Color.DimGray;
+            lbmesf.Visible= false;
         }
 
          private void combox()
